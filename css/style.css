@@ -1,0 +1,238 @@
+@font-face {
+    font-family:'GothamBold';
+    src:url('../fonts/Gotham-Bold.otf');
+}
+@font-face {
+    font-family:'GothamBook';
+    src:url('../fonts/Gotham-Book.otf');
+}
+@font-face {
+    font-family:'GothamBlack';
+    src:url('../fonts/Gotham-Black.woff');
+}
+@font-face {
+    font-family:'RobotoRegular';
+    src:url('../fonts/Roboto-Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+}
+h1{
+    font-family:'GothamBold';
+    font-size: 2.2em;
+    color: #253150;
+    text-align: center;    
+}
+h2{
+    font-family:'GothamBold';
+    font-size: 1.8em;
+}
+.red{
+    color: #BD0F14;
+}
+.blue{
+    color: #253150;
+}
+header{
+    font-family:'GothamBold';
+    display: block;    
+}
+.red-band{
+    height: 40px;
+    width: 100%;
+    display: block;
+    background:#BD0F14;
+} 
+.nav-item{
+    padding: 0 15px;    
+    max-width: 230px;
+    width: 100%;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #253150;
+    width: 100%;
+    display: block;
+    min-width: max-content;
+    text-align: center;
+}
+header button{
+    background: #253150;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 5px;
+    width: 240px;
+    border: none;
+}
+.miga{
+    border-top: 1px solid #BD0F14;      
+}
+.miga .container{
+    color: #253150;  
+    font-size: 0.9em;    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.miga a{
+    font-family:'RobotoRegular';        
+    font-size: 0.9em;  
+    text-decoration: none;  
+}
+.miga a:first-of-type{
+    margin-left: 4em;
+}
+.miga a:hover{
+    color: inherit;
+}
+section{
+    position: relative;
+}
+.contenido{
+    margin: 4em 0;
+}
+.banner{    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% bottom;
+    width: 100%;
+    height: 580px;
+    position: relative;
+    z-index: 0;
+}
+.puntos{
+    background-image: url(../img/puntos/banner_puntos-servicio.png);
+}
+
+.bluebox{
+    font-family:'GothamBold';
+    position: absolute;
+    top: 40%;    
+	color: #fff;
+	background-color: #253150;
+	text-align: center;	
+	border-radius: 3px;
+	width: max-content;	
+}
+.bluebox p{
+    font-size: 2.5em;
+    line-height: 2em;
+    padding: 0 0.5em;
+    margin: 0;
+    text-align: center;
+}
+
+.accordion-header button{
+    font-family:'GothamBlack';
+}
+.accordion-button:not(.collapsed) {
+	color: #BD0F14;
+	background-color: inherit;
+	box-shadow: none;
+}
+.accordion-button:focus {
+	z-index: 3;
+	border-color: none;
+	outline: 0;
+	box-shadow: none;
+}
+footer{
+    width: 100%;
+    background: #253150;
+    color: #ffffff;
+    padding: 2em 0 3em;
+}
+footer h2{
+    position: relative;
+    margin-bottom: 3em;
+}
+footer h2::after{
+    content: '';
+    position: absolute;    
+    width: 35px;
+    height: 3px;
+    background: #BD0F14;
+    border-radius: 2px;
+    left: 0;
+    top: 1.5em;
+}
+footer p{
+    font-family:'RobotoRegular';
+    font-size: 1em;
+}
+footer p.big{
+    max-width: 300px;
+}
+footer p.minus{
+    max-width: 260px;
+}
+footer a,footer a:hover{
+    color: #ffffff;
+}
+footer button{
+    font-family:'GothamBold';
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffffff;   
+    color: #ffffff;
+    padding: 1em 2em;
+    border-radius: 0.4em; 
+}
+footer .lineav{
+    height: 115px;
+    width: 1px;
+    background: #BD0F14;
+}
+.footer-sec{
+    background: #B0B6BA;
+    margin-top: 3em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+.footer-sec h4{
+    font-family:'GothamBlack';
+    font-size: 0.9em;
+    color: #253150;
+}
+.footer-sec h5{
+    font-family:'GothamBlack';
+    font-size: 0.8em;
+    color: #253150;
+}
+.footer-sec ul{
+    list-style: none;
+    padding: 0;    
+}
+.footer-sec ul li{
+    font-family:'GothamBold';
+    font-size: 0.9em;    
+}
+.footer-sec ul li a{
+    font-family:'GothamBook';
+    color: #253150;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    width: max-content;
+}
+.footer-sec ul li a:hover{
+    background: #ffffff;
+    border-radius: 0 5px 5px 5px;
+    text-decoration: none;
+}
+.footer-sec p{
+    font-family:'GothamBook';
+    font-size: 0.9em;
+    color: #253150;
+}
+.blue-rights{
+    font-family:'GothamBook';
+    height: 35px;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    background: #253150;
+    font-size: 0.6em;
+    padding-top: 0.8em;
+}
