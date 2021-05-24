@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Preguntas frecuentes</title>
+  </head>
+  <body>
+    <!-- menu desktop  -->
+    <header class="d-none d-lg-block">
+        <div class="red-band"></div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img src="img/logo.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Acerca de nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Propietario</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Arrendatario</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Intermediarios Inmobiliarios</a>
+                  </li>
+                </ul>
+                <button>
+                    Estudio Arrendamiento
+                </button>
+              </div>
+            </div>
+        </nav>
+        <div class="miga">
+            <div class="container">
+                <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">Acerca de nosotros</a> / <a href="#" class="blue">Puntos de servicio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header móvil -->
+    <div class="header-mb d-lg-none">
+        <div class="red-band"></div>
+        <div class="logo-mb">
+            <img src="img/logo.png" alt="" class="img">
+        </div>
+        <img src="img/movil/menu.png" alt="" class="menu" onclick="openNav()">
+    </div>
+
+    <!-- menú móvil -->
+    <div id="overlay"></div>
+    <div id="mySidenav" class="sidenav d-lg-none">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/movil/cerrar.png" alt=""></a>
+        <div class="accordion accordion-flush" id="menu-lateral">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="menu1-h">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Acerca de nosotros
+                    </button>
+                </h2>
+                <div id="menu1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#menu-lateral">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Quiénes somos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Grupo Bolívar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Lenguaje Inmobiliario
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Puntos de servicio
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="menu2-h">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu2" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Propietario
+                    </button>
+                </h2>
+                <div id="menu2" class="accordion-collapse collapse" aria-labelledby="menu2-h" data-bs-parent="#menu-lateral">
+                    <div class="accordion-body">
+                        
+                    </div>
+                </div>
+            </div> 
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="menu3-h">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu3" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Arrendatario
+                    </button>
+                </h2>
+                <div id="menu3" class="accordion-collapse collapse" aria-labelledby="menu3-h" data-bs-parent="#menu-lateral">
+                    <div class="accordion-body">
+                        
+                    </div>
+                </div>
+            </div> 
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="menu4-h">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu4" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Intermediarios Inmobiliarios
+                    </button>
+                </h2>
+                <div id="menu4" class="accordion-collapse collapse" aria-labelledby="menu4-h" data-bs-parent="#menu-lateral">
+                    <div class="accordion-body">
+                        
+                    </div>
+                </div>
+            </div>           
+        </div> 
+        <a href="#" class="btn-blue">
+            <img src="img/movil/estudio.png" alt="">
+            Estudio Arrendamiento
+        </a>
+    </div>
+
+
+    <!-- contenido -->
+    <section>
+        <div class="banner preguntas">
+            <div class="container">
+                <div class="bluebox">
+                    <p>Preguntas frecuentes</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="search-box">
+                <h3>
+                    ¿Cómo te podemos ayudar?
+                </h3>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Ejemplo: ¿Cómo puedo cotizar el canon de arrendamiento de mi inmueble?" aria-label="preguntas" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2"><img src="img/search.png" alt=""></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contenido">
+        <h1>
+            Encuentre las respuestas a sus preguntas:
+        </h1>
+        
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-10">
+                    <div class="faq">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <div class="text">
+                                            ¿Qué clave debo digitar para poder consultar mi resultado?
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        La clave son los cuatro últimos dígitos de la cedula de ciudadanía si es persona natural y para personas jurídicas son los cuatro últimos dígitos del nit sin incluir el digito de verificación.
+                                        <div class="fecha">
+                                            Publicado 21/09/2020 - 8:57am   |   Actualizado 21/01/2021 - 8:50am 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-10">
+                    <div class="faq">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <div class="text">
+                                            ¿Debo cancelar algún valor por el estudio 
+                                            en el caso que me pidan un deudor adicional?
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        La clave son los cuatro últimos dígitos de la cedula de ciudadanía si es persona natural y para personas 
+                                        <div class="fecha">
+                                            Publicado 21/09/2020 - 8:57am   |   Actualizado 21/01/2021 - 8:50am 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-10">
+                    <div class="faq">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <div class="text">
+                                            ¿Qué vigencia tiene el resultado 
+                                            de mi solicitud?
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        La clave son los cuatro últimos dígitos de la cedula de ciudadanía si es persona natural y para personas jurídicas son los cuatro últimos dígitos del nit sin incluir el digito de verificación.
+                                        <div class="fecha">
+                                            Publicado 21/09/2020 - 8:57am   |   Actualizado 21/01/2021 - 8:50am 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-10">
+                    <div class="faq">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <div class="text">
+                                            ¿Puedo presentar mi solicitud si no tengo 
+                                            en el momento un inmueble definido?
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        La clave son los cuatro últimos dígitos de la cedula de ciudadanía si es persona natural y para personas jurídicas son los cuatro últimos dígitos del nit sin incluir el digito de verificación.
+                                        <div class="fecha">
+                                            Publicado 21/09/2020 - 8:57am   |   Actualizado 21/01/2021 - 8:50am 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-10">
+                    <div class="faq">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <div class="text">
+                                            ¿Si deseo tomar dos o más inmuebles 
+                                            es necesario presentar una solicitud por 
+                                            cada uno de ellos?
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        La clave son los cuatro últimos dígitos de la cedula de ciudadanía si es persona natural y para personas jurídicas son los cuatro últimos dígitos del nit sin incluir el digito de verificación.
+                                        <div class="fecha">
+                                            Publicado 21/09/2020 - 8:57am   |   Actualizado 21/01/2021 - 8:50am 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-10">
+                    <div class="faq">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <div class="text">
+                                            ¿Si mi deudor se encuentra en una ciudad donde ustedes tienen sucursal, como puede radicar la solicitud?
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        La clave son los cuatro últimos dígitos de la cedula de ciudadanía si es persona natural y para personas jurídicas son los cuatro últimos dígitos del nit sin incluir el digito de verificación.
+                                        <div class="fecha">
+                                            Publicado 21/09/2020 - 8:57am   |   Actualizado 21/01/2021 - 8:50am 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-10">
+                    <div class="faq">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <div class="text">
+                                            ¿Qué debo hacer para solicitar la opción 
+                                            de CDT como contragarantía a mi solicitud?
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        La clave son los cuatro últimos dígitos de la cedula de ciudadanía si es persona natural y para personas jurídicas son los cuatro últimos dígitos del nit sin incluir el digito de verificación.
+                                        <div class="fecha">
+                                            Publicado 21/09/2020 - 8:57am   |   Actualizado 21/01/2021 - 8:50am 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-10">
+                    <div class="faq">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <div class="text">
+                                            ¿Puedo radicar mi solicitud en una ciudad diferente de donde se encuentra ubicado el inmueble del cual estoy interesado?
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        La clave son los cuatro últimos dígitos de la cedula de ciudadanía si es persona natural y para personas jurídicas son los cuatro últimos dígitos del nit sin incluir el digito de verificación.
+                                        <div class="fecha">
+                                            Publicado 21/09/2020 - 8:57am   |   Actualizado 21/01/2021 - 8:50am 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                
+                        </div>
+                    </div>
+                </div>
+
+                
+
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <footer>
+            <div class="container">
+                <h2>Contáctenos</h2>
+                <div class="row">                
+                    <div class="col-lg-4 offset-lg-2">
+                        <p class="big">
+                            <strong>Teléfono:</strong> +57(1) 3527070 <br>
+                            <strong>Email:</strong> <a href="mailto:direccióncorreo@email.com">direccióncorreo@email.com</a>
+                        </p>
+                        <p>
+                            <strong>Dirección:</strong> +57(1) 3527070 <br>
+                            <strong>Horario de atención:</strong> 8:00 a.m. - 5:00 p.m.
+                        </p>
+                    </div>
+                    <div class="col-lg-1">
+                        <div class="lineav"></div>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="minus">
+                            Para mayor información, acerca de 
+                            cualquier servicio:
+                        </p>
+                        <button>
+                            Contáctenos aquí
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logos">
+                            <img src="img/vigilado.png" alt="">
+                        <img src="img/logo-gris.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <h4>SERVICIOS</h4>
+                        <ul>
+                            <li><a href="#">Arrendatario</a></li>
+                            <li><a href="#">Inmobiliaria</a></li>
+                            <li><a href="#">Propietario</a></li>                        
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>ENLACES DE INTERÉS</h4>
+                        <ul>
+                            <li><a href="#">Grupo Bolívar</a></li>
+                            <li><a href="#">Lenguaje Inmobiliario</a></li>
+                            <li><a href="#">Artículos de Interés</a></li>                        
+                            <li><a href="#">Agencias de seguros El Libertador</a></li>
+                            <li><a href="#">Puntos de Servicio</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>CONTÁCTENOS</h4>
+                        <p class="big">
+                            <strong>Teléfono:</strong> +57(1) 3527070 <br>
+                            <strong>Email:</strong> <a href="mailto:direccióncorreo@email.com">direccióncorreo@email.com</a>
+                        </p>
+                        <p>
+                            Oficina principal <br>
+                            <strong>Dirección:</strong> +57(1) 3527070 <br>
+                            <strong>Horario de atención:</strong> 8:00 a.m. - 5:00 p.m.
+                        </p>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="lineav"></div>
+                        <div class="contenido-wf">
+                            <h5>Nuestras redes sociales:</h5>
+                            <div class="social">
+                                <ul>
+                                    <li><img src="img/ig.png" alt=""></li>
+                                    <li><img src="img/tw.png" alt=""></li>
+                                    <li><img src="img/fb.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <h5>Busca tu nuevo hogar en:</h5>
+                            <div class="cien">
+                                <img src="img/ciencuadras.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="terminos">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Términos y condiciones de uso</a></li>
+                    <li><a href="#">Política de Tratamiento de datos</a></li>                    
+                </ul>
+            </div>
+        </div>
+        <div class="blue-rights">
+            @2021 Investigaciones y Cobranzas El Libertador S.A.   -   Todos los derechos reservados
+        </div>
+    </section>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>
