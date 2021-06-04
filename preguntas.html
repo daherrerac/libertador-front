@@ -38,9 +38,9 @@
                     <a class="nav-link" href="#">Intermediarios Inmobiliarios</a>
                   </li>
                 </ul>
-                <button>
+                <a class="button">
                     Estudio Arrendamiento
-                </button>
+                </a>
               </div>
             </div>
         </nav>
@@ -58,6 +58,11 @@
             <img src="img/logo.png" alt="" class="img">
         </div>
         <img src="img/movil/menu.png" alt="" class="menu" onclick="openNav()">
+        <div class="miga">
+            <div class="container-fluid">
+                <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">Acerca de nosotros</a> / <a href="#" class="blue">Puntos de servicio</a>
+            </div>
+        </div>
     </div>
 
     <!-- menú móvil -->
@@ -160,7 +165,10 @@
                 </h3>
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Ejemplo: ¿Cómo puedo cotizar el canon de arrendamiento de mi inmueble?" aria-label="preguntas" aria-describedby="basic-addon2">
-                    <span class="input-group-text" id="basic-addon2"><img src="img/search.png" alt=""></span>
+                    <span class="input-group-text d-none d-lg-block" id="basic-addon2"><img src="img/search-gray.png" alt=""></span>
+                </div>
+                <div class="btn-buscar">
+                    <a href="#">Buscar</a>
                 </div>
             </div>
         </div>
@@ -175,7 +183,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-5 col-md-10">
                     <div class="faq">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion accordion-flush" id="accordionFlushExample1">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -184,11 +192,11 @@
                                         </div>
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample1">
                                     <div class="accordion-body">
                                         La clave son los cuatro últimos dígitos de la cedula de ciudadanía si es persona natural y para personas jurídicas son los cuatro últimos dígitos del nit sin incluir el digito de verificación.
                                         <div class="fecha">
-                                            Publicado 21/09/2020 - 8:57am   |   Actualizado 21/01/2021 - 8:50am 
+                                            Publicado 21/09/2020 - 8:57am   <div class="dec">|</div>   <span>Actualizado 21/01/2021 - 8:50am </span>
                                         </div>
                                     </div>
                                 </div>
@@ -199,17 +207,17 @@
 
                 <div class="col-lg-5 col-md-10">
                     <div class="faq">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion accordion-flush" id="accordionFlushExample2">
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                         <div class="text">
                                             ¿Debo cancelar algún valor por el estudio 
                                             en el caso que me pidan un deudor adicional?
                                         </div>
                                     </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample2">
                                     <div class="accordion-body">
                                         La clave son los cuatro últimos dígitos de la cedula de ciudadanía si es persona natural y para personas 
                                         <div class="fecha">
@@ -224,7 +232,7 @@
 
                 <div class="col-lg-5 col-md-10">
                     <div class="faq">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion accordion-flush" id="accordionFlushExample3">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -234,7 +242,7 @@
                                         </div>
                                     </button>
                                 </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample3">
                                     <div class="accordion-body">
                                         La clave son los cuatro últimos dígitos de la cedula de ciudadanía si es persona natural y para personas jurídicas son los cuatro últimos dígitos del nit sin incluir el digito de verificación.
                                         <div class="fecha">
@@ -249,7 +257,7 @@
 
                 <div class="col-lg-5 col-md-10">
                     <div class="faq">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion accordion-flush" id="accordionFlushExample4">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -259,7 +267,7 @@
                                         </div>
                                     </button>
                                 </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample4">
                                     <div class="accordion-body">
                                         La clave son los cuatro últimos dígitos de la cedula de ciudadanía si es persona natural y para personas jurídicas son los cuatro últimos dígitos del nit sin incluir el digito de verificación.
                                         <div class="fecha">
@@ -274,7 +282,7 @@
 
                 <div class="col-lg-5 col-md-10">
                     <div class="faq">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion accordion-flush" id="accordionFlushExample5">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -285,7 +293,7 @@
                                         </div>
                                     </button>
                                 </h2>
-                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample5">
                                     <div class="accordion-body">
                                         La clave son los cuatro últimos dígitos de la cedula de ciudadanía si es persona natural y para personas jurídicas son los cuatro últimos dígitos del nit sin incluir el digito de verificación.
                                         <div class="fecha">
@@ -300,7 +308,7 @@
 
                 <div class="col-lg-5 col-md-10">
                     <div class="faq">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion accordion-flush" id="accordionFlushExample7">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -309,7 +317,7 @@
                                         </div>
                                     </button>
                                 </h2>
-                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample7">
                                     <div class="accordion-body">
                                         La clave son los cuatro últimos dígitos de la cedula de ciudadanía si es persona natural y para personas jurídicas son los cuatro últimos dígitos del nit sin incluir el digito de verificación.
                                         <div class="fecha">
@@ -324,7 +332,7 @@
 
                 <div class="col-lg-5 col-md-10">
                     <div class="faq">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion accordion-flush" id="accordionFlushExample8">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -334,7 +342,7 @@
                                         </div>
                                     </button>
                                 </h2>
-                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample8">
                                     <div class="accordion-body">
                                         La clave son los cuatro últimos dígitos de la cedula de ciudadanía si es persona natural y para personas jurídicas son los cuatro últimos dígitos del nit sin incluir el digito de verificación.
                                         <div class="fecha">
@@ -349,7 +357,7 @@
 
                 <div class="col-lg-5 col-md-10">
                     <div class="faq">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion accordion-flush" id="accordionFlushExample9">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -358,7 +366,7 @@
                                         </div>
                                     </button>
                                 </h2>
-                                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample9">
                                     <div class="accordion-body">
                                         La clave son los cuatro últimos dígitos de la cedula de ciudadanía si es persona natural y para personas jurídicas son los cuatro últimos dígitos del nit sin incluir el digito de verificación.
                                         <div class="fecha">
@@ -383,7 +391,7 @@
             <div class="container">
                 <h2>Contáctenos</h2>
                 <div class="row">                
-                    <div class="col-lg-4 offset-lg-2">
+                    <div class="col-lg-4 offset-lg-2 col-md-5">
                         <p class="big">
                             <strong>Teléfono:</strong> +57(1) 3527070 <br>
                             <strong>Email:</strong> <a href="mailto:direccióncorreo@email.com">direccióncorreo@email.com</a>
@@ -393,10 +401,10 @@
                             <strong>Horario de atención:</strong> 8:00 a.m. - 5:00 p.m.
                         </p>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-lg-1 col-md-1">
                         <div class="lineav"></div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-5">
                         <p class="minus">
                             Para mayor información, acerca de 
                             cualquier servicio:
@@ -411,13 +419,13 @@
         <div class="footer-sec">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-4 d-none d-xl-block">
                         <div class="logos">
                             <img src="img/vigilado.png" alt="">
-                        <img src="img/logo-gris.png" alt="">
+                            <img src="img/logo-gris.png" alt="" class="logo">
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-4 d-none d-md-block">
                         <h4>SERVICIOS</h4>
                         <ul>
                             <li><a href="#">Arrendatario</a></li>
@@ -425,7 +433,43 @@
                             <li><a href="#">Propietario</a></li>                        
                         </ul>
                     </div>
-                    <div class="col-lg-3">
+
+                    <div class="col-sm-12 d-md-none">
+                        <div class="accordion accordion-flush" id="servicios">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="servicios1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        SERVICIOS
+                                    </button>
+                                </h2>
+                                <div id="s1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#servicios">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    Arrendatario
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Inmobiliaria
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Propietario
+                                                </a>
+                                            </li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>                                                                                  
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-3 col-md-5 d-none d-md-block">
                         <h4>ENLACES DE INTERÉS</h4>
                         <ul>
                             <li><a href="#">Grupo Bolívar</a></li>
@@ -435,19 +479,89 @@
                             <li><a href="#">Puntos de Servicio</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3">
+
+                    <div class="col-sm-12 d-md-none">
+                        <div class="accordion accordion-flush" id="interes">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="interes1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        ENLACES DE INTERÉS
+                                    </button>
+                                </h2>
+                                <div id="i1" class="accordion-collapse collapse" aria-labelledby="interes" data-bs-parent="#interes">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    Grupo Bolívar
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Lenguaje Inmobiliario
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Artículos de Interés
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Agencias de seguros El Libertador
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Puntos de Servicio
+                                                </a>
+                                            </li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>                                                                                  
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 d-none d-md-block">
                         <h4>CONTÁCTENOS</h4>
                         <p class="big">
                             <strong>Teléfono:</strong> +57(1) 3527070 <br>
                             <strong>Email:</strong> <a href="mailto:direccióncorreo@email.com">direccióncorreo@email.com</a>
                         </p>
                         <p>
-                            Oficina principal <br>
+                            <span>Oficina principal</span> <br>
                             <strong>Dirección:</strong> +57(1) 3527070 <br>
                             <strong>Horario de atención:</strong> 8:00 a.m. - 5:00 p.m.
                         </p>
                     </div>
-                    <div class="col-lg-2">
+
+                    <div class="col-sm-12 d-md-none">
+                        <div class="accordion accordion-flush" id="contacto">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="contacto1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        CONTÁCTENOS
+                                    </button>
+                                </h2>
+                                <div id="c1" class="accordion-collapse collapse" aria-labelledby="contacto" data-bs-parent="#contacto">
+                                    <div class="accordion-body">                                        
+                                        <p class="big">
+                                            <strong>Teléfono:</strong> +57(1) 3527070 <br>
+                                            <strong>Email:</strong> <a href="mailto:direccióncorreo@email.com">direccióncorreo@email.com</a>
+                                        </p>
+                                        <p>
+                                            <span>Oficina principal</span> <br>
+                                            <strong>Dirección:</strong> +57(1) 3527070 <br>
+                                            <strong>Horario de atención:</strong> 8:00 a.m. - 5:00 p.m.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                                                                                  
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-12">
                         <div class="lineav"></div>
                         <div class="contenido-wf">
                             <h5>Nuestras redes sociales:</h5>
