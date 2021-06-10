@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -38,15 +39,15 @@
                     <a class="nav-link" href="#">Intermediarios Inmobiliarios</a>
                   </li>
                 </ul>
-                <button>
+                <a class="button">
                     Estudio Arrendamiento
-                </button>
+                </a>
               </div>
             </div>
         </nav>
         <div class="miga">
             <div class="container">
-                <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">Acerca de nosotros</a> / <a href="#" class="blue">Puntos de servicio</a>
+                <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">Arrendatario</a> 
             </div>
         </div>
     </header>
@@ -58,6 +59,11 @@
             <img src="img/logo.png" alt="" class="img">
         </div>
         <img src="img/movil/menu.png" alt="" class="menu" onclick="openNav()">
+        <div class="miga">
+            <div class="container-fluid">
+                <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">Arrendatario</a> 
+            </div>
+        </div>
     </div>
 
     <!-- menú móvil -->
@@ -161,16 +167,26 @@
             </h1>
     
             <div class="container">
+                <div class="row d-lg-none">
+                    <div class="col-12">
+                        <div class="recomendacion">
+                            <p>
+                                Recomendaciones al diligenciar 
+                                el  <a href="#" target="_blank" rel="noopener noreferrer">Estudio Digital de arrendamiento</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <div class="d-flex justify-content-end mt-5">
+                        <div class="d-flex justify-content-md-end justify-content-center mt-5">                            
                             <img src="img/arrendatario/img_estudio-digital-montaje.png" alt="">
                         </div>                    
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <div class="d-flex justify-content-start mt-5">
+                        <div class="d-flex justify-content-md-start justify-content-center mt-5">
                             <div class="recomendacion">
-                                <p>
+                                <p class="d-none d-lg-block">
                                     Recomendaciones al diligenciar 
                                     el  <a href="#" target="_blank" rel="noopener noreferrer">Estudio Digital de arrendamiento</a>
                                 </p>
@@ -190,8 +206,10 @@
             <h2 class="text-center my-5">
                 Documentos que debes anexar
             </h2>
-            <div class="row">
-                <div class="col-lg-4">
+            
+            
+                <div class="arrendatario-slider justify-content-md-center">
+                    
                     <div class="doc-box">
                         <img src="img/arrendatario/sl1.png" alt="" class="d-block">
                         <div class="low">
@@ -212,8 +230,8 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
+                
+                
                     <div class="doc-box">
                         <img src="img/arrendatario/sl2.png" alt="" class="d-block">
                         <div class="low">
@@ -231,8 +249,8 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
+                
+                
                     <div class="doc-box">
                         <img src="img/arrendatario/sl3.png" alt="" class="d-block">
                         <div class="low">
@@ -251,12 +269,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                
+            
         </div>        
     </section>
 
-    <section class="citi-bg">
-        <!-- <img src="img/img_consulta-requisitos-fondo.png" alt="" class="img-fluid bg-city"> -->
+    <section class="citi-bg pb-5">
+        <img src="img/img_consulta-requisitos-fondo.png" alt="" class="img-fluid bg-city">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 offset-lg-1">
@@ -268,26 +287,90 @@
                             Requisitos generales de acuerdo al canon 
                             de arrendamiento:
                         </p>
-                        <label for="#">Ciudad</label>
+                        <label for="#" class="form-label">
+                            Ciudad
+                        </label>
                         <div class="dropdown">
-                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                               Seleccione
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><a class="dropdown-item" href="#">Ciudad 1</a></li>
+                              <li><a class="dropdown-item" href="#">Ciudad 2</a></li>
+                              <li><a class="dropdown-item" href="#">Ciudad 3</a></li>
                             </ul>
                         </div>
-                        <input type="text">
+                        <label for="canon" class="form-label">Valor del canon de arrendamiento</label>
+                        <input type="text" id="canon" class="form-control" placeholder="Escriba un valor">                        
+                        
                         <button type="submit" class="btn">Consultar requisitos</button>
                     </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="adv-w">
+                        <img src="img/img_consulta-requisitos-mujer.png" alt="">
+                    </div>                    
                 </div>
             </div>
         </div>
     </section>
 
-    <section>        
+    <section class="py-5">
+        <div class="container est-arrendatario">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="recomendacion mt-5">
+                        <div class="pb-5"></div>
+                        <p class="w-100 text-center">
+                            Inicia tu 
+                              <a href="#" target="_blank" rel="noopener noreferrer">Estudio Digital de arrendamiento</a>
+                        </p>
+                    </div>
+                    <div class="py-1"></div>
+                    <a href="" class="btn dark-blue-btn w-17 mt-5 d-none d-lg-block">
+                        Realízalo aquí
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/arrendatario/img-banner-estudioDigital-compu.png" alt="">
+                    <a href="" class="btn dark-blue-btn w-17 mt-5 d-lg-none">
+                        Realízalo aquí
+                    </a>
+                </div>                
+            </div>            
+        </div>
+    </section>
+
+    <section>
+        <footer>
+            <div class="container">
+                <h2>Contáctenos</h2>
+                <div class="row">                
+                    <div class="col-lg-4 offset-lg-2 col-md-5">
+                        <p class="big">
+                            <strong>Teléfono:</strong> +57(1) 3527070 <br>
+                            <strong>Email:</strong> <a href="mailto:direccióncorreo@email.com">direccióncorreo@email.com</a>
+                        </p>
+                        <p>
+                            <strong>Dirección:</strong> +57(1) 3527070 <br>
+                            <strong>Horario de atención:</strong> 8:00 a.m. - 5:00 p.m.
+                        </p>
+                    </div>
+                    <div class="col-lg-1 col-md-1">
+                        <div class="lineav"></div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <p class="minus">
+                            Para mayor información, acerca de 
+                            cualquier servicio:
+                        </p>
+                        <button>
+                            Contáctenos aquí
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <div class="footer-sec">
             <div class="container">
                 <div class="row">
@@ -439,9 +522,9 @@
                             <h5>Nuestras redes sociales:</h5>
                             <div class="social">
                                 <ul>
-                                    <li><img src="img/ig.png" alt=""></li>
-                                    <li><img src="img/tw.png" alt=""></li>
-                                    <li><img src="img/fb.png" alt=""></li>
+                                    <li><a href="#"><img src="img/icon-rs_instagram-blanco.svg" alt=""></a></li>
+                                    <li><a href="#"><img src="img/icon-rs_twitter-blanco.svg" alt=""></a></li>
+                                    <li><a href="#"><img src="img/icon-rs_facebook-blanco.svg" alt=""></a></li>
                                 </ul>
                             </div>
                             <h5>Busca tu nuevo hogar en:</h5>
@@ -466,7 +549,11 @@
         </div>
     </section>
 
-    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/scripts.js"></script>
     
   </body>

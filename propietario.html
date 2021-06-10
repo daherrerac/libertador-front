@@ -39,15 +39,15 @@
                     <a class="nav-link" href="#">Intermediarios Inmobiliarios</a>
                   </li>
                 </ul>
-                <button>
+                <a class="button">
                     Estudio Arrendamiento
-                </button>
+                </a>
               </div>
             </div>
         </nav>
         <div class="miga">
             <div class="container">
-                <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">Propietario</a> 
+                <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">Propietario</a>
             </div>
         </div>
     </header>
@@ -59,6 +59,11 @@
             <img src="img/logo.png" alt="" class="img">
         </div>
         <img src="img/movil/menu.png" alt="" class="menu" onclick="openNav()">
+        <div class="miga">
+            <div class="container-fluid">
+                <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">Propietario</a> 
+            </div>
+        </div>
     </div>
 
     <!-- menú móvil -->
@@ -143,7 +148,6 @@
             Estudio Arrendamiento
         </a>
     </div>
-
     <!-- contenido -->
     <section>
         <div class="banner propietario">
@@ -155,12 +159,14 @@
         </div>
     </section>
 
-    <section class="contenido">        
+    <section class="contenido pb-0">
         <h1>
             Póliza para Contratos de Arrendamiento 
             de Seguros Bolívar
         </h1>
+    </section>
 
+    <section class="proteger">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
@@ -170,44 +176,78 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="d-flex justify-content-start mt-5">
-                        <div class="recomendacion">
-                            <h4>
+                        <div>
+                            <h5 class="g-boldfont redline-simple">
                                 Proteger su inversión
-                            </h4>
-                            <p>
+                            </h5>
+                            <p class="r-regularfont">
                                 Lo invitamos para que a través de nuestra red de inmobiliarias adquiera el Seguro de 
                                 Arrendamiento de Seguros Comerciales Bolívar y alquile su inmueble con tranquilidad.
                             </p>
-                            <a href="#"  rel="noopener noreferrer">Contáctenos aquí</a>
+                            <a href="#" class="btn red-outline-btn w-17" rel="noopener noreferrer">Contáctenos aquí</a>
                         </div>
                     </div>
                 </div>
-            </div>   
-            <div class="row">
-                <div class="pt-5"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contenido">                
+        <div class="container">               
+            <div class="pt-5"></div>
+            <div class="row seguro">                
                 <div class="col-lg-7">
-                    <div class="row">
-                        <div class="col-lg-4"></div>
-                        <div class="col-lg-8">
-                            <h5>
-                                ¿Por qué el Seguro de 
-                                Arrendamiento Bolívar?
-                            </h5>
+                    <div class="row g-0">
+                        <div class="col-lg-4 ">
+                            <img src="img/propietario/seguro.png" alt="" class="d-none d-lg-block">
+                        </div>
+                        <div class="col-lg-8 ">
+                            <div class="info-seguro-up bordered-box wb-l w-rbox-l">
+                                <h5 class="g-blackfont redline">
+                                    ¿Por qué el Seguro de 
+                                    Arrendamiento Bolívar?
+                                </h5>
+                                <div class="red-dot-list r-regularfont">
+                                    <ul>
+                                        <li>
+                                            Por el conocimiento y experiencia de 56 años.
+                                        </li>
+                                        <li>
+                                            Porque más de <strong>150.000 propietarios</strong> le confían a nuestra red de inmobiliarias la 
+                                            administración de sus propiedades, con valor superior a $12,5 billones, y cuyos cánones 
+                                            de arrendamiento están amparados a través del Seguro.
+                                        </li>
+                                        <li>
+                                            Porque somos la única compañía con presencia 
+                                            en <strong>11 ciudades capitales</strong> del país y más de 
+                                            <strong>60 municipios principales.</strong>
+                                        </li>
+                                        <li>
+                                            Porque contamos con una red de más de 
+                                            <strong>4.000 inmobiliarias.</strong>
+                                        </li>
+                                        <li>
+                                            Al ser compañía aseguradora, contamos con vigilancia de la Superintendencia Financiera.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="my-3"></div>
                 <div class="col-lg-5">
-                    <div class="info-seguro">
-                        <h5>
+                    <div class="info-seguro bordered-box rbox gray-cl-bg">
+                        <h5 class="g-blackfont redline">
                             ¿Qué cubre el Seguro 
                             de Arrendamiento Bolívar?
                         </h5>
-                        <p>El incumplimiento en el pago de:</p>
-                        <ul class="buttons">
-                            <li> Canon de arrendamiento </li>
-                            <li> Cuota de administración en mora</li>
-                            <li> Servicios públicos en mora </li>
-                            <li> Daños y faltantes de inventario</li>
+                        <p class="r-regularfont mb-5">El incumplimiento en el pago de:</p>
+                        <ul class="icons">
+                            <li class="canon g-boldfont"> Canon de arrendamiento </li>
+                            <li class="cuota g-boldfont"> Cuota de administración en mora</li>
+                            <li class="servicios g-boldfont"> Servicios públicos en mora </li>
+                            <li class="danos g-boldfont"> Daños y faltantes de inventario</li>
                         </ul>
                     </div>
                 </div>
@@ -215,12 +255,16 @@
         </div>
     
         <div class="container">
-            <h2>
-                Beneficios para el propietario al utilizar 
-                una de nuestras inmobiliarias:
-            </h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="mt-5 redline beneficios">
+                        Beneficios para el propietario al utilizar 
+                        una de nuestras inmobiliarias:
+                    </h2>
+                </div>
+            </div>
 
-            <div class="carousel-x4 my-5">
+            <div class="carousel-x4 my-5 justify-content-md-center">
                 <div class="slide">
                     <div class="in-slide">
                         <img src="img/propietario/sl1.png" alt="">
@@ -255,24 +299,66 @@
 
         </div>  
         
+        <div class="py-5"></div>
         <div class="container">
-            <div class="info-pago pt-5">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <p>
-                            A través de una inmobiliaria con respaldo de El Libertador S.A., usted cuenta con profesionales que le 
+            <div class="info-pago">
+                <div class="row flex-column-reverse">
+                    <div class="col-lg-5 offset-lg-1">
+                        <p class="text-center r-regularfont fondo">
+                            A través de una inmobiliaria con respaldo de <strong class="red">El Libertador S.A.</strong>, usted cuenta con profesionales que le 
                             ayudarán en la administración de su inmueble y en la solución de eventuales inconvenientes que se puedan presentar.
                         </p>
                     </div>
                     <div class="col-lg-6">
-
+                        <div class="adv-w2">
+                            <img src="img/propietario/iStock-1157105049.png" alt="">
+                        </div>
+                        <div class="recomendacion mt-3">
+                            <div class="pb-5"></div>
+                            <p class=" text-center">                                
+                                <a href="#" target="_blank" rel="noopener noreferrer">Pague cómodamente</a>
+                                y de manera segura sus primas
+                            </p>
+                        </div>                        
+                        <a href="" class="btn dark-blue-btn w-17 mt-1">
+                            Portal de pago
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>        
+    <section>
+        <footer>
+            <div class="container">
+                <h2>Contáctenos</h2>
+                <div class="row">                
+                    <div class="col-lg-4 offset-lg-2 col-md-5">
+                        <p class="big">
+                            <strong>Teléfono:</strong> +57(1) 3527070 <br>
+                            <strong>Email:</strong> <a href="mailto:direccióncorreo@email.com">direccióncorreo@email.com</a>
+                        </p>
+                        <p>
+                            <strong>Dirección:</strong> +57(1) 3527070 <br>
+                            <strong>Horario de atención:</strong> 8:00 a.m. - 5:00 p.m.
+                        </p>
+                    </div>
+                    <div class="col-lg-1 col-md-1">
+                        <div class="lineav"></div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <p class="minus">
+                            Para mayor información, acerca de 
+                            cualquier servicio:
+                        </p>
+                        <button>
+                            Contáctenos aquí
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <div class="footer-sec">
             <div class="container">
                 <div class="row">
@@ -424,9 +510,9 @@
                             <h5>Nuestras redes sociales:</h5>
                             <div class="social">
                                 <ul>
-                                    <li><img src="img/ig.png" alt=""></li>
-                                    <li><img src="img/tw.png" alt=""></li>
-                                    <li><img src="img/fb.png" alt=""></li>
+                                    <li><a href="#"><img src="img/icon-rs_instagram-blanco.svg" alt=""></a></li>
+                                    <li><a href="#"><img src="img/icon-rs_twitter-blanco.svg" alt=""></a></li>
+                                    <li><a href="#"><img src="img/icon-rs_facebook-blanco.svg" alt=""></a></li>
                                 </ul>
                             </div>
                             <h5>Busca tu nuevo hogar en:</h5>
@@ -461,8 +547,27 @@
             slidesToShow: 4,
             slidesToScroll: 4,
             arrows:true,
-            prevArrow: '<img src="img/previous.png" alt="" class="slick-prev">',
-            nextArrow: '<img src="img/next.png" alt="" class="slick-next">'
+            prevArrow: '<img src="img/prev.png" alt="" class="slick-prev">',
+            nextArrow: '<img src="img/next.png" alt="" class="slick-next">',
+            responsive: [  
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        centerMode: true,                                                  
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '40px',                           
+                    }
+                }
+            ]  
         });
     </script>
     
