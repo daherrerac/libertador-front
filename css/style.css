@@ -36,11 +36,23 @@ body{
 .r-regularfont{
     font-family: 'RobotoRegular';
 }
+.r-boldfont{
+    font-family: 'RobotoBold';
+}
 .g-blackfont{
     font-family:'GothamBlack';
 }
 .g-boldfont{
     font-family:'GothamBold';
+}
+.g-mediumfont{
+    font-family:'GothamMedium';
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-16{
+    font-size: 16px;
 }
 h1{
     font-family:'GothamBlack';
@@ -83,15 +95,24 @@ h5.redline-simple::after{
     left: 0;
     top: 1.2em;
 }
+p{
+    font-family: 'RobotoRegular';
+}
 p.dark{
     font-family:'RobotoRegular';
-    color: #333333;
-    font-size: 1.1em;
+    color: #333333;    
 }
 .red{
     color: #BD0F14;
 }
+.hred:hover{
+    color: #BD0F14;
+}
+
 .blue{
+    color: #253150;
+}
+.hblue:hover{
     color: #253150;
 }
 /*Header*/
@@ -234,6 +255,15 @@ section{
 .propietario{
     background-image: url(../img/propietario/banner_propietario_1.png);
 }
+.somos{
+    background-image: url(../img/somos/banner_quienesSomos_1.png);
+}
+.gobierno{
+    background-image: url(../img/gobierno/banner-gobierno.png);
+}
+.inmobiliarios {
+    background-image: url(../img/inmobiliarios/bannerD_inmobiliaria_opt.png);
+}
 .gris-bg{
     background: linear-gradient( #F8F8F8 90%, #FFFFFF 20%);    
 }
@@ -339,6 +369,9 @@ section{
 }
 .gray-cl-bg{
     background: #b0b6ba3a; 
+}
+.back-gray {
+    background-color: #F8F8F8;
 }
 .rbox{
     border-radius: 5px;
@@ -472,6 +505,7 @@ section{
 .proteger{
     background-image: url(../img/bg-dg.png);
     height: 330px;
+    margin-bottom: 100px;
 }
 .proteger p{
     color: #253150;
@@ -664,9 +698,298 @@ ul.icons li.cuota{
 ul.icons li.canon{
     background-image: url(../img/propietario/icon_canon-arrendamiento.svg);
     background-position-x: 10px;
-}       
- /* Carousel*/
+}  
 
+.colum-sec{
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 0 !important;
+    margin: 1rem 0 0rem 0;
+    border-radius: 9px;
+}
+.colum-sec img{
+    width: 100%;
+}
+.colum-sec-p{
+    padding: 3rem 3rem 2rem 3rem;
+}
+.colum-sec-p h1{
+    font-family:'GothamBlack';
+    color: #253150;
+    text-align: left;
+    padding: 0; 
+}
+.colum-sec-p img{
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+}
+.colum-sec-p h3{
+    position: relative;
+    margin-bottom: 0.5em;
+    color: #253150;
+    padding-bottom: 3rem;
+}
+.colum-sec-p h3::after{
+    content: '';
+    position: absolute;    
+    width: 35px;
+    height: 3px;
+    background: #BD0F14;
+    border-radius: 2px;
+    left: 0;
+    top: 1.5em;    
+}
+.colum-sec-p h3.tline::after{
+    content: '';
+    position: absolute;    
+    width: 35px;
+    height: 3px;
+    background: #BD0F14;
+    border-radius: 2px;
+    left: 0;
+    top: 2.5em;    
+}
+.colum-sec-p li{
+    font-family:'RobotoRegular';
+}
+.colum-sec-p ul{
+    list-style: none;
+}
+.colum-sec-p ul li::before {
+  content: "\2022";
+  color: #BD0F14;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.colum-sec-p button{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'GothamBold';
+    background: rgba(189, 15, 20, 0.1);
+    border: 1px solid #BD0F14;
+    color: #BD0F14;
+    padding: 1em 2em;
+    border-radius: 0.4em;
+    margin-top: 1rem;
+}
+.colum-icon{
+    padding: 2rem 0 2rem 0;
+}
+.colum-icon.princip, .colum-icon.val{
+    padding: 2rem 0 0 0;
+}
+.colum-medidas-p{
+    background-color: #F8F8F8;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px #999;
+}
+.colum-pdf-p{
+    text-align: center;
+    padding: 1rem;
+    background-color: #F8F8F8;
+    width: 100%;
+    height: 150px;
+}
+.colum-pdf-p h5{
+    font-size: 0.7em;
+}
+.colum-pdf img{
+    margin-top: 1em;
+    width: 40px;
+    padding: 0 0 0.5rem 0 !important;
+}
+.princip img{
+    padding: 0 1rem 1rem 0;
+    width: 48%;
+}
+.val img{
+    padding: 0 0 1rem 0;
+}
+.colum-bluebox{
+    background-color: #253150;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    padding-bottom: 0;
+}
+.colum-bluebox h3{
+    color: white;
+}
+.colum-adic{
+    text-align: center;
+}
+.colum-adic a:hover{
+    color: #BD0F14;
+}
+.indicador{
+    display: inline-flex;
+}
+.indicador img{
+    height: 1em;
+    width: auto;
+    display: inline-flex;
+    padding: 0 0.5em 0 0;
+    margin-top: 0.2em;
+}
+p.nproductos{
+    max-width: 650px;
+    margin: 2em auto;
+}
+.coberturas{
+    width: 100%;
+    margin-top: 2em;
+}
+.coberturas .tab-content{
+    max-width: 770px;    
+    width: calc(100% - 200px);
+    background: #F8F8F8;
+}
+.coberturas .tab-content ul{
+    list-style: none;
+    max-width: 640px;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.coberturas .tab-content ul li{
+    padding: 1em 0;
+}
+.coberturas .tab-content ul li ul{
+    padding: 1em 0 0 0;
+}
+.coberturas .tab-content ul li ul li{
+    padding: 0.2em 0;
+}
+.coberturas .tab-content ul li ul{
+    list-style-type: "-";
+}
+.coberturas .tab-content ul li ul li::before{
+    content: "";
+}
+.coberturas .tab-content ul li::before {
+    content: "\2022";
+    color: #BD0F14;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1.2em;
+}
+.submenu-dos{
+    min-width: 200px;
+}
+.submenu-dos button{
+    margin-bottom: 1em;
+}
+.submenu-dos.nav-pills .nav-link{
+    color: #253150;
+}
+
+.submenu-dos .nav-link.active {
+    color: #253150;
+    background-color: transparent;    
+}
+.submenu-dos .nav-link.active span{
+    width: 70%;
+    height: 3px;
+    background: #BD0F14;
+    display: block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul.submenu{
+    height: 70px;
+}
+.submenu li{
+    height: 100%;
+}
+
+.backmenu .nav-pills .nav-link.active {
+    background-color: #253150;
+    font-size: 1em;
+    height: 100%;
+}
+.backmenu .nav-link {    
+    color: #B0B6BA; 
+    height: 100%;   
+}
+.backmenu .nav-link:hover{
+    color: #BD0F14;
+}
+.backmenu .nav-pills .nav-link:hover.active{
+    color: #ffffff;
+}
+.backmenu .submenu {
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-shadow: 2px 2px 5px #999;
+    background-color: white;
+}
+.colum-sec-p .intabs button {
+    padding: 1em 0;
+    text-align: left;
+}
+.submenu-dos.intabs .nav-link.active  span{
+    width: 100%;
+}
+.aula-info{
+    background-color: white;
+    padding: 1.2rem;
+    align-items: center;
+    text-align: center;
+}
+.aula-info h4{
+    font-size: 2em;
+    font-family: "GothamBlack";
+}
+.aula-info img{
+    width: 25%;
+}
+.back-gray{
+    background-color: #F8F8F8;
+}
+.colum-dato{
+    padding: 3rem;
+    border-radius: 9px;    
+}
+.colum-dato button{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'GothamBold';
+    background: #253150;
+    border: 1px solid #253150;
+    color: white;
+    padding: 1em 2em;
+    border-radius: 0.4em;
+    margin-top: 2rem;
+}
+.redbox {
+    width: max-content;
+    text-align: center;
+    background-color: #BD0F14;
+    padding: 5px;
+    margin: 1rem 0 4rem 0;
+}
+.redbox h4 {
+    color: #ffffff;
+    font-size: 1em;
+}
+.especial-img {
+    padding: 0;
+}
+
+.body-card-box h5 {
+    color: #253150;
+    font-family: "GothamBlack";
+    font-size: 1em;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem 0.3rem;
+}
+ /* Carousel*/
 .carousel-x4{    
     position: relative;
     justify-content: space-between;
@@ -1064,6 +1387,7 @@ footer .lineav{
     display: inline-flex;
     text-align: center;
     margin: 0 auto;
+    padding: 0;
 }
 .terminos li:first-of-type{
     border: none;
@@ -1114,7 +1438,25 @@ footer .lineav{
     .consulta h3 {        
         font-size: 20px;        
     }
+    .adv-w2 img {
+        left: -60px;
+    }
+    .info-pago .recomendacion {
+        width: 45%;        
+    }    
 }
+@media screen and (max-width:1200px){
+    .wb-l{
+        border-left: 1px solid #B0B6BA !important;
+    }
+    .info-seguro ul {
+        width: 90%;
+    }
+    .slide{
+        margin: 0 1em;
+    }
+}
+
 @media screen and (max-width:1024px) {
     .navbar-brand{
         width: 200px;
@@ -1138,7 +1480,7 @@ footer .lineav{
         background-image: url(../img/lenguaje/movil/banner-tablet_lenguaje_opt.png);
     }
     .arrendatario{
-        background-image: url(../img/arrendatario/movil/banner-mobile_arrendatario.png);
+        background-image: url(../img/arrendatario/movil/banner-tablet_arrendatario_opt.png);
     }
     h1{        
         width: 80%;
@@ -1390,9 +1732,18 @@ footer .lineav{
         height: 310px;
     }
     .proteger {
-        height: 420px;
-        background-size: cover;
+        height: auto;
+        background-size: 100% 50%;
+        background-position: bottom;
         background-repeat: no-repeat;
+    }
+    .proteger img{
+        margin-top: -10%;
+        width: 95%;
+    }
+    .proteger p{
+        max-width: 100%;
+        width: 100%;
     }
     .info-seguro, .info-seguro-up {
         height: 100%;
@@ -1418,13 +1769,19 @@ footer .lineav{
         background: #BD0F14;
         border-radius: 2px;
         left: 0;
-        top: 3.6em;
+        top: 2.6em;
     }    
     .wb-r{
         border-right: 1px solid #B0B6BA !important;
+    }        
+    .info-pago {
+        background: none;
+        background-size: cover;
+        background-position-y: bottom;
+        height: auto;
     }
-    .wb-l{
-        border-left: 1px solid #B0B6BA !important;
+    .indicador {        
+        margin-top: 100px;
     }
 }
 @media screen and (max-width:767px){
@@ -1491,6 +1848,14 @@ footer .lineav{
     .seguro ul {
         width: 90%;
         margin-left: 1em;
+    }
+    .coberturas .tab-content {
+        max-width: 770px;
+        width: 100%;
+        background: #F8F8F8;
+    }
+    .submenu-dos .nav-link.active span {
+        width: 25%;
     }
 }
 @media screen and (max-width:600px) {
@@ -1572,6 +1937,13 @@ footer .lineav{
     .aviso{
         margin-left: 1.5em;
     }
+    .seguro .sd-image{
+        width: 100%;
+        margin-top: -40px;
+    }
+    .recomendacion p {        
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width:480px){
@@ -1586,6 +1958,12 @@ footer .lineav{
     }
     .info-pago  .btn{
         margin: 1em 5em 1em auto;
+    }  
+    .recomendacion p {        
+        max-width: 95%;
+    }  
+    .info-pago .recomendacion {        
+        margin: 0 auto 0 5em;
     }
 }
 
