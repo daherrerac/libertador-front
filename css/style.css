@@ -251,20 +251,8 @@ section{
 .banner img{
     width: 100%;
 }
-.inicio{
-    background-image: url(../img/home/banner_home.png);
-}
-.puntos{
-    background-image: url(../img/puntos/banner_puntos-servicio.png);
-}
-.preguntas{
-    background-image: url(../img/preguntas/banner_preguntas.png);
-}
 .lenguaje{
     background-image: url(../img/lenguaje/banner_lenguaje.png);
-}
-.privacidad{
-    background-image: url(../img/privacidad/banner_politica-privacidad_2.png);
 }
 .proteccion{
     background-image: url(../img/proteccion/banner_proteccion-datos.png);
@@ -738,11 +726,12 @@ section{
     font-size: 1.1em;
     color: #B0B6BA;
 }
-.page-link:hover {
+.page-link:hover,.page-link:focus {
 	z-index: 2;
 	color: #BD0F14;
 	background-color: transparent;
 	border-color: transparent;
+    box-shadow: none;
 }
 .page-item.active .page-link {
 	z-index: 3;
@@ -789,10 +778,13 @@ section{
     max-width: 770px;
     margin: 0 auto;    
 }
-.search-box .input-group.left {
+.search-box .input-group{
+    background-color: #f8f8f8;
+}
+.search-box .input-group.left {     
 	width: 90%;
-	max-width: 100%;
-	margin-left: 60px;
+	max-width: 570px;
+	margin-left: 100px;
 }
 .search-box h3{
     font-family:'GothamBlack';
@@ -804,7 +796,7 @@ section{
     padding-top: 2em;
 }
 .search-box h3.left{
-    margin: 2em auto 1.5em 60px; 
+    margin: 2em auto 1.5em 100px; 
 }
 .search-box h3::after{
     content: '';
@@ -896,6 +888,7 @@ h5.redline::after{
     width: 40%;
     margin: 0 auto;
 }
+
 .filtro .btn-secondary{
     height: 50px;
     width: 170px;
@@ -908,6 +901,69 @@ h5.redline::after{
     background-position-x: 90%;
     background-position-y: 50%;
     background-size: 20px;
+}
+.filtro .btn{
+    margin: 0 auto;
+}
+.lupa{
+    background-image: url(../img/search-gray.png);
+    background-repeat: no-repeat;
+    padding: 0 1.5em ;
+    background-position:center center;
+    width: 67px;
+}
+.lupa.redsearch{
+    background-image: url(../img/search.png);
+}
+.lupa.redsearch:active{
+    background-image: url(../img/search-white.png);
+}
+
+.input-group-text.redsearch {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    white-space: nowrap;
+    background-color:  #bd0f152a;
+    border: 1px solid #BD0F14;
+    border-radius: 0 0.25rem 0.25rem 0 !important;
+}
+.input-group-text.redsearch:active{
+    background-color: #BD0F14;
+}
+.form-control:focus {
+    color: #253150;
+    background-color: #fff;
+    border:1px solid #ced4da;
+    outline: 0;
+    box-shadow: none;
+}
+#mySearch-results {
+    position: absolute;
+    top: 45px;
+    width: 360px;
+    background: #f8f8f8;
+    height: 110px;
+    overflow-y: scroll;
+    left: 10px;
+    border-radius: 5px;
+    z-index: 5;
+}
+#mySearch-results div{
+    font-family: 'RobotoRegular';
+    font-size: 14px;
+    padding: 0.5em 2em;
+    color: #253150;
+    border-bottom: 1px solid #B0B6BA ;
+}
+#mySearch-results div:hover,#mySearch-results div:focus,#mySearch-results div:active{
+    color: #ffffff;
+    background-color: #BD0F14;    
 }
 .faq{
     margin-top: 3em;
@@ -1587,17 +1643,21 @@ footer p.minus{
 footer a,footer a:hover{
     color: #ffffff;
 }
-footer button{
+footer .button{
     font-family:'GothamBold';
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid #B0B6BA;   
     color: #B0B6BA;
     padding: 1em 2em;
     border-radius: 0.4em; 
+    text-decoration: none;
+    width: max-content;
+    margin: 0 auto;
 }
-footer button:hover{
+footer .button:hover{
     background: #B0B6BA;
     color: #ffffff;
+    text-decoration: none;
 }
 footer .lineav{
     height: 115px;
@@ -1837,19 +1897,7 @@ footer .lineav{
     }    
     
 }
-@media screen and (max-width:992px){
-    .puntos{
-        background-image: url(../img/puntos/movil/banner-tablet_puntos-servicio.png);
-    }
-    .preguntas{
-        background-image: url(../img/preguntas/movil/banner-tablet_preguntas-frec_opt.png);
-    }
-    .proteccion{
-        background-image: url(../img/proteccion/movil/banner-tablet_Politica-protec_opt.png);
-    }
-    .privacidad{
-        background-image: url(../img/privacidad/movil/banner-tablet_politica-privacidad_opt.png);
-    }
+@media screen and (max-width:992px){                
     .lenguaje{
         background-image: url(../img/lenguaje/movil/banner-tablet_lenguaje_opt.png);
     }
@@ -2261,11 +2309,22 @@ footer .lineav{
     .footer-sec{
         margin-top: 10px;
     }
+    footer p.minus {
+        max-width: 300px;
+    }
     .bluebox{
         top: 48%;      
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .justify-content-sm-start .bluebox {
+        top: 48%;
+        left: 10%;
+        transform: translate(0, -50%);
+        max-width: 100%;
+    }
+    
+    
     .search-box.filtro {
         height: 270px;
     }
@@ -2396,22 +2455,14 @@ footer .lineav{
     
     .miga a {        
         font-size: 0.75em;        
-    }
-    .puntos{
-        background-image: url(../img/puntos/movil/banner-mobile_puntos-servicio.png);
-    }
-    .preguntas{
-        background-image: url(../img/preguntas/movil/banner-mobile_preg-frecuentes.png);
-    }
+    }        
     .lenguaje{
         background-image: url(../img/lenguaje/movil/banner-mobile_lenguaje-inmob.png);
     }
     .proteccion{
         background-image: url(../img/proteccion/movil/banner-mobile_politica-proteccion-datos.png);
     }
-    .privacidad{
-        background-image: url(../img/privacidad/movil/banner-mobile_politica-privacidad.png);
-    }
+    
     
     .bluebox p {        
         font-size: 1.8em;  
@@ -2437,10 +2488,7 @@ footer .lineav{
     footer h2 {        
         margin-bottom: 1.5em;
         margin-left: 0.5em;
-    }
-    footer p.minus {
-        max-width: 300px;
-    }
+    }    
     .blue-rights {        
         padding-left: 10px;
         padding-right: 10px;
@@ -2463,7 +2511,12 @@ footer .lineav{
     .recomendacion p {        
         max-width: 100%;
     }
-    
+    .bluebox.mt {
+        margin-top: 3.2em;
+    }
+    .banner {
+        height: auto;
+    }
 }
 
 @media screen and (max-width:480px){
