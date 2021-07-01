@@ -502,7 +502,13 @@ section{
     border: none;
 }
 .estudio-home ul.h-menu li{
-    text-align: center;
+    text-align: center;    
+}
+.estudio-home .h-menu .dropdown-menu li{
+    min-width: 280px;
+}
+.estudio-home .h-menu .dropdown-menu li a{
+    padding: 1em 0;
 }
 .estudio-home ul li a{
     font-family: 'GothamBold';
