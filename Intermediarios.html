@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
 
     <title>Intermediarios Inmobiliarios</title>
@@ -19,146 +20,211 @@
     <div class="red-band"></div>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand" href="#">
-              <img src="img/logo.png" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Acerca de nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Propietario</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Arrendatario</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Intermediarios Inmobiliarios</a>
-              </li>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">                    
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Acerca <br> de nosotros
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#">Quiénes somos</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Grupo Bolívar</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Lenguaje inmobiliario</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Puntos de servicio</a>
+                        </li>                                                    
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Propietario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Arrendatario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Intermediarios Inmobiliarios</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pagos <br> Electrónicos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#">Pago Estudio Solicitud Arrendamiento</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Pago de Obligaciones</a>
+                        </li>                        
+                        <li>
+                            <a class="dropdown-item" href="#">Primas seguro de arrendamiento</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
             <a class="button">
                 Estudio Arrendamiento
             </a>
-          </div>
+        </div>
         </div>
     </nav>
     <div class="miga">
         <div class="container">
-          <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">intermediarios inmobiliarios</a>
+            <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">intermediarios inmobiliarios</a> 
         </div>
     </div>
-</header>
+  </header>
 
-<!-- Header móvil -->
-<div class="header-mb d-lg-none">
-    <div class="red-band"></div>
-    <div class="logo-mb">
-        <img src="img/logo.png" alt="" class="img">
-    </div>
-    <img src="img/movil/menu.png" alt="" class="menu" onclick="openNav()">
-    <div class="miga">
-        <div class="container-fluid">
-          <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">intermediarios inmobiliarios</a>
-        </div>
-    </div>
-</div>
+  <!-- Header móvil -->
+  <div class="header-mb d-lg-none">
+      <div class="red-band"></div>
+      <div class="logo-mb">
+          <img src="img/logo.svg" alt="" class="img">
+      </div>
+      <img src="img/movil/menu.png" alt="" class="menu" onclick="openNav()">    
+      <div class="miga">
+          <div class="container">
+              <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">intermediarios inmobiliarios</a> 
+          </div>
+      </div>    
+  </div>
 
-<!-- menú móvil -->
-<div id="overlay"></div>
-<div id="mySidenav" class="sidenav d-lg-none">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/movil/cerrar.png" alt=""></a>
-    <div class="accordion accordion-flush" id="menu-lateral">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="menu1-h">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Acerca de nosotros
-                </button>
-            </h2>
-            <div id="menu1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#menu-lateral">
-                <div class="accordion-body">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Quiénes somos
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Grupo Bolívar
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Lenguaje Inmobiliario
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Puntos de servicio
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div> 
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="menu2-h">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu2" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Propietario
-                </button>
-            </h2>
-            <div id="menu2" class="accordion-collapse collapse" aria-labelledby="menu2-h" data-bs-parent="#menu-lateral">
-                <div class="accordion-body">
-                    
-                </div>
-            </div>
-        </div> 
+  <!-- menú móvil -->
+  <div id="overlay"></div>
+  <div id="mySidenav" class="sidenav d-lg-none">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/movil/cerrar.png" alt=""></a>
+      <div class="accordion accordion-flush" id="menu-lateral">
+          <div class="accordion-item">
+              <div class="accordion-header" id="menu1-h">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Acerca de nosotros
+                  </button>
+              </div>
+              <div id="menu1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#menu-lateral">
+                  <div class="accordion-body">
+                      <ul>
+                          <li>
+                              <a href="#">
+                                  Quiénes somos
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  Grupo Bolívar
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  Lenguaje Inmobiliario
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  Puntos de servicio
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div> 
+          
+          <div class="accordion-header link" id="menu2-h">
+              <a class="accordion-button" href="#">
+                  Propietario
+              </a>
+          </div>
+          
+          <div class="accordion-header link" id="menu3-h">
+              <a class="accordion-button" href="#">
+                  Arrendatario
+              </a>
+          </div>
+              
+          <div class="accordion-header link" id="menu4-h">
+              <a class="accordion-button" href="#">
+                  Intermediarios Inmobiliarios
+              </a>
+          </div>
+              
+          
 
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="menu3-h">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu3" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Arrendatario
-                </button>
-            </h2>
-            <div id="menu3" class="accordion-collapse collapse" aria-labelledby="menu3-h" data-bs-parent="#menu-lateral">
-                <div class="accordion-body">
-                    
-                </div>
-            </div>
-        </div> 
+          <div class="accordion-item">
+              <div class="accordion-header" id="menu5-h">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Pagos Electrónicos
+                  </button>
+              </div>
+              <div id="menu5" class="accordion-collapse collapse" aria-labelledby="menu5-h" data-bs-parent="#menu-lateral">
+                  <div class="accordion-body">
+                      <ul>
+                          <li>
+                              <a href="#">
+                                  Pago Estudio Solicitud Arrendamiento
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  Pago de Obligaciones
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  Primas seguro de arrendamiento
+                              </a>
+                          </li>                            
+                      </ul>                        
+                  </div>
+              </div>
+          </div>           
+      </div> 
+      <a href="#" class="btn-blue">
+          <img src="img/movil/estudio.png" alt="">
+          Estudio Arrendamiento
+      </a>
+  </div>
 
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="menu4-h">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu4" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Intermediarios Inmobiliarios
-                </button>
-            </h2>
-            <div id="menu4" class="accordion-collapse collapse" aria-labelledby="menu4-h" data-bs-parent="#menu-lateral">
-                <div class="accordion-body">
-                    
-                </div>
-            </div>
-        </div>           
-    </div> 
-    <a href="#" class="btn-blue">
-        <img src="img/movil/estudio.png" alt="">
-        Estudio Arrendamiento
+
+  <div class="sios">
+    <a href="#" class="d-none d-lg-block">
+        <img src="img/sios.png" alt="" >            
     </a>
-</div>
-
-
+    <div class="d-lg-none" >           
+        <div class="mensaje">
+            <a href="#">
+                <span>SIOS</span> <br>
+                Sistema de Indemnizaciones y Operaciones del Seguro
+            </a>
+        </div> 
+        <img src="img/sios-movil.png" alt="" >            
+    </div>
+  </div>
 
     <section>
-        <div class="banner inmobiliarios">
-            <div class="container">
-                <div class="bluebox">
-                    <p>Intermediarios<br> Inmobiliarios</p>
-                </div>
-            </div>
+        <div class="banner">
+          <img src="img/inmobiliarios/bannerD_inmobiliaria_opt.png" alt="" class="img-fluid d-none d-lg-block">            
+          <img src="img/inmobiliarios/bannerD_inmobiliaria-tablet_opt.png" alt="" class="img-fluid d-none d-md-block d-sm-block d-lg-none">
+          <img src="img/inmobiliarios/bannerD_inmobiliaria-mobil_opt.png" alt="" class="d-block d-sm-none">
+          <div class="container">
+              <div class="justify-content-sm-start">
+                  <div class="bluebox">
+                      <p>Intermediarios</p>                    
+                  </div>
+                  <div class="bluebox mt">
+                      <p>Inmobiliarios</p>
+                  </div>
+              </div>
+          </div>
         </div>
     </section>
     <section class="contenido">
@@ -178,67 +244,106 @@
 
 
 
-<div class="back-gray position-relative">
-<section class="container position-relative pt-3 pt-lg-0 pb-5 mt-lg-n10">
-<div class="container">
-<div class="row row-cols-1 row-cols-md-4 g-4">
-  <div class="col">
-    <div class="card h-100">
-      <div class="img-card-box">
-      <img src="img/Nservicios/estudio.png" class="card-img-top" alt="Solicitudes de arrendamiento">
+  <div class="back-gray position-relative">
+    <section class="container position-relative pt-3 pt-lg-0 pb-5 mt-lg-n10">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="slider-servicios">
+            <div class="col">
+              <div class="card">
+                <div class="img-card-box">
+                <img src="img/inmobiliarios/solicitudes.png" class="card-img-top" alt="Solicitudes de arrendamiento">
+                </div>
+                <div class="card-body body-card-box text-center">
+                  <h5 class="card-title">Estudio de Solicitudes de arrendamiento</h5>
+                  <p class="card-text">Nos encargamos de evaluar e investigar a los futuros arrendatarios. <a href="#" class="red hred">Consultando aquí</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="img-card-box">
+                <img src="img/inmobiliarios/capacitacion.png" class="card-img-top" alt="Capacitación inmobiliaria">
+                </div>
+                <div class="card-body body-card-box text-center">
+                  <h5 class="card-title">Capacitación inmobiliaria</h5>
+                  <p class="card-text">El conocimiento es un activo muy importante que debemos desarrollar. <a href="#" class="red hred">Descúbrelo aquí</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="img-card-box">
+                <img src="img/inmobiliarios/reportes.png" class="card-img-top" alt="Reportes de facturación">
+                </div>
+                <div class="card-body body-card-box text-center">
+                  <h5 class="card-title">Reportes de facturación</h5>
+                  <p class="card-text">Nuestros clientes tendrán acceso a la información propia de su inmobiliaria. <a href="#" class="red hred">Descúbrelo aquí</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="img-card-box">
+                <img src="img/inmobiliarios/novedades.png" class="card-img-top" alt="Programa de novedades">
+                </div>
+                <div class="card-body body-card-box text-center">
+                  <h5 class="card-title">Programa de novedades</h5>
+                  <p class="card-text">Nuestros inmobiliarios podrán registrar las novedades del seguro. <a href="#" class="red hred">Consultando aquí</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="img-card-box">
+                <img src="img/inmobiliarios/legislacion.png" class="card-img-top" alt="Programa de novedades">
+                </div>
+                <div class="card-body body-card-box text-center">
+                  <h5 class="card-title">Legislación</h5>
+                  <p class="card-text"><a href="#" class="red hred">Aquí podrás acceder</a> al Régimen de Arrendamiento de vivienda Urbana, como apoyo al sector inmobiliario. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <div class="img-card-box">
+                <img src="img/inmobiliarios/asesoria.png" class="card-img-top" alt="Programa de novedades">
+                </div>
+                <div class="card-body body-card-box text-center">
+                  <h5 class="card-title">Asesoría jurídica</h5>
+                  <p class="card-text">Contamos con un grupo de abogados especializados en procesos de restitución y ejecutivos <a href="#" class="red hred">Consultando aquí</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <div class="img-card-box">
+                <img src="img/inmobiliarios/judiciales.png" class="card-img-top" alt="Programa de novedades">
+                </div>
+                <div class="card-body body-card-box text-center">
+                  <h5 class="card-title">Notificaciones judiciales</h5>
+                  <p class="card-text">Equipo de trabajo calificado, para que sus procesos judiciales no se detengan. <a href="#" class="red hred">Consultando aquí</a></p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
       </div>
-      <div class="card-body body-card-box text-center">
-        <h5 class="card-title">Estudio de Solicitudes de arrendamiento</h5>
-        <p class="card-text">Nos encargamos de evaluar e investigar a los futuros arrendatarios. <a href="#">Consultando aquí</a></p>
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-12">
+            <div class="text-end">
+              <a href="#" class="red hred" >Ver todos los servicios</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   </div>
-  <div class="col">
-    <div class="card h-100">
-      <div class="img-card-box">
-      <img src="img/Nservicios/capacitacion01.png" class="card-img-top" alt="Capacitación inmobiliaria">
-      </div>
-      <div class="card-body body-card-box text-center">
-        <h5 class="card-title">Capacitación inmobiliaria</h5>
-        <p class="card-text">El conocimiento es un activo muy importante que debemos desarrollar. <a href="#">Descúbrelo aquí</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <div class="img-card-box">
-      <img src="img/Nservicios/reportes01.png" class="card-img-top" alt="Reportes de facturación">
-      </div>
-      <div class="card-body body-card-box text-center">
-        <h5 class="card-title">Reportes de facturación</h5>
-        <p class="card-text">Nuestros clientes tendrán acceso a la información propia de su inmobiliaria. <a href="#">Descúbrelo aquí</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <div class="img-card-box">
-      <img src="img/Nservicios/novedades.png" class="card-img-top" alt="Programa de novedades">
-      </div>
-      <div class="card-body body-card-box text-center">
-        <h5 class="card-title">Programa de novedades</h5>
-        <p class="card-text">Nuestros inmobiliarios podrán registrar las novedades del seguro. <a href="#">Consultando aquí</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-xxl-12">
-      <div class="text-end">
-        <a href="#">Ver todos los servicios</a>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-</div>
 
 
 <div class="container colum-sec-p">
@@ -254,7 +359,7 @@
               <img src="img/inmobiliarios/inmobiliario02.png">
             </div>
             <div class="col-xxl-8">
-              <div class="colum-dato  h-100">
+              <div class="colum-dato h-100">
                 <h3 class="text-start mt-n1">Póliza para Contratos de Arrendamiento de Seguros Bolívar</h3>
                 <p>Frente a todos los riesgos presentes al momento de arrendar un inmueble, Seguros Comerciales Bolívar S.A. presenta su Póliza de Cumplimiento para Contratos de Arrendamiento.</p>
                 <a class="d-block text-end blue hblue" href="#">Ver producto</a>
@@ -268,25 +373,25 @@
       <div class="container">
         <div class="row g-3">
           <div class="col-xxl-6">
-            <div class="card h-100 colum-sec">
+            <div class="card colum-sec servicio-info">
               <div class="img-card-box">
-              <img src="img/inmobiliarios/inmobiliario03.png" class="card-img-top" alt="Programa de novedades">
+              <img src="img/inmobiliarios/futuro.png" class="card-img-top" alt="Programa de novedades">
               </div>
               <div class="card-body body-card-box text-center">
-                <h5 class="card-title">Futuro producto</h5>
-                <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui  sint occaecat</p>
+                <h5 class="card-title text-start ps-3">Futuro producto</h5>
+                <p class="card-text text-start">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui  sint occaecat cupidatat non proident, sunt in culpa.</p>
                 <a href="#" class="d-block text-end red hred">Ver producto</a>
               </div>
             </div>
           </div>
           <div class="col-xxl-6">
-            <div class="card h-100 colum-sec">
+            <div class="card colum-sec servicio-info">
               <div class="img-card-box">
-              <img src="img/inmobiliarios/inmobiliario03.png" class="card-img-top" alt="Programa de novedades">
+              <img src="img/inmobiliarios/futuro.png" class="card-img-top" alt="Programa de novedades">
               </div>
               <div class="card-body body-card-box text-center">
-                <h5 class="card-title">Futuro producto</h5>
-                <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui  sint occaecat<br>  
+                <h5 class="card-title text-start ps-3">Futuro producto</h5>
+                <p class="card-text text-start">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui  sint occaecat cupidatat non proident, sunt in culpa.<br>  
                 </p>
                 <a href="#" class="d-block text-end red hred">Ver producto</a>
               </div>
@@ -297,90 +402,266 @@
     </div>
   </div>
 </div>
+    
+</section>
+
+  <div class="py-5"></div>
+
+  <section class="blog">    
+    <div class="blue-bg rounded-0 h-450"></div>
+    <div class="container mt-n200">            
+        <h2 class="text-center white py-3">
+            Eventos especiales
+        </h2>
+        <div class="py-4"></div>
+        <div class="d-flex justify-content-center entradas-blog">                
+            <div class="blog-card">
+                <img src="img/home/blog1.png" alt="" >
+                <div class="text-card">
+                    <h5 class="g-boldfont">
+                        Día del asesor inmobiliario
+                    </h5>
+                    <p class="r-regularfont px-4">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. 
+                    </p>
+                    <a href="#" class="red hred d-block text-end px-3 pb-3">
+                        Leer más
+                    </a>
+                </div>
+            </div>
+            
+            <div class="blog-card">
+                <img src="img/home/blog2.png" alt="">
+                <div class="text-card">
+                    <h5 class="g-boldfont">
+                        Concurso 'Radica y gana'
+                    </h5>
+                    <p class="r-regularfont px-4">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. 
+                    </p>
+                    <a href="#" class="red hred d-block text-end px-3 pb-3">
+                        Leer más
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="blog-card">
+                <img src="img/home/blog3.png" alt="">
+                <div class="text-card">
+                    <h5 class="g-boldfont">
+                        Excepteur sint
+                    </h5>
+                    <p class="r-regularfont px-4">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. 
+                    </p>
+                    <a href="#" class="red hred d-block text-end px-3 pb-3">
+                        Leer más
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+  </section>
+
+  <section>  
+    <div class="footer-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 d-none d-xl-block">
+                    <div class="logos">
+                        <img src="img/vigilado.png" alt="">
+                        <img src="img/logo.svg" alt="" class="logo">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 d-none d-md-block">
+                    <h4>SERVICIOS</h4>
+                    <ul>
+                        <li><a href="#">Arrendatario</a></li>
+                        <li><a href="#">Inmobiliaria</a></li>
+                        <li><a href="#">Propietario</a></li>                        
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 d-md-none">
+                    <div class="accordion accordion-flush" id="servicios">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="servicios1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    SERVICIOS
+                                </button>
+                            </h2>
+                            <div id="s1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#servicios">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Arrendatario
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Inmobiliaria
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Propietario
+                                            </a>
+                                        </li>                                            
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>                                                                                  
+                    </div>
+                </div>
 
 
-<div class="footer-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2">
-                        <div class="logos">
-                            <img src="img/vigilado.png" alt="">
-                        <img src="img/logo-gris.png" alt="">
+
+                <div class="col-lg-3 col-md-5 d-none d-md-block">
+                    <h4>ENLACES DE INTERÉS</h4>
+                    <ul>
+                        <li><a href="#">Grupo Bolívar</a></li>
+                        <li><a href="#">Lenguaje Inmobiliario</a></li>
+                        <li><a href="#">Artículos de Interés</a></li>                        
+                        <li><a href="#">Agencias de seguros El Libertador</a></li>
+                        <li><a href="#">Puntos de Servicio</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 d-md-none">
+                    <div class="accordion accordion-flush" id="interes">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="interes1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    ENLACES DE INTERÉS
+                                </button>
+                            </h2>
+                            <div id="i1" class="accordion-collapse collapse" aria-labelledby="interes" data-bs-parent="#interes">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Grupo Bolívar
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Lenguaje Inmobiliario
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Artículos de Interés
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Agencias de seguros El Libertador
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Puntos de Servicio
+                                            </a>
+                                        </li>                                            
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>                                                                                  
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 d-none d-md-block">
+                    <h4>CONTÁCTENOS</h4>
+                    <p class="big">
+                        <div class="d-block"><strong class="blue">Teléfono:</strong> +57(1) 3527070</div> 
+                        <div class="d-block"><strong class="blue">Email:</strong> <a href="mailto:direccióncorreo@email.com" class="blue hblue">direccióncorreo@email.com</a></div>
+                    </p>
+                    <p>
+                        <div class="d-block"><strong class="blue">Oficina principal</strong> </div> 
+                        <div class="d-block"><strong class="blue">Dirección:</strong> +57(1) 3527070</div>
+                        <div class="d-block"><strong class="blue">Horario de atención:</strong> 8:00 a.m. - 5:00 p.m.</div>                            
+                    </p>
+                </div>
+
+                <div class="col-sm-12 d-md-none">
+                    <div class="accordion accordion-flush" id="contacto">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="contacto1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    CONTÁCTENOS
+                                </button>
+                            </h2>
+                            <div id="c1" class="accordion-collapse collapse" aria-labelledby="contacto" data-bs-parent="#contacto">
+                                <div class="accordion-body">                                        
+                                    <p class="big">
+                                        <div class="d-block"><strong class="blue">Teléfono:</strong> +57(1) 3527070</div> 
+                                        <div class="d-block"><strong class="blue">Email:</strong> <a href="mailto:direccióncorreo@email.com" class="blue hblue">direccióncorreo@email.com</a></div>
+                                    </p>
+                                    <p>
+                                        <div class="d-block"><strong class="blue">Oficina principal</strong> </div> 
+                                        <div class="d-block"><strong class="blue">Dirección:</strong> +57(1) 3527070</div>
+                                        <div class="d-block"><strong class="blue">Horario de atención:</strong> 8:00 a.m. - 5:00 p.m.</div>                            
+                                    </p>
+                                </div>
+                            </div>
+                        </div>                                                                                  
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12">
+                    <div class="lineav"></div>
+                    <div class="contenido-wf">
+                        <h5>Nuestras redes sociales:</h5>
+                        <div class="social">
+                            <ul>
+                                <li><a href="#"><img src="img/icon-rs_instagram-blanco.svg" alt=""></a></li>
+                                <li><a href="#"><img src="img/icon-rs_twitter-blanco.svg" alt=""></a></li>
+                                <li><a href="#"><img src="img/icon-rs_facebook-blanco.svg" alt=""></a></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <h4>SERVICIOS</h4>
-                        <ul>
-                            <li><a href="#">Arrendatario</a></li>
-                            <li><a href="#">Inmobiliaria</a></li>
-                            <li><a href="#">Propietario</a></li>                        
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <h4>ENLACES DE INTERÉS</h4>
-                        <ul>
-                            <li><a href="#">Grupo Bolívar</a></li>
-                            <li><a href="#">Lenguaje Inmobiliario</a></li>
-                            <li><a href="#">Artículos de Interés</a></li>                        
-                            <li><a href="#">Agencias de seguros El Libertador</a></li>
-                            <li><a href="#">Puntos de Servicio</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <h4>CONTÁCTENOS</h4>
-                        <p class="big">
-                            <strong>Teléfono:</strong> +57(1) 3527070 <br>
-                            <strong>Email:</strong> <a href="mailto:direccióncorreo@email.com">direccióncorreo@email.com</a>
-                        </p>
-                        <p>
-                            Oficina principal <br>
-                            <strong>Dirección:</strong> +57(1) 3527070 <br>
-                            <strong>Horario de atención:</strong> 8:00 a.m. - 5:00 p.m.
-                        </p>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="lineav"></div>
-                        <div class="contenido-wf">
-                            <h5>Nuestras redes sociales:</h5>
-                            <div class="social">
-                                <ul>
-                                    <li><img src="img/ig.png" alt=""></li>
-                                    <li><img src="img/tw.png" alt=""></li>
-                                    <li><img src="img/fb.png" alt=""></li>
-                                </ul>
-                            </div>
-                            <h5>Busca tu nuevo hogar en:</h5>
-                            <div class="cien">
-                                <img src="img/ciencuadras.png" alt="">
-                            </div>
+                        <h5>Busca tu nuevo hogar en:</h5>
+                        <div class="cien">
+                            <img src="img/ciencuadras.png" alt="" >
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="terminos">
-            <div class="container">
-                <ul>
-                    <li><a href="#">Términos y condiciones de uso</a></li>
-                    <li><a href="#">Política de Tratamiento de datos</a></li>                    
-                </ul>
-            </div>
+    </div>
+    <div class="terminos">
+        <div class="container">
+            <ul>
+                <li><a href="#">Términos y condiciones de uso</a></li>
+                <li><a href="#">Política de Tratamiento de datos</a></li>                    
+            </ul>
         </div>
-        <div class="blue-rights">
-            @2021 Investigaciones y Cobranzas El Libertador S.A.   -   Todos los derechos reservados
-        </div>
-      
-    </section>
-<!-- Optional JavaScript; choose one of the two! -->
+    </div>
+    <div class="blue-rights">
+        @2021 Investigaciones y Cobranzas El Libertador S.A.   -   Todos los derechos reservados
+    </div>
+  </section>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
-    -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        $('.slider-servicios').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            arrows:false,
+            dots:true             
+        });
+        $(".sios").click(function(){
+            $(".mensaje").toggle();
+        });
+    </script>
 
 </body>
 </html>

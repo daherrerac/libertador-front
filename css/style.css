@@ -258,9 +258,7 @@ section{
     background-image: url(../img/proteccion/banner_proteccion-datos.png);
 }
 
-.inmobiliarios {
-    background-image: url(../img/inmobiliarios/bannerD_inmobiliaria_opt.png);
-}
+
 .gris-bg{
     background: linear-gradient( #F8F8F8 90%, #FFFFFF 20%);    
 }
@@ -347,12 +345,14 @@ section{
 }
 .banner-slide .slick-dots li,
 .slider-modalidades .slick-dots li,
-.entradas-blog .slick-dots li {
+.entradas-blog .slick-dots li,
+.slider-servicios .slick-dots li {
     margin: 0 0.25rem;
 }
 .banner-slide .slick-dots button,
 .slider-modalidades .slick-dots button,
-.entradas-blog .slick-dots button {
+.entradas-blog .slick-dots button,
+.slider-servicios .slick-dots button {
     display: block;
     width: 30px;
     height: 3px;
@@ -363,7 +363,8 @@ section{
 }
 .banner-slide .slick-dots li.slick-active button,
 .slider-modalidades .slick-dots li.slick-active button,
-.entradas-blog .slick-dots li.slick-active button {
+.entradas-blog .slick-dots li.slick-active button,
+.slider-servicios .slick-dots li.slick-active button{
     background-color: #BD0F14;
 }
 .slider-modalidades{
@@ -378,7 +379,8 @@ section{
     z-index: 10;
     bottom: -40px;
 }
-.entradas-blog .slick-dots {
+.entradas-blog .slick-dots,
+.slider-servicios .slick-dots {
 	display: flex !important;
 	justify-content: center;	
 	padding: 1rem 0;	
@@ -1363,11 +1365,27 @@ ul.submenu{
 .body-card-box h5 {
     color: #253150;
     font-family: "GothamBlack";
-    font-size: 1em;
+    font-size: 22px;
+    padding-top: 1em;
 }
 .card-body {
     flex: 1 1 auto;
-    padding: 1rem 1rem 0.3rem;
+    padding: 1rem 0.7rem 0.3rem;
+}
+.card-body p{
+    padding: 1em;
+}
+.slider-servicios{
+    width: 100%;
+    margin-top: -50px;
+}
+.slider-servicios .card{
+    width: 275px;
+    margin: 0 1em;
+    height: 350px;
+}
+.servicio-info{
+    height: 375px;
 }
  /* Carousel*/
 .carousel-x4{    
