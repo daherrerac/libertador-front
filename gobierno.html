@@ -19,25 +19,57 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="#">
-              <img src="img/logo.png" alt="">
+              <img src="img/logo.svg" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Acerca de nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Propietario</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Arrendatario</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Intermediarios Inmobiliarios</a>
-              </li>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">                    
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Acerca <br> de nosotros
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#">Quiénes somos</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Grupo Bolívar</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Lenguaje inmobiliario</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Puntos de servicio</a>
+                        </li>                                                    
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Propietario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Arrendatario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Intermediarios Inmobiliarios</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pagos <br> Electrónicos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#">Pago Estudio Solicitud Arrendamiento</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Pago de Obligaciones</a>
+                        </li>                        
+                        <li>
+                            <a class="dropdown-item" href="#">Primas seguro de arrendamiento</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
             <a class="button">
                 Estudio Arrendamiento
@@ -46,112 +78,126 @@
         </div>
     </nav>
     <div class="miga">
-      <div class="container">
-          <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">Acerca de nosotros</a> / <a href="#" class="blue">Gobierno Corporativo</a>
-      </div>
-  </div>
+        <div class="container">
+            <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">Acerca de nosotros</a> / <a href="#" class="blue">Gobierno Corporativo</a>
+        </div>
+    </div>
   </header>
 
-<!-- Header móvil -->
-<div class="header-mb d-lg-none">
-    <div class="red-band"></div>
-    <div class="logo-mb">
-        <img src="img/logo.png" alt="" class="img">
-    </div>
-    <img src="img/movil/menu.png" alt="" class="menu" onclick="openNav()">
-    <div class="miga">
-      <div class="container">
-          <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">Acerca de nosotros</a> / <a href="#" class="blue">Gobierno Corporativo</a>
+  <!-- Header móvil -->
+  <div class="header-mb d-lg-none">
+      <div class="red-band"></div>
+      <div class="logo-mb">
+          <img src="img/logo.svg" alt="" class="img">
       </div>
-    </div> 
-</div>
+      <img src="img/movil/menu.png" alt="" class="menu" onclick="openNav()">    
+      <div class="miga">
+          <div class="container">
+            <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">Acerca de nosotros</a> / <a href="#" class="blue">Gobierno Corporativo</a>
+          </div>
+      </div>    
+  </div>
 
-<!-- menú móvil -->
-<div id="overlay"></div>
-<div id="mySidenav" class="sidenav d-lg-none">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/movil/cerrar.png" alt=""></a>
-    <div class="accordion accordion-flush" id="menu-lateral">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="menu1-h">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Acerca de nosotros
-                </button>
-            </h2>
-            <div id="menu1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#menu-lateral">
-                <div class="accordion-body">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Quiénes somos
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Grupo Bolívar
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Lenguaje Inmobiliario
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Puntos de servicio
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div> 
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="menu2-h">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu2" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Propietario
-                </button>
-            </h2>
-            <div id="menu2" class="accordion-collapse collapse" aria-labelledby="menu2-h" data-bs-parent="#menu-lateral">
-                <div class="accordion-body">
-                    
-                </div>
-            </div>
-        </div> 
+  <!-- menú móvil -->
+  <div id="overlay"></div>
+  <div id="mySidenav" class="sidenav d-lg-none">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/movil/cerrar.png" alt=""></a>
+      <div class="accordion accordion-flush" id="menu-lateral">
+          <div class="accordion-item">
+              <div class="accordion-header" id="menu1-h">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Acerca de nosotros
+                  </button>
+              </div>
+              <div id="menu1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#menu-lateral">
+                  <div class="accordion-body">
+                      <ul>
+                          <li>
+                              <a href="#">
+                                  Quiénes somos
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  Grupo Bolívar
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  Lenguaje Inmobiliario
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  Puntos de servicio
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div> 
+          
+          <div class="accordion-header link" id="menu2-h">
+              <a class="accordion-button" href="#">
+                  Propietario
+              </a>
+          </div>
+          
+          <div class="accordion-header link" id="menu3-h">
+              <a class="accordion-button" href="#">
+                  Arrendatario
+              </a>
+          </div>
+              
+          <div class="accordion-header link" id="menu4-h">
+              <a class="accordion-button" href="#">
+                  Intermediarios Inmobiliarios
+              </a>
+          </div>
+              
+          
 
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="menu3-h">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu3" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Arrendatario
-                </button>
-            </h2>
-            <div id="menu3" class="accordion-collapse collapse" aria-labelledby="menu3-h" data-bs-parent="#menu-lateral">
-                <div class="accordion-body">
-                    
-                </div>
-            </div>
-        </div> 
-
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="menu4-h">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu4" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Intermediarios Inmobiliarios
-                </button>
-            </h2>
-            <div id="menu4" class="accordion-collapse collapse" aria-labelledby="menu4-h" data-bs-parent="#menu-lateral">
-                <div class="accordion-body">
-                    
-                </div>
-            </div>
-        </div>           
-    </div> 
-    <a href="#" class="btn-blue">
-        <img src="img/movil/estudio.png" alt="">
-        Estudio Arrendamiento
-    </a>
-</div>
+          <div class="accordion-item">
+              <div class="accordion-header" id="menu5-h">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Pagos Electrónicos
+                  </button>
+              </div>
+              <div id="menu5" class="accordion-collapse collapse" aria-labelledby="menu5-h" data-bs-parent="#menu-lateral">
+                  <div class="accordion-body">
+                      <ul>
+                          <li>
+                              <a href="#">
+                                  Pago Estudio Solicitud Arrendamiento
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  Pago de Obligaciones
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  Primas seguro de arrendamiento
+                              </a>
+                          </li>                            
+                      </ul>                        
+                  </div>
+              </div>
+          </div>           
+      </div> 
+      <a href="#" class="btn-blue">
+          <img src="img/movil/estudio.png" alt="">
+          Estudio Arrendamiento
+      </a>
+  </div>
 	
 
     <section>
-        <div class="banner gobierno">
+        <div class="banner">
+            <img src="img/gobierno/banner-gobierno.png" alt="" class="img-fluid d-none d-lg-block">            
+            <img src="img/gobierno/banner-tablet_gobierno_opt.png" alt="" class="img-fluid d-none d-md-block d-sm-block d-lg-none">
+            <img src="img/gobierno/banner-mobile_gobierno-corpo.png" alt="" class="d-block d-sm-none">
             <div class="container">
                 <div class="bluebox">
                     <p>Gobierno Corporativo</p>

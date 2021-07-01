@@ -269,16 +269,7 @@ section{
 .proteccion{
     background-image: url(../img/proteccion/banner_proteccion-datos.png);
 }
-.arrendatario{
-    background-image: url(../img/arrendatario/banner_arrendatario.png);
-    background-color: #F8F8F8;
-}
-.somos{
-    background-image: url(../img/somos/banner_quienesSomos_1.png);
-}
-.gobierno{
-    background-image: url(../img/gobierno/banner-gobierno.png);
-}
+
 .inmobiliarios {
     background-image: url(../img/inmobiliarios/bannerD_inmobiliaria_opt.png);
 }
@@ -883,7 +874,7 @@ h5.redline::after{
     background-color: #FFFFFF;
     height: 55px;
     margin-bottom: 1.5em;    
-    padding: 1em 0px 0px 5em !important;
+    padding: 0.7em 0px 0px 5em !important;
 }
 .info-pago{
     background:  url(../img/propietario/img_consulta-requisitos-fondo.png)  no-repeat;      
@@ -1031,7 +1022,7 @@ ul.icons li.canon{
     height: auto;
     border: 1px solid #ccc;
     padding: 0 !important;
-    margin: 1rem 0 0rem 0;
+    margin: 1rem 0 1rem 0;
     border-radius: 9px;
 }
 .colum-sec img{
@@ -1770,6 +1761,9 @@ footer .lineav{
     .banner {
         height: 380px;
     }
+    .colum-sec-p h3::after {
+        top: 2.5em;
+    }
 }
 @media screen and (max-width:1280px){
     .navbar-brand img{
@@ -2237,7 +2231,9 @@ footer .lineav{
     .blog-card,.home-minibox .gray-box{
         max-width: calc(375px - 10%);
     }
-    
+    .colum-sec-p h3::after {
+        top: 1.5em;
+    }
 }
 @media screen and (max-width:767px){
     footer .lineav {
@@ -2370,6 +2366,16 @@ footer .lineav{
         z-index: 0;
         margin-top: 106px;
     }
+    .info-seguro ul li {
+        padding: 0.7em 0px 0px 3.5em !important;
+        font-size: 0.9em;
+    }
+    h2.beneficios {
+        font-size: 20px;
+    }
+    .colum-sec-p h3::after {
+        top: 2.5em;
+    }
 }
 @media screen and (max-width:600px) {
     h1{
@@ -2474,7 +2480,11 @@ footer .lineav{
         margin: 0 auto 0 5em;
     }
 }
-
+@media screen and (max-width:400px){
+    h2.redline.beneficios::after {        
+        top: 3.6em;
+    }
+}
 @media screen and (max-width:320px){
     .search-box h3{
         font-size: 1.2em;
