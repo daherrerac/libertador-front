@@ -52,3 +52,64 @@ $(window).on('load resize orientationchange', function() {
 });
 
 
+$(window).on('load resize orientationchange', function() {
+    $('.slider-modalidades').each(function(){
+        var $carousel = $(this);
+        /* Initializes a slick carousel only on mobile screens */
+        // slick on mobile
+        if ($(window).width()  > 1400) {
+            if ($carousel.hasClass('slick-initialized')) {
+                $carousel.slick('unslick');
+            }
+        }
+        else{
+            if (!$carousel.hasClass('slick-initialized')) {
+                $carousel.slick({
+                    dots: true,
+                    arrows: false,
+                    infinite: true,
+                    slidesToShow: 2,                                        
+                    slidesToScroll: 1,
+                    responsive: [  
+                        {
+                            breakpoint: 992,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                centerMode:true,
+                                centerPadding:'0px'                           
+                            }
+                        }
+                    ]                   
+                });
+            }
+        }
+    });
+});
+
+
+$(window).on('load resize orientationchange', function() {
+    $('.entradas-blog').each(function(){
+        var $carousel = $(this);
+        /* Initializes a slick carousel only on mobile screens */
+        // slick on mobile
+        if ($(window).width()  > 768) {
+            if ($carousel.hasClass('slick-initialized')) {
+                $carousel.slick('unslick');
+            }
+        }
+        else{
+            if (!$carousel.hasClass('slick-initialized')) {
+                $carousel.slick({
+                    dots: true,
+                    arrows: false,
+                    infinite: true,
+                    slidesToShow: 1,                                        
+                    slidesToScroll: 1,
+                    centerMode:true,
+                    centerPadding:'0px'                                   
+                });
+            }
+        }
+    });
+});
