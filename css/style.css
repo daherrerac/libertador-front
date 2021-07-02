@@ -1194,7 +1194,7 @@ ul.icons li.canon{
     background-color: #253150;
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
-    padding-bottom: 0;
+    padding-bottom: 5px;
 }
 .colum-bluebox h3{
     color: white;
@@ -1270,6 +1270,7 @@ p.nproductos{
 .submenu-dos .nav-link.active {
     color: #253150;
     background-color: transparent;    
+    width: max-content;
 }
 .submenu-dos .nav-link.active span{
     width: 70%;
@@ -1286,7 +1287,18 @@ ul.submenu{
 .submenu li{
     height: 100%;
 }
-
+.backgro {
+    background-color: #F8F8F8;
+    width: 100%;
+    height: 395px;
+    position: absolute;
+    z-index: 0;
+    top: 40px;    
+}
+.backmenu, .tab-content{
+    position: relative;
+    z-index: 1;
+}
 .backmenu .nav-pills .nav-link.active {
     background-color: #253150;
     font-size: 1em;
@@ -1297,7 +1309,7 @@ ul.submenu{
     height: 100%;   
 }
 .backmenu .nav-link:hover{
-    color: #BD0F14;
+    color: #253150;
 }
 .backmenu .nav-pills .nav-link:hover.active{
     color: #ffffff;
@@ -1312,22 +1324,58 @@ ul.submenu{
 .colum-sec-p .intabs button {
     padding: 1em 0;
     text-align: left;
+    margin: 1em 0;
 }
 .submenu-dos.intabs .nav-link.active  span{
     width: 100%;
 }
 .aula-info{
-    background-color: white;
+    background-color: #ffffff;
     padding: 1.2rem;
     align-items: center;
     text-align: center;
+    max-width: 275px;    
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
+
 .aula-info h4{
     font-size: 2em;
     font-family: "GothamBlack";
+    color: #253150;
 }
 .aula-info img{
     width: 25%;
+}
+.aula-info p{
+    font-size: 14px;
+}
+.w-320{
+    width: 320px;
+}
+.tabs-servicios h3{
+    padding:0.5em 0 ;
+    position: relative;    
+}
+.tab-pane h3{
+    padding-bottom: 0.5em;
+    position: relative;
+    padding-left: 0;
+}
+.tab-pane h3::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background: #BD0F14;
+    border-radius: 2px;
+    left: 0;
+    top: 1.5em;
+}
+
+.tabs-servicios h3::after{
+    width: 0;
+    height: 0;
 }
 .back-gray{
     background-color: #F8F8F8;
@@ -1852,6 +1900,9 @@ footer .lineav{
     }
     .colum-sec-p h3::after {
         top: 2.5em;
+    }
+    .tab-pane h3::after{
+        top: 1.5em;   
     }
     .colum-dato.interm{
         padding: 1rem;
