@@ -1333,7 +1333,7 @@ ul.submenu{
     background-color: #F8F8F8;
 }
 .colum-dato{
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 9px;    
 }
 .colum-dato button{
@@ -1387,6 +1387,11 @@ ul.submenu{
 .servicio-info{
     height: 375px;
 }
+.flotante{
+    float: left;
+    margin-bottom: 1em;
+}
+
  /* Carousel*/
 .carousel-x4{    
     position: relative;
@@ -1848,6 +1853,13 @@ footer .lineav{
     .colum-sec-p h3::after {
         top: 2.5em;
     }
+    .colum-dato.interm{
+        padding: 1rem;
+        width: 100%;
+    }
+    .interm h3 {
+        font-size: 1.6em;
+    }
 }
 @media screen and (max-width:1280px){
     .navbar-brand img{
@@ -1864,7 +1876,10 @@ footer .lineav{
     }
     .info-pago .recomendacion {
         width: 45%;        
-    }    
+    }   
+    .interm h3 {
+        font-size: 1.5em;
+    } 
 }
 @media screen and (max-width:1200px){
     .wb-l{
@@ -1902,6 +1917,9 @@ footer .lineav{
     }
     header .button{
         width: 220px;
+    }
+    .servicio-info {
+        height: auto;
     }
 }
 @media screen and (min-width:992px) and (max-width:1090px){
@@ -2459,6 +2477,12 @@ footer .lineav{
     .colum-sec-p h3::after {
         top: 2.5em;
     }
+    .slider-servicios .col-aux{
+        padding:0.5em;
+    }
+    .slider-servicios .card{
+        margin: 0 auto;
+    }
 }
 @media screen and (max-width:600px) {
     h1{
@@ -2555,7 +2579,7 @@ footer .lineav{
     }  
     .info-pago .recomendacion {        
         margin: 0 auto 0 5em;
-    }
+    }    
 }
 @media screen and (max-width:400px){
     h2.redline.beneficios::after {        
