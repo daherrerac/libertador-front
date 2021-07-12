@@ -87,7 +87,7 @@ $(window).on('load resize orientationchange', function() {
         var $carousel = $(this);
         /* Initializes a slick carousel only on mobile screens */
         // slick on mobile
-        if ($(window).width()  > 1200) {
+        if ($(window).width()  >= 1200) {
             if ($carousel.hasClass('slick-initialized')) {
                 $carousel.slick('unslick');
             }
@@ -99,7 +99,7 @@ $(window).on('load resize orientationchange', function() {
                     arrows: false,
                     infinite: true,
                     slidesToShow: 2,                                        
-                    slidesToScroll: 1,
+                    slidesToScroll: 1,                    
                     responsive: [  
                         {
                             breakpoint: 992,

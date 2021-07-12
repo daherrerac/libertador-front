@@ -304,6 +304,8 @@ section.brn{
     background-color:#253150e0;
     max-width: 580px;
     width: auto;
+    top: 37%;
+    left: 12%;
 }
 .bluebox.home h2 {
     text-align: left;    
@@ -357,7 +359,9 @@ section.brn{
 .slider-servicios .slick-dots li.slick-active button{
     background-color: #BD0F14;
 }
-
+.slider-modalidades{
+    width: 100%;
+}
 .slider-modalidades .slick-dots {
     display: flex !important;
     justify-content: center;
@@ -384,8 +388,10 @@ section.brn{
     position: relative;
     z-index: 1;
     height: 240px;
+    transition: transform 1 s;
 }
-.home-minibox .gray-box:hover{
+.home-minibox .gray-box:hover{ 
+    transition-timing-function: ease;   
     transform: scale(1.05);
 }
 .home-minibox h3{
@@ -593,7 +599,7 @@ section.brn{
 }
 .blog-card{
     max-width: 370px;
-    margin: 0 1em;
+    margin: 0;
 }
 .blog-card img{
     width: 100%;
@@ -609,7 +615,8 @@ section.brn{
     padding: 1em;    
 }
 .btn-blog{
-    margin-left: 28%;
+    margin-left: auto;
+    margin-right: 0;
     padding: 0.7em;
     background: transparent;
 }
@@ -625,6 +632,8 @@ section.brn{
     position: absolute;
     z-index: 10;
     bottom: -70px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 /*Propietario*/
@@ -846,6 +855,7 @@ h2.beneficios::after{
     z-index: 10;	
     bottom: -70px;			
     left: 50%;
+    transform: translate(-50%) ;
     display: flex !important;
 }
 .flotante{
@@ -860,10 +870,17 @@ h2.beneficios::after{
     font-size: 1.25rem;
     margin: 1em auto;
 }
-.more{
+.more {        
+    margin-right: 25px;
+    margin-top: -30px;
+}
+.more-open {
+    margin-right: 25px;
+    margin-bottom: -30px;
+    display: block;
     position: absolute;
-    bottom: 10px;
-    right: 40px;
+    bottom: -460px;
+    right: 80px;
 }
 .interm p{
     max-width: 350px;
@@ -1226,6 +1243,9 @@ footer .lineav{
     .info-seguro {        
         margin-left: 0;
     }
+    .interm p {       
+        margin-top: 1em;
+    }
 }
 @media (max-width: 1199.98px) {
     header .button{
@@ -1253,6 +1273,10 @@ footer .lineav{
     }
     .blog-card {        
         margin: 0 auto;
+    }
+    .especial-img{
+        height: 315px;
+        padding: 0em 1em;
     }
 }
 
@@ -1458,6 +1482,7 @@ footer .lineav{
         border-radius: 5px;
         width: 95%;
         padding: 1rem;
+        margin: 0 auto;
     }
     .estudio-home h4 {
         width: 95%;
@@ -1499,7 +1524,9 @@ footer .lineav{
     .btn-blog{
         margin-top: 1em;
     }
-    
+    .bluebox {
+        top: 60%;
+    }
     .proteger {
         height: auto;
         background-size: 100% 70%;
@@ -1516,9 +1543,17 @@ footer .lineav{
     }
     .seguro h3{
         margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .seguro p {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;        
     }
     ul.icons {        
-        max-width: 90%;        
+        max-width: 90%;   
+        margin: 0 auto;     
     }
     .info-seguro{    
         max-width: 672px;    
@@ -1538,6 +1573,15 @@ footer .lineav{
     }
     .info-pago {
         background-position-y: 25%;
+    }
+    .especial-img{
+        max-width: 340px;
+        margin: 1em auto;
+        height: auto;
+        padding: 0;
+    }
+    .especial-img.bordered-box{
+        border: none;
     }
     /*Footer*/
     .footer-sec .contenido-wf {
@@ -1588,16 +1632,31 @@ footer .lineav{
 
 @media (max-width: 767.98px) {
     h1{
-        font-size: 1.5625rem;
+        font-size: 1.875rem;
     }
+    h2{
+        font-size: 1.875rem;
+    }    
     .menu{                
         left: 0;        
     }
     .banner {
         height: auto;                
     }
+    .bluebox{
+        width: 90%;
+        margin: auto;
+    }
     .bluebox h2{
         font-size: 1.875rem;
+    }
+    .nproductos h2{
+        max-width: 340px;
+        margin: auto;
+    }
+    .intermediarios .blog-card{
+        max-width: 340px;
+        margin: auto;
     }
     .footer-sec{
         padding-top: 0.5em;
@@ -1642,7 +1701,7 @@ footer .lineav{
     }
     .icon-box {
         height: auto;
-        min-height: auto;
+        min-height: 190px;
         display: inline-flex;
         width: 100%;
         align-content: center;
@@ -1688,7 +1747,15 @@ footer .lineav{
         left: 50%;
         transform: translate(-50%, 0);
     }
-    
+    .estudio-home p{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0.5rem 1rem;
+    }
+    .estudio-home h4 {
+        width: 100%;
+        margin: 1rem 1.7rem;        
+    }
 }
 
 
@@ -1707,17 +1774,15 @@ footer .lineav{
         padding: 1em 0;
     }
     .menu{        
-        left: 2.1875rem;        
+        left: 25px;        
     }
     .banner-slide {
-        height: 520px;        
+        height: 535px;        
     }
     ul.icons li {
         height: 70px;
     }
-    .proteger {
-        max-height: 600px;
-    }
+    
     .estudio-home,.icon-space .blue-bg, .sm-box{
         max-width: 375px;
         margin: 0 auto;
@@ -1727,17 +1792,17 @@ footer .lineav{
         margin-top: -30px;
     }
     .info-seguro-l{
-        max-width: 340px;
+        max-width: 375px;
     }
     .info-seguro{
-        max-width: 340px;
+        max-width: 375px;
     }
     .info-adj{
-        max-width: 340px;
+        max-width: 375px;
         margin: 0 auto;
     }
     h2.beneficios{
-        max-width: 340px;
+        max-width: 375px;
         font-size: 1.375rem;
     }
     .adv-w2 img {        
@@ -1771,10 +1836,24 @@ footer .lineav{
     .seguro .red-dot-list ul {
         max-width: 85%;
     }
+    .blog-card {
+        max-width: 375px;        
+        margin: 0 auto;
+    }
+    .blog-button{
+        max-width: 375px;        
+        margin: 0 auto;        
+    }
+    .proteger p {
+        max-width: 375px;
+    }
 }
 
 @media (max-width: 480px) {
     .banner-slide {
         height: 460px;        
+    }
+    .proteger {
+        max-height: 620px;
     }
 }
