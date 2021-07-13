@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="10.054167mm"
+   height="9.9729395mm"
+   viewBox="0 0 10.054167 9.9729395"
+   version="1.1"
+   id="svg101"
+   sodipodi:docname="perseverancia-1.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
+  <defs
+     id="defs95" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="75.566134"
+     inkscape:cy="353.85853"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1258"
+     inkscape:window-height="1040"
+     inkscape:window-x="1926"
+     inkscape:window-y="9"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata98">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-160.90446,-75.900437)">
+    <g
+       id="Grupo_5876"
+       data-name="Grupo 5876"
+       transform="matrix(0.26458333,0,0,0.26458333,-144.4247,-401.21104)">
+      <circle
+         id="Elipse_274"
+         data-name="Elipse 274"
+         cx="15"
+         cy="15"
+         r="15"
+         transform="translate(1158,1805.852)"
+         fill="rgba(176,182,186,0.2)" />
+      <path
+         id="Trazado_3629"
+         data-name="Trazado 3629"
+         d="m 22.333,39.43 c 0,0 1.527,13.952 11.358,13.952 H 22.645 L 21.56,51.807 V 39.43 Z"
+         transform="translate(1155.41,1782.924)"
+         fill="#bd0f14" />
+      <g
+         id="surface1"
+         transform="translate(1156.246,1803.256)">
+        <path
+           id="Trazado_3627"
+           data-name="Trazado 3627"
+           d="m 30.9,10.868 h -4.42 v -3.4 h 7.138 A 1.015,1.015 0 0 0 34.307,5.7 l -1.969,-1.968 2,-2 A 1.015,1.015 0 0 0 33.62,0 h -8.151 a 1.015,1.015 0 0 0 -1.014,1.015 v 9.854 h -1.16 A 3.736,3.736 0 0 0 19.563,14.6 v 2.115 a 3.709,3.709 0 0 0 -1.7,-0.413 h -1.089 a 3.736,3.736 0 0 0 -3.732,3.732 v 2.116 a 3.711,3.711 0 0 0 -1.7,-0.413 h -1.089 a 3.736,3.736 0 0 0 -3.732,3.732 v 2.115 a 3.705,3.705 0 0 0 -1.7,-0.413 H 3.732 A 3.736,3.736 0 0 0 0,30.9 v 2.72 a 1.015,1.015 0 0 0 1.015,1.015 H 33.62 A 1.015,1.015 0 0 0 34.635,33.62 V 14.6 A 3.736,3.736 0 0 0 30.9,10.868 Z M 26.48,2.029 h 4.69 l -0.985,0.985 a 1.015,1.015 0 0 0 0,1.435 L 31.17,5.434 H 26.483 Z M 2.029,30.9 a 1.7,1.7 0 0 1 1.7,-1.7 h 1.09 a 1.7,1.7 0 0 1 1.7,1.7 v 1.7 h -4.49 z m 6.521,0 v -5.431 a 1.7,1.7 0 0 1 1.7,-1.7 h 1.09 a 1.7,1.7 0 0 1 1.7,1.7 v 7.137 H 8.55 Z m 6.521,-5.434 v -5.431 a 1.7,1.7 0 0 1 1.7,-1.7 h 1.087 a 1.7,1.7 0 0 1 1.7,1.7 v 12.571 h -4.487 z m 17.534,7.137 H 21.593 V 14.6 a 1.7,1.7 0 0 1 1.7,-1.7 H 30.9 a 1.7,1.7 0 0 1 1.7,1.7 z m 0,0"
+           fill="#253150" />
+      </g>
+      <path
+         id="Trazado_3628"
+         data-name="Trazado 3628"
+         d="M 0,0 H 38"
+         transform="translate(1154,1838.449)"
+         fill="none"
+         stroke="#ffffff"
+         stroke-width="5" />
+    </g>
+  </g>
+</svg>
