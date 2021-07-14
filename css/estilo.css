@@ -48,6 +48,9 @@
 .g-mediumfont{
     font-family:'GothamMedium';
 }
+.fs-12{
+    font-size: 0.75rem;
+}
 .blue {
     color: #253150;
 }
@@ -85,6 +88,9 @@ h3{
     color: #253150;
 }
 h4{
+    color: #253150;
+}
+h5{
     color: #253150;
 }
 p{
@@ -284,14 +290,14 @@ section.brn{
 }
 .bluebox {
     font-family: 'GothamBold';
-    background-color:#253150;
+    background-color:#253150e0;
     position: absolute;
     top: 40%;
     left: 20%;
     color: #fff;
     text-align: center;    
     width: max-content;
-    max-width: 450px;
+    max-width: 490px;
 }
 .bluebox.mt{
     margin-top: 4.2em;
@@ -302,7 +308,7 @@ section.brn{
     line-height: 2em;
     padding: 0 0.5em;
     margin: 0;
-    text-align: center;
+    text-align: left;
     color: #ffffff;
     line-height: 1.5;        
 }
@@ -575,14 +581,23 @@ section.brn{
 .icon-box{
     border-radius: 5px;
     border: 1px solid #B0B6BA;   
-    height: 250px; 
+    height: 250px;
+    position: relative; 
+}
+.icon-box .vc{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 .icon-box:hover{
     border: 1px solid #bd0f1567;
 }
 .icon-box img{
-    width: 50px;
-    margin-top: 1em;
+    width: 50px;    
     margin-bottom: 1em;
 }
 .icon-box h5{
@@ -847,6 +862,31 @@ h2.beneficios::after{
 .nuestra p{
     max-width: 574px;
     margin: 0 auto;
+    position: relative;
+}
+.nuestra h2{
+    font-size: 1.5625rem;
+    position: relative;
+    max-width: 574px;
+    margin: 1.5em auto 1em;
+}
+.nuestra h2::after{
+    content: '';
+    position: absolute;    
+    width: 35px;
+    height: 3px;
+    background: #BD0F14;
+    border-radius: 2px;
+    left: 0;
+    top: 100%;
+}
+.nuestra p.sgrayline::before{
+    position: absolute;
+    content: '';
+    width: 35px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.125);
+    top: 35px;
 }
 .nuestra-l{
     max-width: 472px;
@@ -862,6 +902,10 @@ h2.beneficios::after{
     padding: 2rem;
     height: 63%;
 }
+.nuestra-l .colum-sec-full{
+    height: 100%;
+    padding: 2rem 0 0;
+}
 .nuestra-l h2{
     font-size: 1.5625rem;  
     position: relative;  
@@ -874,10 +918,37 @@ h2.beneficios::after{
     background: #BD0F14;
     border-radius: 2px;
     left: 0;
-    top: 1.2em;
+    top: 100%;
 }
 .nuestra-l p{
     padding: 1.2em 0;
+}
+.nuestra-l ul{
+    font-family: 'RobotoRegular';
+    list-style: none;
+    margin-top: 2em;
+}
+.nuestra-l .colum-sec-full ul{
+    padding: 0 4rem;
+}
+.nuestra-l .colum-sec-full h2{
+    margin: 0 2rem;
+}
+.nuestra-l ul li::before {
+    content: "\2022";
+    color: #BD0F14; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+.nuestra-l .full {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.nuestra-l .full img{
+    width: 100%;
 }
 .column-icon .rect{
     background-color: #ffffff;
@@ -2013,6 +2084,9 @@ footer .lineav{
     .blue-bg h4 span {
         margin: 0.2em auto;
     }
+    .blue-bg h4 span {        
+        padding: 0 1em ;
+    }
     .icon-space .blue-bg{
         padding: 2em;
     }
@@ -2024,6 +2098,16 @@ footer .lineav{
         align-content: center;
         justify-content: center;
         align-items: center;
+    }
+    .icon-box .vc {
+        margin: 0;
+        position: relative;
+        top: auto;
+        left: auto;
+        -ms-transform: none;
+        transform: none;
+        width: 100%;
+        display: inline-flex;
     }
     .icon-box h5 {
         padding-top: 1em;

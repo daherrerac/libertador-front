@@ -29,254 +29,304 @@
   </head>
 <body>
 
-  <!-- menu desktop  -->
-  <header class="d-none d-lg-block">
-    <div class="red-band"></div>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-              <img src="img/logo.svg" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">                    
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Acerca <br> de nosotros
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li>
-                            <a class="dropdown-item" href="#">Quiénes somos</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Grupo Bolívar</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Lenguaje inmobiliario</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Puntos de servicio</a>
-                        </li>                                                    
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Propietario</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Arrendatario</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Intermediarios Inmobiliarios</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Pagos <br> Electrónicos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li>
-                            <a class="dropdown-item" href="#">Pago Estudio Solicitud Arrendamiento</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Pago de Obligaciones</a>
-                        </li>                        
-                        <li>
-                            <a class="dropdown-item" href="#">Primas seguro de arrendamiento</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <a class="button">
-                Estudio Arrendamiento
-            </a>
-          </div>
-        </div>
-    </nav>
-    <div class="miga">
-        <div class="container">
-            <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">Acerca de nosotros</a> / <a href="#" class="blue">Gobierno Corporativo</a>
-        </div>
-    </div>
-  </header>
-
-  <!-- Header móvil -->
-  <div class="header-mb d-lg-none">
+    <!-- menu desktop  -->
+    <header class="d-none d-lg-block">
       <div class="red-band"></div>
-      <div class="logo-mb">
-          <img src="img/logo.svg" alt="" class="img">
-      </div>
-      <img src="img/movil/menu.png" alt="" class="menu" onclick="openNav()">    
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.svg" alt="" width="240" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">                    
+                  <li class="nav-item">
+                      <div class="nav-box">
+                          <div class="dropdown">
+                              <a class="nav-link " href="#">Acerca de nosotros</a>
+                              <div class="dropdown-content">
+                                  <ul class="dropdown-content-menu">
+                                      <li>
+                                          <a class="dropdown-item" href="#">Quiénes somos</a>
+                                      </li>
+                                      <li>
+                                          <a class="dropdown-item" href="#">Grupo Bolívar</a>
+                                      </li>
+                                      <li>
+                                          <a class="dropdown-item" href="#">Lenguaje inmobiliario</a>
+                                      </li>
+                                      <li>
+                                          <a class="dropdown-item" href="#">Puntos de servicio</a>
+                                      </li>                                                    
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <div class="nav-box">
+                          <a class="nav-link" href="#">Propietario</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <div class="nav-box">
+                          <a class="nav-link" href="#">Arrendatario</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <div class="nav-box">
+                          <a class="nav-link" href="#">Intermediarios Inmobiliarios</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <div class="nav-box">
+                          <div class="dropdown">
+                              <a class="nav-link" href="#">Pagos electrónicos</a>
+                              <div class="dropdown-content">
+                                  <ul class="dropdown-content-menu">
+                                      <li>
+                                          <a class="dropdown-item" href="#">Pago Estudio Solicitud Arrendamiento</a>
+                                      </li>
+                                      <li>
+                                          <a class="dropdown-item" href="#">Pago de Obligaciones</a>
+                                      </li>                        
+                                      <li>
+                                          <a class="dropdown-item" href="#">Primas seguro de arrendamiento</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+              <a class="button">
+                  Estudio Arrendamiento
+              </a>
+            </div>
+          </div>
+      </nav>
       <div class="miga">
           <div class="container">
-            <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">Acerca de nosotros</a> / <a href="#" class="blue">Gobierno Corporativo</a>
+              <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">Acerca de nosotros</a> / <a href="#" class="blue">Gobierno Corporativo</a>
           </div>
-      </div>    
-  </div>
+      </div>
+    </header>
 
-  <!-- menú móvil -->
-  <div id="overlay"></div>
-  <div id="mySidenav" class="sidenav d-lg-none">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/movil/cerrar.png" alt=""></a>
-      <div class="accordion accordion-flush" id="menu-lateral">
-          <div class="accordion-item">
-              <div class="accordion-header" id="menu1-h">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Acerca de nosotros
-                  </button>
-              </div>
-              <div id="menu1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#menu-lateral">
-                  <div class="accordion-body">
-                      <ul>
-                          <li>
-                              <a href="#">
-                                  Quiénes somos
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  Grupo Bolívar
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  Lenguaje Inmobiliario
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  Puntos de servicio
-                              </a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-          </div> 
-          
-          <div class="accordion-header link" id="menu2-h">
-              <a class="accordion-button" href="#">
-                  Propietario
-              </a>
-          </div>
-          
-          <div class="accordion-header link" id="menu3-h">
-              <a class="accordion-button" href="#">
-                  Arrendatario
-              </a>
-          </div>
-              
-          <div class="accordion-header link" id="menu4-h">
-              <a class="accordion-button" href="#">
-                  Intermediarios Inmobiliarios
-              </a>
-          </div>
-              
-          
+    <!-- Header móvil -->
+    <div class="header-mb d-lg-none">
+        <div class="red-band"></div>
+        <div class="container">
+            <div class="logo-mb">
+                <img src="img/logo.svg" alt="" class="img" width="240" height="30">
+            </div>
+            <img src="img/movil/icon_menu.svg" alt="" class="menu abrir" onclick="openNav()">
+            <img src="img/movil/icon_cerrar.svg" alt="" class="menu cerrar" onclick="closeNav()"></a>              
+        </div>                      
+        <div class="miga">
+            <div class="container">
+                <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">Acerca de nosotros</a> / <a href="#" class="blue">Gobierno Corporativo</a>
+            </div>
+        </div> 
+    </div>
 
-          <div class="accordion-item">
-              <div class="accordion-header" id="menu5-h">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Pagos Electrónicos
-                  </button>
+    <!-- menú móvil -->
+    <div id="overlay"></div>
+    <div id="mySidenav" class="sidenav d-lg-none">        
+        <div class="accordion accordion-flush" id="menu-lateral">
+            <div class="accordion-item">
+                <div class="accordion-header" id="menu1-h">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Acerca de nosotros
+                    </button>
+                </div>
+                <div id="menu1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#menu-lateral">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Quiénes somos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Grupo Bolívar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Lenguaje Inmobiliario
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Puntos de servicio
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="accordion-header link" id="menu2-h">
+                <a class="accordion-button" href="#">
+                    Propietario
+                </a>
+            </div>
+            
+            <div class="accordion-header link" id="menu3-h">
+                <a class="accordion-button" href="#">
+                    Arrendatario
+                </a>
+            </div>
+                
+            <div class="accordion-header link" id="menu4-h">
+                <a class="accordion-button" href="#">
+                    Intermediarios Inmobiliarios
+                </a>
+            </div>
+                
+            
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="menu5-h">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Pagos Electrónicos
+                    </button>
+                </div>
+                <div id="menu5" class="accordion-collapse collapse" aria-labelledby="menu5-h" data-bs-parent="#menu-lateral">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Pago Estudio Solicitud Arrendamiento
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Pago de Obligaciones
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Primas seguro de arrendamiento
+                                </a>
+                            </li>                            
+                        </ul>                        
+                    </div>
+                </div>
+            </div>           
+        </div> 
+        <a href="#" class="btn-blue">
+            <img src="img/movil/estudio.png" alt="">
+            Estudio Arrendamiento
+        </a>
+    </div>
+	    
+
+    <section class="brn">
+      <div class="banner">            
+          <picture>
+              <source media="(max-width:575.98px)" srcset="img/gobierno/banner-mobile_gobierno-corpo.png">
+              <source media="(max-width:991px)" srcset="img/gobierno/banner-tablet_gobierno_opt.png">              
+              <img src="img/gobierno/banner-gobierno.png" alt="" class="img-fluid">
+          </picture>
+          <div class="container">
+              <div class="bluebox">
+                  <h2>Gobierno Corporativo</h2>
               </div>
-              <div id="menu5" class="accordion-collapse collapse" aria-labelledby="menu5-h" data-bs-parent="#menu-lateral">
-                  <div class="accordion-body">
-                      <ul>
-                          <li>
-                              <a href="#">
-                                  Pago Estudio Solicitud Arrendamiento
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  Pago de Obligaciones
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  Primas seguro de arrendamiento
-                              </a>
-                          </li>                            
-                      </ul>                        
-                  </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="titulo">
+    <h1 class="text-center tit-espace">
+      Definición del buen Gobierno
+    </h1>
+  </section>
+
+
+  <section>
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-xxl-7 col-lg-7 col-md-12 ">
+          <div class="nuestra bordered-box rbox">
+            <h2 class="text-start">
+              Definición de Gobierno Corporativo <sup>1</sup> 
+            </h2>
+            <p class="py-3">
+              El término de Gobierno Corporativo puede tener múltiples significados, para efectos de INVESTIGACIONES Y COBRANZAS EL LIBERTADOR S.A. se entenderá como una decisión para crear valor y generar confianza para sus diferentes Grupos de interés <sup>2</sup>. 
+            </p>
+            <p class="pb-2">
+              <img src="img/gobierno/GobiernoCor_img.png" width="600" height="445" class="img-fluid mx-auto d-block">
+            </p>
+            <p class="fs-12 pt-5 sgrayline">
+              1. Información con corte a 30 de noviembre de 2008.
+            </p>
+            <p class="fs-12 pb-5">
+              2. La Superintendencia de Sociedades ha definido a los Grupos de Interés como “el conjunto de personas naturales o jurídicas cuyas características comunes 
+              permiten considerarlos como afectados por el desarrollo de las actividades de la compañía y por las reglas de su gobierno. Dentro de los Grupos de Interés 
+              de una Compañía además de los accionistas, se encuentran, entre otros, los clientes, los proveedores, trabajadores, las autoridades supervisoras y la 
+              comunidad”. Glosario Encuesta de Gobierno Corporativo y Responsabilidad Social. Superintendencia de Sociedades. 2008. 
+            </p>
+          </div>
+        </div>
+
+        <div class="col-xxl-5 col-lg-5 col-md-12">
+          <div class="nuestra-l">
+            <div class="colum-sec-full bordered-box   rbox position-relative">
+              <h2 class="text-start">
+                Importancia del Gobierno Corporativo
+              </h2>
+              <ul>
+                <li>Formaliza los principios y políticas de transparencia, conducta y ética que tiene una Sociedad.</li><br>
+                <li>Establece las competencias y los órganos que toman decisiones al interior de una Empresa.</li><br>
+                <li>Permite identificar el tipo de información a revelar por parte de una Compañía y los mecanismos a través de los cuales se realiza tal divulgación.</li><br>
+                <li>Fomenta en los diferentes Grupos de Interés al interior de una Compañía, una cultura basada en transparencia y ética.</li><br>
+                <li>A largo plazo genera confianza en todos los Grupos de Interés de una Sociedad, tanto internos como externos. </li>
+              </ul>
+              <div class="full">
+                <img src="img/gobierno/gobierno_02.png" width="472" height="274" class="img-fluid">
+              </div>              
+            </div>                        
+          </div>          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="min-container p-3">
+        <div class="bordered-box rbox">
+          <div class="row">
+            <div class="col-xxl-12">
+              <div class="colum-sec">
+                <div class="colum-sec-p">
+                  <h3 class="text-start">
+                    Normas que regulan el Gobierno Corporativo
+                  </h3>
+                  <img src="img/gobierno/normas.png">
+                </div>
               </div>
-          </div>           
-      </div> 
-      <a href="#" class="btn-blue">
-          <img src="img/movil/estudio.png" alt="">
-          Estudio Arrendamiento
-      </a>
-  </div>
-	
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <section>
-        <div class="banner">
-            <img src="img/gobierno/banner-gobierno.png" alt="" class="img-fluid d-none d-lg-block">            
-            <img src="img/gobierno/banner-tablet_gobierno_opt.png" alt="" class="img-fluid d-none d-md-block d-sm-block d-lg-none">
-            <img src="img/gobierno/banner-mobile_gobierno-corpo.png" alt="" class="d-block d-sm-none">
-            <div class="container">
-                <div class="bluebox">
-                    <p>Gobierno Corporativo</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contenido">
-    	<h1>
-            Definición del buen Gobierno
-      </h1>
+    	
         
 
 <div class="container">
   <div class="row g-3">
-    <div class="col-xxl-7">
-      <div class="colum-sec">
-        <div class="colum-sec-p">
-        <h3 class="text-start">
-          Definición de Gobierno Corporativo <sup>1</sup> 
-        </h3>
-        <p>
-          El término de Gobierno Corporativo puede tener múltiples significados, para efectos de INVESTIGACIONES Y COBRANZAS EL LIBERTADOR S.A. se entenderá como una decisión para crear valor y generar confianza para sus diferentes Grupos de interés2. 
-        </p>
-        <img src="img/gobierno/gobiernocor.png">
-        <div class="py-2"></div>
-        <p class="mb-0 fs-12">
-          1. Información con corte a 30 de noviembre de 2008.
-        </p>
-        <p class="fs-12">
-          2. La Superintendencia de Sociedades ha definido a los Grupos de Interés como “el conjunto de personas naturales o jurídicas cuyas características comunes permiten considerarlos como afectados por el desarrollo de las actividades de la compañía y por las reglas de su gobierno. Dentro de los Grupos de Interés de una Compañía además de los accionistas, se encuentran, entre otros, los clientes, los proveedores, trabajadores, las autoridades supervisoras y la comunidad”. Glosario Encuesta de Gobierno Corporativo y Responsabilidad Social. Superintendencia de Sociedades. 2008. 
-        </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-xxl-5">
-      <div class="colum-sec">
-        <div class="colum-sec-p">
-        <h3 class="text-start tline">
-          Importancia del Gobierno Corporativo
-        </h3>
-        <ul>
-          <li>Formaliza los principios y políticas de transparencia, conducta y ética que tiene una Sociedad.</li><br>
-          <li>Establece las competencias y los órganos que toman decisiones al interior de una Empresa.</li><br>
-          <li>Permite identificar el tipo de información a revelar por parte de una Compañía y los mecanismos a través de los cuales se realiza tal divulgación.</li><br>
-          <li>Fomenta en los diferentes Grupos de Interés al interior de una Compañía, una cultura basada en transparencia y ética.</li><br>
-          <li>A largo plazo genera confianza en todos los Grupos de Interés de una Sociedad, tanto internos como externos. </li>
-        </ul>
-        </div>
-        <img src="img/gobierno/gobierno_02.png">
-      </div>
-    </div>
-    <div class="col-xxl-12">
-      <div class="colum-sec">
-        <div class="colum-sec-p">
-          <h3 class="text-start">
-            Normas que regulan el Gobierno Corporativo
-          </h3>
-          <img src="img/gobierno/normas.png">
-        </div>
-      </div>
-    </div>
+    
+    
+    
     <div class="col-xxl-7">
       <div class="colum-sec">
         <div class="colum-sec-p">
