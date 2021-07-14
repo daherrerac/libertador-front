@@ -84,6 +84,9 @@ h3{
     font-size: 1.375rem;
     color: #253150;
 }
+h4{
+    color: #253150;
+}
 p{
     font-family:'RobotoRegular';  
     color: #253150;  
@@ -550,7 +553,7 @@ section.brn{
 .blue-bg h4 span{
     background-color: #BD0F14;
     width: max-content;
-    padding: 0 1em;
+    padding: 0 2em 0 1em;
 }
 .btn-gray{
     font-family: 'GothamBold';
@@ -686,7 +689,8 @@ section.brn{
     position: relative;
     margin-top: 55px;
     margin-left: 1.875rem;   
-    width: 300px; 
+    width: 350px; 
+    font-size: 1.75rem;
 }
 .seguro h3::after{
     content: '';
@@ -2121,6 +2125,9 @@ footer .lineav{
     }
     h2.beneficios{
         max-width: 375px;
+        font-size: 1.375rem;
+    }
+    .seguro h3,.proteger h2{
         font-size: 1.375rem;
     }
     .adv-w2 img {        

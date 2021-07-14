@@ -581,7 +581,7 @@ section{
 .blue-bg h4 span{
     background-color: #BD0F14;
     width: max-content;
-    padding: 0 1em;
+    padding: 0 2em 0 1em;
 }
 .btn-gray{
     font-family: 'GothamBold';
