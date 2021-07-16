@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2.236445mm"
+   height="3.8496826mm"
+   viewBox="0 0 2.236445 3.8496826"
+   version="1.1"
+   id="svg31"
+   sodipodi:docname="icon_flecha-inactivo-der.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
+  <defs
+     id="defs25" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="-0.84740163"
+     inkscape:cy="26.716283"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata28">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-157.70387,-110.29067)">
+    <path
+       class="st0"
+       d="m 159.94032,112.21546 c 0,0.0819 -0.0331,0.14785 -0.0818,0.19709 l -1.65803,1.64163 c -0.1149,0.11489 -0.2955,0.11489 -0.41041,0 -0.11494,-0.11492 -0.11494,-0.29552 0,-0.41047 l 1.44466,-1.44465 -1.42829,-1.41178 c -0.11495,-0.1149 -0.11495,-0.29549 0,-0.41041 0.11495,-0.11494 0.29545,-0.11494 0.41036,0 l 1.64171,1.60876 c 0.0499,0.0819 0.0818,0.14779 0.0818,0.22981 0,0 0,0 0,2e-5 z"
+       id="path4"
+       style="fill:#253150;stroke-width:0.16417" />
+  </g>
+</svg>

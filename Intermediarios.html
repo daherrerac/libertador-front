@@ -124,13 +124,13 @@
             </div>
             <img src="img/movil/icon_menu.svg" alt="" class="menu abrir" onclick="openNav()">
             <img src="img/movil/icon_cerrar.svg" alt="" class="menu cerrar" onclick="closeNav()"></a>              
-        </div>                      
-        <div class="miga">
-            <div class="container">
-                <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">intermediarios inmobiliarios</a> 
-            </div>
-        </div> 
+        </div>                              
     </div>
+    <div class="miga d-lg-none">
+        <div class="container">
+            <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">intermediarios inmobiliarios</a> 
+        </div>
+    </div> 
 
     <!-- menú móvil -->
     <div id="overlay"></div>
@@ -271,6 +271,19 @@
     <section class="position-relative">
         <div class="py-4"></div>                   
         <div >
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Link with href
+                </a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Button with data-bs-target
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+            </div>
             <div class="gray-bg fondo-servicios"></div>
             <div class="container position-relative">
                 <div class="slider-servicios d-flex justify-content-center">
@@ -380,7 +393,7 @@
         </div>                               
     </section>
 
-    <section class="nproductos">
+    <section class="nproductos ">
         <div class="container colum-sec-p">
             <h2 class="mb-4">Nuestros Productos</h2>
           </div>
@@ -389,14 +402,16 @@
                 <div class="col-xxl-6 col-xl-6 col-lg-4">                                  
                     <div class="especial-img bordered-box rbox">
                         <div class="row g-2">
-                            <div class="col-xxl-4 col-lg-5 col-md-12">
-                                <picture class="d-block d-lg-none d-xl-block">                                    
-                                    <source media="(max-width:991px)" srcset="img/inmobiliarios/inmobiliario.png">                                    
-                                    <img src="img/inmobiliarios/inmobiliario02.png"  class="img-fluid">
-                                </picture>
-                                
+                            <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-12">
+                                <div class="d-none d-xl-block">
+                                    <img src="img/inmobiliarios/inmobiliario02.png"  class="img-fluid" width="175" height="313">  
+                                </div>
+                                <div class="d-lg-none">
+                                    <img src="img/inmobiliarios/inmobiliario.png"  class="img-fluid" width="342" height="137">
+                                </div>
+                                                                                                                                                                          
                             </div>
-                            <div class="col-xxl-8 col-xl-7 col-lg-12 col-md-12">
+                            <div class="col-xxl-8 col-xl-8 col-lg-12 col-md-12">
                                 <div class="colum-dato h-100 interm">
                                     <h3 class="text-start mt-4">Póliza para Contratos de Arrendamiento de Seguros Bolívar</h3>
                                     <p>Frente a todos los riesgos presentes al momento de arrendar un inmueble, Seguros Comerciales Bolívar S.A. 

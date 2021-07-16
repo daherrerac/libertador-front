@@ -116,3 +116,4 @@ $(window).on('load resize orientationchange', function() {
         }
     });
 });
+

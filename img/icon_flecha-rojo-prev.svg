@@ -8,13 +8,13 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   id="Grupo_7585"
+   id="Capa_1"
    x="0px"
    y="0px"
-   viewBox="0 0 53 53"
-   style="enable-background:new 0 0 53 53;"
+   viewBox="0 0 52.8 52.8"
+   style="enable-background:new 0 0 52.8 52.8;"
    xml:space="preserve"
-   sodipodi:docname="icon_flecha-izq.svg"
+   sodipodi:docname="icon_flecha-rojo-prev.svg"
    inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"><metadata
    id="metadata18"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
@@ -32,37 +32,37 @@
    inkscape:window-height="1017"
    id="namedview14"
    showgrid="false"
-   inkscape:zoom="16.037736"
-   inkscape:cx="26.5"
-   inkscape:cy="26.5"
+   inkscape:zoom="16.098485"
+   inkscape:cx="26.4"
+   inkscape:cy="26.4"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
-   inkscape:current-layer="Trazado_3906_2_" />
+   inkscape:current-layer="g11" />
 <style
    type="text/css"
    id="style2">
-	.st0{fill:none;}
-	.st1{fill:#B0B6BA;}
+	.st0{fill:#F8E6E7;}
+	.st1{fill:#BD0F14;}
 </style>
-<circle
+<g
+   id="g11">
+	<circle
    class="st0"
-   cx="26.5"
-   cy="26.5"
+   cx="26.4"
+   cy="26.4"
    r="25"
    id="circle4" />
-<path
+	<path
    class="st1"
-   d="M26.5,1.5c13.8,0,25,11.2,25,25s-11.2,25-25,25s-25-11.2-25-25S12.7,1.5,26.5,1.5 M26.5,0.5  c-14.4,0-26,11.6-26,26s11.6,26,26,26s26-11.6,26-26S40.9,0.5,26.5,0.5L26.5,0.5z"
+   d="M26.4,1.4c13.8,0,25,11.2,25,25s-11.2,25-25,25s-25-11.2-25-25S12.6,1.4,26.4,1.4 M26.4,0.4   c-14.4,0-26,11.6-26,26s11.6,26,26,26s26-11.6,26-26S40.7,0.4,26.4,0.4L26.4,0.4z"
    id="path6" />
-<g
-   id="Trazado_3906_2_">
 	<g
-   id="g10"
-   transform="rotate(180,26.5125,26.5125)">
+   id="Trazado_3906_2_"
+   transform="rotate(180,26.3125,26.4125)">
 		<path
    class="st1"
-   d="m 21.6,37.5 c -0.3,0 -0.6,-0.1 -0.9,-0.4 -0.5,-0.5 -0.5,-1.3 0,-1.7 l 9,-8.8 -9,-9 c -0.5,-0.5 -0.5,-1.3 0,-1.7 0.5,-0.5 1.3,-0.5 1.7,0 l 9.9,9.9 c 0.2,0.2 0.4,0.5 0.4,0.9 0,0.3 -0.1,0.6 -0.4,0.9 l -9.9,9.7 c -0.2,0.1 -0.5,0.2 -0.8,0.2 z"
+   d="m 21.4,37.4 c -0.3,0 -0.6,-0.1 -0.9,-0.4 -0.5,-0.5 -0.5,-1.3 0,-1.7 l 9,-8.8 -9,-9 C 20,17 20,16.2 20.5,15.8 c 0.5,-0.5 1.3,-0.5 1.7,0 l 9.9,9.9 c 0.2,0.2 0.4,0.5 0.4,0.9 0,0.3 -0.1,0.6 -0.4,0.9 L 22.3,37 c -0.2,0.3 -0.5,0.4 -0.9,0.4 z"
    id="path8" />
 	</g>
 </g>
