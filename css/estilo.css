@@ -256,7 +256,7 @@ section.npage{
     display: flex;
     justify-content: center;
     align-items: center;
-    height:calc(100vh - 105px);    
+    height:100vh;    
 }
 .vcpage .numero{
     font-family: 'GothamBlack';
