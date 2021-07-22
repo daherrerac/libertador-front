@@ -3355,12 +3355,12 @@ footer .lineav{
         margin-top: 50px;
         margin-bottom: 80px;
     }
-    .search-box{
-        width: 90%;        
+    .search-box{                
         margin:auto;
     }
     .search-box.filtro {
         height: 275px;
+        margin-bottom: 2em;
     }
     .search-box h3.left {
         font-size: 1.25rem;
