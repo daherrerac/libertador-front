@@ -28,18 +28,18 @@
     <title>Lenguaje inmobiliario</title>
   </head>
   <body>
-    <!-- menu desktop  -->
-    <header class="d-none d-lg-block">
+    <!-- Header escritorio -->
+    <header class="d-none d-lg-block brline">
         <div class="red-band"></div>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-              <a class="navbar-brand" href="#">
-                  <img src="img/logo.svg" alt="" width="240" height="30">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.svg" alt="" width="240" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">                    
                     <li class="nav-item">
                         <div class="nav-box">
@@ -103,124 +103,119 @@
                 <a class="button">
                     Estudio Arrendamiento
                 </a>
-              </div>
             </div>
-        </nav>
-        <div class="miga">
-            <div class="container">
-                <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">lenguaje inmobiliario</a>
             </div>
-        </div>
+        </nav>        
     </header>
-  
-      <!-- Header móvil -->
+	
+    <!-- Header móvil -->
     <div class="header-mb d-lg-none">
-          <div class="red-band"></div>
-          <div class="container">
-              <div class="logo-mb">
-                  <img src="img/logo.svg" alt="" class="img" width="240" height="30">
-              </div>
-              <img src="img/movil/icon_menu.svg" alt="" class="menu abrir" onclick="openNav()">
-              <img src="img/movil/icon_cerrar.svg" alt="" class="menu cerrar" onclick="closeNav()"></a>              
-          </div>                               
-    </div>
-    <div class="miga d-lg-none">
+        <div class="red-band"></div>
         <div class="container">
-            <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">lenguaje inmobiliario</a>
-        </div>
+            <div class="logo-mb">
+                <img src="img/logo.svg" alt="" class="img" width="240" height="30">
+            </div>
+            <img src="img/movil/icon_menu.svg" alt="" class="menu abrir" onclick="openNav()">
+            <img src="img/movil/icon_cerrar.svg" alt="" class="menu cerrar" onclick="closeNav()"></a>              
+        </div>                              
     </div>
-  
-      <!-- menú móvil -->
+    <div class="miga">
+		<div class="container">
+			<a href="index.html" class="red">Inicio</a><span> / </span> <a href="#" class="blue">lenguaje inmobiliario</a>
+		</div>
+	</div>
+
+    <!-- menú móvil -->
     <div id="overlay"></div>
     <div id="mySidenav" class="sidenav d-lg-none">        
         <div class="accordion accordion-flush" id="menu-lateral">
-              <div class="accordion-item">
-                  <div class="accordion-header" id="menu1-h">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Acerca de nosotros
-                      </button>
-                  </div>
-                  <div id="menu1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#menu-lateral">
-                      <div class="accordion-body">
-                          <ul>
-                              <li>
-                                  <a href="#">
-                                      Quiénes somos
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#">
-                                      Grupo Bolívar
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#">
-                                      Lenguaje Inmobiliario
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#">
-                                      Puntos de servicio
-                                  </a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-              </div> 
-              
-              <div class="accordion-header link" id="menu2-h">
-                  <a class="accordion-button" href="#">
-                      Propietario
-                  </a>
-              </div>
-              
-              <div class="accordion-header link" id="menu3-h">
-                  <a class="accordion-button" href="#">
-                      Arrendatario
-                  </a>
-              </div>
-                  
-              <div class="accordion-header link" id="menu4-h">
-                  <a class="accordion-button" href="#">
-                      Intermediarios Inmobiliarios
-                  </a>
-              </div>
-                  
-              
-  
-              <div class="accordion-item">
-                  <div class="accordion-header" id="menu5-h">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Pagos Electrónicos
-                      </button>
-                  </div>
-                  <div id="menu5" class="accordion-collapse collapse" aria-labelledby="menu5-h" data-bs-parent="#menu-lateral">
-                      <div class="accordion-body">
-                          <ul>
-                              <li>
-                                  <a href="#">
-                                      Pago Estudio Solicitud Arrendamiento
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#">
-                                      Pago de Obligaciones
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#">
-                                      Primas seguro de arrendamiento
-                                  </a>
-                              </li>                            
-                          </ul>                        
-                      </div>
-                  </div>
-              </div>           
-          </div> 
-          <a href="#" class="btn-blue">
-              <img src="img/movil/estudio.png" alt="">
-              Estudio Arrendamiento
-          </a>
+            <div class="accordion-item">
+                <div class="accordion-header" id="menu1-h">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Acerca de nosotros
+                    </button>
+                </div>
+                <div id="menu1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#menu-lateral">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Quiénes somos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Grupo Bolívar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Lenguaje Inmobiliario
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Puntos de servicio
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="accordion-header link" id="menu2-h">
+                <a class="accordion-button" href="#">
+                    Propietario
+                </a>
+            </div>
+            
+            <div class="accordion-header link" id="menu3-h">
+                <a class="accordion-button" href="#">
+                    Arrendatario
+                </a>
+            </div>
+                
+            <div class="accordion-header link" id="menu4-h">
+                <a class="accordion-button" href="#">
+                    Intermediarios Inmobiliarios
+                </a>
+            </div>
+                
+            
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="menu5-h">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Pagos Electrónicos
+                    </button>
+                </div>
+                <div id="menu5" class="accordion-collapse collapse" aria-labelledby="menu5-h" data-bs-parent="#menu-lateral">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Pago Estudio Solicitud Arrendamiento
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Pago de Obligaciones
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Primas seguro de arrendamiento
+                                </a>
+                            </li>                            
+                        </ul>                        
+                    </div>
+                </div>
+            </div>           
+        </div> 
+        <a href="#" class="btn-blue">
+            <img src="img/movil/estudio.png" alt="">
+            Estudio Arrendamiento
+        </a>
     </div>
 
     <!-- contenido -->
@@ -295,9 +290,9 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="texto">
-                            <h3 class="termino">
+                            <h4 class="termino">
                                 Cesión entre arrendadores
-                            </h3>
+                            </h4>
     
                             Documento escrito por medio del cual un Arrendador transfiere a otra persona (que asume la calidad de nueva Arrendadora), 
                             todos los derechos y obligaciones pactados en el contrato de arrendamiento. Hay cesión expresa (notificación escrita al 
@@ -306,9 +301,9 @@
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="texto">
-                            <h3 class="termino">
+                            <h4 class="termino">
                                 Cesión entre arrendatarios
-                            </h3>
+                            </h4>
     
                             Documento escrito por medio del cual un arrendatario y/o deudor solidario traslada a otra persona los derechos y obligaciones 
                             del contrato de arrendamiento para que asuma la calidad de arrendatario y/o deudor solidario. La cesión debe ser autorizada 

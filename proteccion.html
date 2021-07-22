@@ -28,18 +28,18 @@
     <title>Proteccion</title>
   </head>
   <body>
-    <!-- menu desktop  -->
-    <header class="d-none d-lg-block">
+    <!-- Header escritorio -->
+    <header class="d-none d-lg-block brline">
         <div class="red-band"></div>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-              <a class="navbar-brand" href="#">
-                  <img src="img/logo.svg" alt="" width="240" height="30">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.svg" alt="" width="240" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">                    
                     <li class="nav-item">
                         <div class="nav-box">
@@ -103,16 +103,11 @@
                 <a class="button">
                     Estudio Arrendamiento
                 </a>
-              </div>
             </div>
-        </nav>
-        <div class="miga">
-            <div class="container">
-                <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">políticas de protección de datos</a>
             </div>
-        </div>
+        </nav>        
     </header>
-  
+	
     <!-- Header móvil -->
     <div class="header-mb d-lg-none">
         <div class="red-band"></div>
@@ -122,12 +117,105 @@
             </div>
             <img src="img/movil/icon_menu.svg" alt="" class="menu abrir" onclick="openNav()">
             <img src="img/movil/icon_cerrar.svg" alt="" class="menu cerrar" onclick="closeNav()"></a>              
-        </div>                               
+        </div>                              
     </div>
-    <div class="miga d-lg-none">
-    <div class="container">
-        <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">políticas de protección de datos</a>
-    </div>
+    <div class="miga">
+		<div class="container">
+			<a href="index.html" class="red">Inicio</a><span> / </span> <a href="#" class="blue">políticas de protección de datos</a>
+		</div>
+	</div>
+
+    <!-- menú móvil -->
+    <div id="overlay"></div>
+    <div id="mySidenav" class="sidenav d-lg-none">        
+        <div class="accordion accordion-flush" id="menu-lateral">
+            <div class="accordion-item">
+                <div class="accordion-header" id="menu1-h">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Acerca de nosotros
+                    </button>
+                </div>
+                <div id="menu1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#menu-lateral">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Quiénes somos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Grupo Bolívar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Lenguaje Inmobiliario
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Puntos de servicio
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="accordion-header link" id="menu2-h">
+                <a class="accordion-button" href="#">
+                    Propietario
+                </a>
+            </div>
+            
+            <div class="accordion-header link" id="menu3-h">
+                <a class="accordion-button" href="#">
+                    Arrendatario
+                </a>
+            </div>
+                
+            <div class="accordion-header link" id="menu4-h">
+                <a class="accordion-button" href="#">
+                    Intermediarios Inmobiliarios
+                </a>
+            </div>
+                
+            
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="menu5-h">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Pagos Electrónicos
+                    </button>
+                </div>
+                <div id="menu5" class="accordion-collapse collapse" aria-labelledby="menu5-h" data-bs-parent="#menu-lateral">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Pago Estudio Solicitud Arrendamiento
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Pago de Obligaciones
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Primas seguro de arrendamiento
+                                </a>
+                            </li>                            
+                        </ul>                        
+                    </div>
+                </div>
+            </div>           
+        </div> 
+        <a href="#" class="btn-blue">
+            <img src="img/movil/estudio.png" alt="">
+            Estudio Arrendamiento
+        </a>
     </div>
   
     <!-- menú móvil -->
@@ -247,41 +335,43 @@
 
     <section>                
         <div class="container ppoliticas">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <div class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Normatividad
-                    </button>
-                </div>
-                  <div id="flush-collapseOne" class="accordion-collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="row">
-                            <div class="col-lg-10 offset-lg-1">
-                                <div class="aviso">
-                                    Descargue aquí los documentos:
-                                    <ul class="mt-3">
-                                        <li>
-                                            <a href="#" class="red hred">
-                                                LEY 1581 DEL 17 DE OCTUBRE DE 2012 
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="red hred">
-                                                DECRETO 1377 DE 2013 REGLAMENTARIO DE LA LEY DE DATOS PERSONALES
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>  
-                        </div>
+            <div class="min-container">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <div class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Normatividad
+                        </button>
                     </div>
-                  </div>
-                </div>                                                                                               
-            </div>
-            <div class="linea my-5"></div>
-            <div class="fecha text-start">
-                Publicado 21/09/2020 - 8:57am   |   Actualizado 21/01/2021 - 8:50am 
+                      <div id="flush-collapseOne" class="accordion-collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-lg-10 offset-lg-1">
+                                    <div class="aviso">
+                                        Descargue aquí los documentos:
+                                        <ul class="mt-3">
+                                            <li>
+                                                <a href="#" class="red hred">
+                                                    LEY 1581 DEL 17 DE OCTUBRE DE 2012 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="red hred">
+                                                    DECRETO 1377 DE 2013 REGLAMENTARIO DE LA LEY DE DATOS PERSONALES
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                      </div>
+                    </div>                                                                                               
+                </div>
+                <div class="linea my-5"></div>
+                <div class="fecha text-start">
+                    Publicado 21/09/2020 - 8:57am   |   Actualizado 21/01/2021 - 8:50am 
+                </div>
             </div>
         </div>
     </section>
@@ -289,155 +379,156 @@
     <section class="ftr">  
         <div class="footer-sec">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-2 col-md-4 d-none d-xl-block">
-                        <div class="logos">                            
-                            <img src="img/logo-gris.svg" alt="" class="logo" width="140" height="17">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 d-none d-md-block">
-                        <h4>SERVICIOS</h4>
-                        <ul>
-                            <li><a href="#">Arrendatario</a></li>
-                            <li><a href="#">Inmobiliaria</a></li>
-                            <li><a href="#">Propietario</a></li>                        
-                        </ul>
-                    </div>
-    
-                    <div class="col-sm-12 d-md-none">
-                        <div class="accordion accordion-flush" id="servicios">
-                            <div class="accordion-item">
-                                <div class="accordion-header" id="servicios1">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s1" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        SERVICIOS
-                                    </button>
-                                </div>
-                                <div id="s1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#servicios">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    Arrendatario
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Inmobiliaria
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Propietario
-                                                </a>
-                                            </li>                                            
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>                                                                                  
-                        </div>
-                    </div>
-    
-    
-    
-                    <div class="col-lg-3 col-md-5 d-none d-md-block">
-                        <h4>ENLACES DE INTERÉS</h4>
-                        <ul>
-                            <li><a href="#">Grupo Bolívar</a></li>
-                            <li><a href="#">Lenguaje Inmobiliario</a></li>
-                            <li><a href="#">Artículos de Interés</a></li>                        
-                            <li><a href="#">Agencias de seguros El Libertador</a></li>
-                            <li><a href="#">Puntos de Servicio</a></li>
-                        </ul>
-                    </div>
-    
-                    <div class="col-sm-12 d-md-none">
-                        <div class="accordion accordion-flush" id="interes">
-                            <div class="accordion-item">
-                                <div class="accordion-header" id="interes1">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i1" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        ENLACES DE INTERÉS
-                                    </button>
-                                </div>
-                                <div id="i1" class="accordion-collapse collapse" aria-labelledby="interes" data-bs-parent="#interes">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    Grupo Bolívar
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Lenguaje Inmobiliario
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Artículos de Interés
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Agencias de seguros El Libertador
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Puntos de Servicio
-                                                </a>
-                                            </li>                                            
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>                                                                                  
-                        </div>
-                    </div>
-    
-                    <div class="col-lg-3 col-md-4 d-none d-md-block contactenos">
-                        <h4>CONTÁCTENOS</h4>                                                
-                        <div class="d-block pb-1"><span>Teléfono: +57(1) 3527070</span></div> 
-                        <div class="d-block pb-1"><span>Email:</span><a href="mailto:direccióncorreo@email.com" class="blue hblue">direccióncorreo@email.com</a></div>                                                
-                        <div class="d-block"><strong class="blue oficina">Oficina principal</strong> </div> 
-                        <div class="d-block pb-1"><span>Dirección: Cra 13 # 26 - 45 Piso 16</span></div>
-                        <div class="d-block pb-1"><span>Horario de atención: 8:00 a.m. - 5:00 p.m.</span></div>                            
-                        
-                    </div>
-    
-                    <div class="col-sm-12 d-md-none">
-                        <div class="accordion accordion-flush" id="contacto">
-                            <div class="accordion-item">
-                                <div class="accordion-header" id="contacto1">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c1" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        CONTÁCTENOS
-                                    </button>
-                                </div>
-                                <div id="c1" class="accordion-collapse collapse" aria-labelledby="contacto" data-bs-parent="#contacto">
-                                    <div class="accordion-body contactenos">                                        
-                                        <div class="d-block pb-1"><span>Teléfono: +57(1) 3527070</span></div> 
-                                        <div class="d-block pb-1"><span>Email:</span><a href="mailto:direccióncorreo@email.com" class="blue hblue">direccióncorreo@email.com</a></div>                                                
-                                        <div class="d-block"><strong class="blue oficina">Oficina principal</strong> </div> 
-                                        <div class="d-block pb-1"><span>Dirección: Cra 13 # 26 - 45 Piso 16</span></div>
-                                        <div class="d-block pb-1"><span>Horario de atención: 8:00 a.m. - 5:00 p.m.</span></div> 
-                                    </div>
-                                </div>
-                            </div>                                                                                  
-                        </div>
-                    </div>
-    
-                    <div class="col-lg-2 col-md-12">
-                        <div class="lineav"></div>
-                        <div class="contenido-wf">
-                            <h5>Nuestras redes sociales:</h5>
-                            <div class="social">
-                                <ul>
-                                    <li><a href="#"><img src="img/icon-rs_instagram-blanco.svg" alt="" width="38" height="38"></a></li>
-                                    <li><a href="#"><img src="img/icon-rs_twitter-blanco.svg" alt="" width="38" height="38"></a></li>
-                                    <li><a href="#"><img src="img/icon-rs_facebook-blanco.svg" alt="" width="38" height="38"></a></li>
-                                </ul>
+                <div class="min-container">
+                    <div class="row g-0">
+                        <div class="col-lg-2 col-md-4 d-none d-xl-block">
+                            <div class="logos">                            
+                                <img src="img/logo-gris.svg" alt="" class="logo" width="140" height="17">
                             </div>
-                            <h5>Busca tu nuevo hogar en:</h5>
-                            <div class="cien">
-                                <img src="img/logo_ciencuadras.svg" alt="" width="140" height="30" >
+                        </div>
+                        <div class="col-lg-2 col-md-3 d-none d-md-block">
+                            <h4>SERVICIOS</h4>
+                            <ul>
+                                <li><a href="#">Arrendatario</a></li>
+                                <li><a href="#">Inmobiliaria</a></li>
+                                <li><a href="#">Propietario</a></li>                        
+                            </ul>
+                        </div>
+        
+                        <div class="col-sm-12 d-md-none">
+                            <div class="accordion accordion-flush" id="servicios">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" id="servicios1">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            SERVICIOS
+                                        </button>
+                                    </div>
+                                    <div id="s1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#servicios">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        Arrendatario
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Inmobiliaria
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Propietario
+                                                    </a>
+                                                </li>                                            
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>                                                                                  
+                            </div>
+                        </div>
+        
+        
+        
+                        <div class="col-lg-3 col-md-5 d-none d-md-block">
+                            <h4>ENLACES DE INTERÉS</h4>
+                            <ul>
+                                <li><a href="#">Grupo Bolívar</a></li>
+                                <li><a href="#">Lenguaje Inmobiliario</a></li>
+                                <li><a href="#">Artículos de Interés</a></li>                        
+                                <li><a href="#">Agencias de seguros El Libertador</a></li>
+                                <li><a href="#">Puntos de Servicio</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="col-sm-12 d-md-none">
+                            <div class="accordion accordion-flush" id="interes">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" id="interes1">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            ENLACES DE INTERÉS
+                                        </button>
+                                    </div>
+                                    <div id="i1" class="accordion-collapse collapse" aria-labelledby="interes" data-bs-parent="#interes">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        Grupo Bolívar
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Lenguaje Inmobiliario
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Artículos de Interés
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Agencias de seguros El Libertador
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Puntos de Servicio
+                                                    </a>
+                                                </li>                                            
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>                                                                                  
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-3 col-md-4 d-none d-md-block contactenos">
+                            <h4>CONTÁCTENOS</h4>                                                
+                            <div class="d-block pb-1"><span>Teléfono: +57(1) 3527070</span></div> 
+                            <div class="d-block pb-1"><span>Email:</span><a href="mailto:direccióncorreo@email.com" class="blue hblue">direccióncorreo@email.com</a></div>                                                
+                            <div class="d-block"><strong class="blue oficina">Oficina principal</strong> </div> 
+                            <div class="d-block pb-1"><span>Dirección: Cra 13 # 26 - 45 Piso 16</span></div>
+                            <div class="d-block pb-1"><span>Horario de atención: 8:00 a.m. - 5:00 p.m.</span></div>                            
+                            
+                        </div>
+        
+                        <div class="col-sm-12 d-md-none">
+                            <div class="accordion accordion-flush" id="contacto">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" id="contacto1">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            CONTÁCTENOS
+                                        </button>
+                                    </div>
+                                    <div id="c1" class="accordion-collapse collapse" aria-labelledby="contacto" data-bs-parent="#contacto">
+                                        <div class="accordion-body contactenos">                                        
+                                            <div class="d-block pb-1"><span>Teléfono: +57(1) 3527070</span></div> 
+                                            <div class="d-block pb-1"><span>Email:</span><a href="mailto:direccióncorreo@email.com" class="blue hblue">direccióncorreo@email.com</a></div>                                                
+                                            <div class="d-block"><strong class="blue oficina">Oficina principal</strong> </div> 
+                                            <div class="d-block pb-1"><span>Dirección: Cra 13 # 26 - 45 Piso 16</span></div>
+                                            <div class="d-block pb-1"><span>Horario de atención: 8:00 a.m. - 5:00 p.m.</span></div> 
+                                        </div>
+                                    </div>
+                                </div>                                                                                  
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-2 col-md-12">                        
+                            <div class="contenido-wf">
+                                <h5>Nuestras redes sociales:</h5>
+                                <div class="social">
+                                    <ul>
+                                        <li><a href="#"><img src="img/icon-rs_instagram-blanco.svg" alt="" width="38" height="38"></a></li>
+                                        <li><a href="#"><img src="img/icon-rs_twitter-blanco.svg" alt="" width="38" height="38"></a></li>
+                                        <li><a href="#"><img src="img/icon-rs_facebook-blanco.svg" alt="" width="38" height="38"></a></li>
+                                    </ul>
+                                </div>
+                                <h5>Busca tu nuevo hogar en:</h5>
+                                <div class="cien">
+                                    <img src="img/logo_ciencuadras.svg" alt="" width="140" height="30" >
+                                </div>
                             </div>
                         </div>
                     </div>

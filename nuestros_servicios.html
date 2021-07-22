@@ -29,18 +29,18 @@
   </head>
 <body>
 
-  <!-- menu desktop  -->
-  <header class="d-none d-lg-block">
+  <!-- Header escritorio -->
+  <header class="d-none d-lg-block brline">
     <div class="red-band"></div>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand" href="#">
-              <img src="img/logo.svg" alt="" width="240" height="30">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.svg" alt="" width="240" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">                    
                 <li class="nav-item">
                     <div class="nav-box">
@@ -104,14 +104,9 @@
             <a class="button">
                 Estudio Arrendamiento
             </a>
-          </div>
         </div>
-    </nav>
-    <div class="miga">
-        <div class="container">
-            <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">intermediarios inmobiliarios</a> / <a href="#" class="blue">nuestros servicios</a>
         </div>
-    </div>
+    </nav>        
   </header>
 
   <!-- Header móvil -->
@@ -123,12 +118,105 @@
           </div>
           <img src="img/movil/icon_menu.svg" alt="" class="menu abrir" onclick="openNav()">
           <img src="img/movil/icon_cerrar.svg" alt="" class="menu cerrar" onclick="closeNav()"></a>              
-      </div>                      
-      <div class="miga">
-          <div class="container">
-              <a href="index.html" class="red">Inicio</a> / <a href="#" class="blue">intermediarios inmobiliarios</a> / <a href="#" class="blue">nuestros servicios</a> 
+      </div>                              
+  </div>
+  <div class="miga">
+    <div class="container">			
+      <a href="index.html" class="red">Inicio</a> <span> / </span> <a href="#" class="blue">intermediarios inmobiliarios</a> <span> / </span> <a href="#" class="blue">nuestros servicios</a> 			
+    </div>
+  </div>
+
+  <!-- menú móvil -->
+  <div id="overlay"></div>
+  <div id="mySidenav" class="sidenav d-lg-none">        
+      <div class="accordion accordion-flush" id="menu-lateral">
+          <div class="accordion-item">
+              <div class="accordion-header" id="menu1-h">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Acerca de nosotros
+                  </button>
+              </div>
+              <div id="menu1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#menu-lateral">
+                  <div class="accordion-body">
+                      <ul>
+                          <li>
+                              <a href="#">
+                                  Quiénes somos
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  Grupo Bolívar
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  Lenguaje Inmobiliario
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  Puntos de servicio
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div> 
+          
+          <div class="accordion-header link" id="menu2-h">
+              <a class="accordion-button" href="#">
+                  Propietario
+              </a>
           </div>
+          
+          <div class="accordion-header link" id="menu3-h">
+              <a class="accordion-button" href="#">
+                  Arrendatario
+              </a>
+          </div>
+              
+          <div class="accordion-header link" id="menu4-h">
+              <a class="accordion-button" href="#">
+                  Intermediarios Inmobiliarios
+              </a>
+          </div>
+              
+          
+
+          <div class="accordion-item">
+              <div class="accordion-header" id="menu5-h">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Pagos Electrónicos
+                  </button>
+              </div>
+              <div id="menu5" class="accordion-collapse collapse" aria-labelledby="menu5-h" data-bs-parent="#menu-lateral">
+                  <div class="accordion-body">
+                      <ul>
+                          <li>
+                              <a href="#">
+                                  Pago Estudio Solicitud Arrendamiento
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  Pago de Obligaciones
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  Primas seguro de arrendamiento
+                              </a>
+                          </li>                            
+                      </ul>                        
+                  </div>
+              </div>
+          </div>           
       </div> 
+      <a href="#" class="btn-blue">
+          <img src="img/movil/estudio.png" alt="">
+          Estudio Arrendamiento
+      </a>
   </div>
 
   <!-- menú móvil -->
@@ -233,8 +321,8 @@
           Volver a Intermediarios inmobiliarios
         </a>
         <picture>              
-          <source media="(max-width:991px)" srcset="img/Nservicios/bienvenido.png">              
-          <img src="img/Nservicios/bienvenido01.png" alt="" class="img-fluid" width="1200" height="235">
+          <source media="(max-width:991px)" srcset="img/Nservicios/servicios_banner-Movil.jpg">              
+          <img src="img/Nservicios/servicios_banner-Desktop.jpg" alt="" class="img-fluid" width="1200" height="230">
         </picture>            
       </div>              
     </div>
@@ -694,8 +782,8 @@
           
           <div class="low-tab">
             <div class="row">
-              <div class="col-xxl-11 offset-xxl-1 col-lg-12">
-                <div class="container lenginm">
+              <div class="col-xxl-10 col-xl-10 offset-xxl-1 col-lg-12">
+                <div class="lenginm">
                   <div class="accordion accordion-flush" id="accordionFlushExample">
                       <div class="accordion-item">
                         <div class="accordion-header" id="flush-headingOne">
@@ -825,136 +913,186 @@
 
         <!-- tab6 -->
         <div class="tab-pane fade" id="pills-juridica" role="tabpanel" aria-labelledby="juridica">        
-          <div class="container">
-            <div class="row g-3">
-              <div class="col-xxl-5 col-xl-5 col-lg-12">
-                <div class="colum-sec-p">
-                  <img src="img/Nservicios/juridico01.png" width="475" height="230">
-                </div>
-              </div>
-              <div class="col-xxl-7 col-xl-7 col-lg-12">
-                <div class="colum-sec-p">
-                  <h3 class="text-start">Asesoría jurídica</h3>
-                  <p>Contamos con un grupo de abogados especializado en procesos de restitución y ejecutivos.</p>
+          <div class="upper-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-xxl-5 col-xl-5  offset-xxl-1 col-lg-12">
+                  <div class="colum-sec-p">
+                    <img src="img/Nservicios/juridico01.png" width="475" height="230">
                   </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-12">
+                  <div class="colum-sec-p">
+                    <h3 class="text-start">Asesoría jurídica</h3>
+                    <p>Contamos con un grupo de abogados especializado en procesos de restitución y ejecutivos.</p>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="py-5"></div>  
-          <div class="container">
-            <div class="row g-3">
-              <div class="col-xxl-7">
-                <div class="colum-sec">           
-                  <div class="container especial-img">
-                    <div class="row g-2">
-                      <div class="col-xxl-4">
-                        <img src="img/Nservicios/juridico02.png" >
-                      </div>
-                      <div class="col-xxl-8">
-                        <div class="colum-sec-p especial-colum">
-                          <h3 class="text-start">Asesorías</h3>
-                          <ul>
-                            <li>Evitar la propagación de los siniestros adelantando procesos de restitución de inmuebles.</li><br>
-                            <li>Prestar asesoría permanente a las empresas inmobiliarias.</li><br>
-                            <li>Gestionar judicialmente recuperaciones de valores para nuestro cliente inmobiliario.</li><br>
-                            <li>Llevar a cabo procesos de restitución de inmuebles, evitando la propagación de siniestros.</li><br>
-                            <li>Adelantar procesos ejecutivos.</li>
-                          </ul>
-                        </div>                  
-                      </div>
+
+          <div class="low-tab">
+            <div class="container">
+              <div class="row h-100">
+                <div class="col-xxl-7">
+                  <div class="info-seguro-l bordered-box wb-l rbox">
+                    <div class="col-xl-4 d-none d-xl-block">
+                        <img src="img/propietario/seguro.png" alt="" class="d-none d-lg-block fsimage" width="235" height="613">
+                    </div>
+                    <div class="col-xl-8 col-md-12">
+                        <div class="info-seguro-up">
+                            <img src="img/propietario/seguro-mb.png" alt="" class="d-sm-none img-fluid" width="340" height="193">
+                            <h2 class="g-blackfont">
+                                Asesorias
+                            </h2>
+                            
+                            <ul>
+                              <li>Evitar la propagación de los siniestros adelantando procesos de restitución de inmuebles.</li><br>
+                              <li>Prestar asesoría permanente a las empresas inmobiliarias.</li><br>
+                              <li>Gestionar judicialmente recuperaciones de valores para nuestro cliente inmobiliario.</li><br>
+                              <li>Llevar a cabo procesos de restitución de inmuebles, evitando la propagación de siniestros.</li><br>
+                              <li>Adelantar procesos ejecutivos.</li>
+                            </ul>                                       
+                        </div>
+                    </div>                    
+                  </div>
+                  <div class="content-down gray-bg">
+                    <div class="colum-dato d-grid">
+                      <div class="redbox"><h4>Señor inmobiliario</h4></div>
+                      <p class="dark-gray"><b>El Libertador</b> pone en sus manos, una presentación sencilla y útil con breves recomendaciones y observaciones a la hora de elaborar y firmar contratos de arrendamiento.</p>
+                      <a class="btn dark-blue-btn  mt-1">Pautas para nunca olvidar</a>
                     </div>
                   </div>
                 </div>
-      
-                <div class="colum-dato bg-light d-grid">
-                  <div class="redbox"><h4>Señor inmobiliario</h4></div>
-                  <p><b>El Libertador</b> pone en sus manos, una presentación sencilla y útil con breves recomendaciones y observaciones a la hora de elaborar y firmar contratos de arrendamiento.</p>
-                  <button>Pautas para nunca olvidar</button>
+                <div class="col-xxl-5">
+                  <div class="bordered-box rbox h-100">
+                    <div class="colum-bluebox">
+                      <h2>
+                          Documentos de descarga
+                      </h2>
+                    </div> 
+                    <div class="colum-sec-full">  
+                      <div class="fiscal">
+                        <div class="col-lg-9">
+                          <h4 class="text-start noline">
+                            Poderes
+                          </h4>
+                        </div>
+                      </div>                            
+                          
+                      <div class="container">
+                        <div class="row g-3">
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="colum-pdf gray-bg rbox">
+                              <a href="#">
+                                <div class="colum-pdf-p">
+                                  <img src="img/gobierno/icon_pdf.svg" width="40" height="40">
+                                  <div>
+                                    <p>Proceso Ejecutivo</p>
+                                    <span>(132 KB)</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div> 
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="colum-pdf gray-bg rbox">
+                              <a href="#">
+                                <div class="colum-pdf-p">
+                                  <img src="img/gobierno/icon_pdf.svg" width="40" height="40">
+                                  <div>
+                                    <p>Proceso de Restitución</p>
+                                    <span>(132 KB)</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div> 
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="colum-pdf gray-bg rbox">
+                              <a href="">
+                                <div class="colum-pdf-p">
+                                  <img src="img/gobierno/icon_pdf.svg" width="40" height="40">
+                                  <div>
+                                    <p>Especial</p>
+                                    <span>(132 KB)</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div> 
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="colum-pdf gray-bg rbox">
+                              <a href="#">
+                                <div class="colum-pdf-p">
+                                  <img src="img/gobierno/icon_pdf.svg" width="40" height="40">
+                                  <div>
+                                    <p>Especial de Conciliación</p>
+                                    <span>(132 KB)</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div> 
+                          </div>
+                                                                                                
+                        </div>
+                      </div>
+
+                      <div class="fiscal">
+                        <div class="col-lg-9">
+                          <h4 class="text-start noline">
+                            Otros
+                          </h4>
+                        </div>
+                      </div> 
+
+                      <div class="container">
+                        <div class="row g-3">
+
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="colum-pdf gray-bg rbox">
+                              <a href="#">
+                                <div class="colum-pdf-p">
+                                  <img src="img/gobierno/icon_pdf.svg" width="40" height="40">
+                                  <div>
+                                    <p>Declaración Extra proceso</p>
+                                    <span>(132 KB)</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div> 
+                          </div>
+
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="colum-pdf gray-bg rbox">
+                              <a href="#">
+                                <div class="colum-pdf-p">
+                                  <img src="img/gobierno/icon_pdf.svg" width="40" height="40">
+                                  <div>
+                                    <p>Cesión de Contrato</p>
+                                    <span>(132 KB)</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div> 
+                          </div>
+
+                        </div>
+                      </div>
+                         
+                    </div> 
+                  </div>
                 </div>
-      
               </div>
-      
-              <div class="col-xxl-5">
-                <div class="colum-sec">
-      
-                  <div class="colum-sec-p colum-bluebox">
-                    <h3 class="text-start">Documentos de descarga</h3>
-                  </div>
-      
-                  <div class="colum-sec-p especial-pdf">
-                    <h3 class="text-start">Poderes</h3>
-      
-                  <div class="container">
-                    <div class="row g-2">
-      
-                      <div class="col-xxl-4">
-                        <div class="colum-pdf">
-                          <div class="colum-pdf-p">
-                            <img src="img/gobierno/icon_pdf.svg"><h5><b>Proceso Ejecutivo</b> (132 KB)</h5>
-                          </div>
-                        </div> 
-                      </div>
-      
-                      <div class="col-xxl-4">
-                        <div class="colum-pdf">
-                          <div class="colum-pdf-p">
-                            <img src="img/gobierno/icon_pdf.svg"><h5><b>Proceso de Restitución</b> (132 KB)</h5>
-                          </div>
-                        </div> 
-                      </div>
-      
-                      <div class="col-xxl-4">
-                        <div class="colum-pdf">
-                          <div class="colum-pdf-p">
-                            <img src="img/gobierno/icon_pdf.svg"><h5><b>Especial</b> (190 KB)</h5>
-                          </div>
-                        </div> 
-                      </div>
-      
-                      <div class="col-xxl-4">
-                        <div class="colum-pdf">
-                          <div class="colum-pdf-p">
-                            <img src="img/gobierno/icon_pdf.svg"><h5><b>Especial de Conciliación</b> (132 KB)</h5>
-                          </div>
-                        </div> 
-                      </div>
-                    </div>  
-                  </div>
-      
-                  
-                  <div class="container">
-                    <div class="pt-3"></div>
-                    <h3 class="text-start">Otros</h3>
-                    <div class="row g-2">
-      
-                      <div class="col-xxl-4">
-                        <div class="colum-pdf">
-                          <div class="colum-pdf-p">
-                            <img src="img/gobierno/icon_pdf.svg"><h5><b>Declaración Extra proceso</b> (132 KB)</h5>
-                          </div>
-                        </div> 
-                      </div>
-      
-                      <div class="col-xxl-4">
-                        <div class="colum-pdf">
-                          <div class="colum-pdf-p">
-                            <img src="img/gobierno/icon_pdf.svg"><h5><b>Cesión de Contrato</b> (132 KB)</h5>
-                          </div>
-                        </div> 
-                      </div>                    
-                    
-                    </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>  
+              
+            </div> 
+          </div> 
+           
         </div>
       
         <!-- tab6 -->
         <div class="tab-pane fade" id="pills-judiciales" role="tabpanel" aria-labelledby="judiciales">          
-          <div id="judiciales">
+          
           <div class="container">
             <div class="row g-2">
               <div class="col-xxl-5 col-xl-5 col-lg-12">
@@ -970,33 +1108,63 @@
               </div>
             </div>
           </div>
-          <div class="py-5"></div>
-          <div class="container">
-            <div class="row g-0">
-              <div class="col-xxl-12">
-                <div class="colum-sec">
-      
-                  <div class="container">
-                    <div class="row g-2">
-                      <div class="col-xxl-6">
-                        <div class="colum-sec-p">
-                          <h3 class="text-start">Nos encargamos de:</h3>
-                          <p>Recoger y radicar sus solicitudes de notificaciones judiciales en el juzgado u oficina de notificaciones, pagar aranceles e informar permanentemente sobre el estado de la diligencia.<br><br>
-      
-                          Contamos con un equipo de trabajo calificado para que sus procesos judiciales no se detengan.</p>
-                        </div>
+
+          
+          <div class="low-tab">
+
+
+            <div class="container">
+              <div class="row g-0">
+                <div class="col-xxl-12">
+                  <div class="judiciales">
+        
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="mini-slide">
+                          <div class="block-slide rbox bordered-box ">
+                            <img src="img/Nservicios/radicacion.png" alt="" width="374" height="137">
+                            <div class="text">
+                              <h5>
+                                Radicación
+                              </h5>
+                              <p class="dark-gray">
+                                Recoger y radicar sus solicitudes de notificaciones judiciales en el juzgado u oficina de notificaciones, 
+                                pagar aranceles e informar permanentemente sobre el estado de la diligencia.
+                              </p>
+                            </div>
+                          </div>
+                         </div>
                       </div>
-                      <div class="col-xxl-6">
-                        <img src="img/Nservicios/judiciales02.png">
+
+                      <div class="col-6">
+                        <div class="mini-slide">
+                          <div class="block-slide rbox bordered-box ">
+                            <img src="img/Nservicios/asesoria.png" alt="" width="374" height="137">
+                            <div class="text">
+                              <h5>
+                                Asesoría jurídica
+                              </h5>
+                              <p class="dark-gray">
+                                Contamos con un equipo de trabajo calificado para que sus procesos judiciales no se detengan.
+                              </p>
+                            </div>
+                          </div>
+                         </div>
                       </div>
+
                     </div>
+                                                                 
+                    
                   </div>
-                  
-                </div>
-              </div>        
+
+
+                </div>        
+              </div>
             </div>
+
           </div>
-          </div>
+          
+          
       
         </div>
 
@@ -1011,155 +1179,156 @@
   <section class="ftr">  
     <div class="footer-sec">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-md-4 d-none d-xl-block">
-                    <div class="logos">                            
-                        <img src="img/logo-gris.svg" alt="" class="logo" width="140" height="17">
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 d-none d-md-block">
-                    <h4>SERVICIOS</h4>
-                    <ul>
-                        <li><a href="#">Arrendatario</a></li>
-                        <li><a href="#">Inmobiliaria</a></li>
-                        <li><a href="#">Propietario</a></li>                        
-                    </ul>
-                </div>
-
-                <div class="col-sm-12 d-md-none">
-                    <div class="accordion accordion-flush" id="servicios">
-                        <div class="accordion-item">
-                            <div class="accordion-header" id="servicios1">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s1" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    SERVICIOS
-                                </button>
-                            </div>
-                            <div id="s1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#servicios">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                Arrendatario
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Inmobiliaria
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Propietario
-                                            </a>
-                                        </li>                                            
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>                                                                                  
-                    </div>
-                </div>
-
-
-
-                <div class="col-lg-3 col-md-5 d-none d-md-block">
-                    <h4>ENLACES DE INTERÉS</h4>
-                    <ul>
-                        <li><a href="#">Grupo Bolívar</a></li>
-                        <li><a href="#">Lenguaje Inmobiliario</a></li>
-                        <li><a href="#">Artículos de Interés</a></li>                        
-                        <li><a href="#">Agencias de seguros El Libertador</a></li>
-                        <li><a href="#">Puntos de Servicio</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-sm-12 d-md-none">
-                    <div class="accordion accordion-flush" id="interes">
-                        <div class="accordion-item">
-                            <div class="accordion-header" id="interes1">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i1" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    ENLACES DE INTERÉS
-                                </button>
-                            </div>
-                            <div id="i1" class="accordion-collapse collapse" aria-labelledby="interes" data-bs-parent="#interes">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                Grupo Bolívar
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Lenguaje Inmobiliario
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Artículos de Interés
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Agencias de seguros El Libertador
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Puntos de Servicio
-                                            </a>
-                                        </li>                                            
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>                                                                                  
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 d-none d-md-block contactenos">
-                    <h4>CONTÁCTENOS</h4>                                                
-                    <div class="d-block pb-1"><span>Teléfono: +57(1) 3527070</span></div> 
-                    <div class="d-block pb-1"><span>Email:</span><a href="mailto:direccióncorreo@email.com" class="blue hblue">direccióncorreo@email.com</a></div>                                                
-                    <div class="d-block"><strong class="blue oficina">Oficina principal</strong> </div> 
-                    <div class="d-block pb-1"><span>Dirección: Cra 13 # 26 - 45 Piso 16</span></div>
-                    <div class="d-block pb-1"><span>Horario de atención: 8:00 a.m. - 5:00 p.m.</span></div>                            
-                    
-                </div>
-
-                <div class="col-sm-12 d-md-none">
-                    <div class="accordion accordion-flush" id="contacto">
-                        <div class="accordion-item">
-                            <div class="accordion-header" id="contacto1">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c1" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    CONTÁCTENOS
-                                </button>
-                            </div>
-                            <div id="c1" class="accordion-collapse collapse" aria-labelledby="contacto" data-bs-parent="#contacto">
-                                <div class="accordion-body contactenos">                                        
-                                    <div class="d-block pb-1"><span>Teléfono: +57(1) 3527070</span></div> 
-                                    <div class="d-block pb-1"><span>Email:</span><a href="mailto:direccióncorreo@email.com" class="blue hblue">direccióncorreo@email.com</a></div>                                                
-                                    <div class="d-block"><strong class="blue oficina">Oficina principal</strong> </div> 
-                                    <div class="d-block pb-1"><span>Dirección: Cra 13 # 26 - 45 Piso 16</span></div>
-                                    <div class="d-block pb-1"><span>Horario de atención: 8:00 a.m. - 5:00 p.m.</span></div> 
-                                </div>
-                            </div>
-                        </div>                                                                                  
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-12">
-                    <div class="lineav"></div>
-                    <div class="contenido-wf">
-                        <h5>Nuestras redes sociales:</h5>
-                        <div class="social">
-                            <ul>
-                                <li><a href="#"><img src="img/icon-rs_instagram-blanco.svg" alt="" width="38" height="38"></a></li>
-                                <li><a href="#"><img src="img/icon-rs_twitter-blanco.svg" alt="" width="38" height="38"></a></li>
-                                <li><a href="#"><img src="img/icon-rs_facebook-blanco.svg" alt="" width="38" height="38"></a></li>
-                            </ul>
+            <div class="min-container">
+                <div class="row g-0">
+                    <div class="col-lg-2 col-md-4 d-none d-xl-block">
+                        <div class="logos">                            
+                            <img src="img/logo-gris.svg" alt="" class="logo" width="140" height="17">
                         </div>
-                        <h5>Busca tu nuevo hogar en:</h5>
-                        <div class="cien">
-                            <img src="img/logo_ciencuadras.svg" alt="" width="140" height="30" >
+                    </div>
+                    <div class="col-lg-2 col-md-3 d-none d-md-block">
+                        <h4>SERVICIOS</h4>
+                        <ul>
+                            <li><a href="#">Arrendatario</a></li>
+                            <li><a href="#">Inmobiliaria</a></li>
+                            <li><a href="#">Propietario</a></li>                        
+                        </ul>
+                    </div>
+    
+                    <div class="col-sm-12 d-md-none">
+                        <div class="accordion accordion-flush" id="servicios">
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="servicios1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        SERVICIOS
+                                    </button>
+                                </div>
+                                <div id="s1" class="accordion-collapse collapse" aria-labelledby="menu1-h" data-bs-parent="#servicios">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    Arrendatario
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Inmobiliaria
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Propietario
+                                                </a>
+                                            </li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>                                                                                  
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="col-lg-3 col-md-5 d-none d-md-block">
+                        <h4>ENLACES DE INTERÉS</h4>
+                        <ul>
+                            <li><a href="#">Grupo Bolívar</a></li>
+                            <li><a href="#">Lenguaje Inmobiliario</a></li>
+                            <li><a href="#">Artículos de Interés</a></li>                        
+                            <li><a href="#">Agencias de seguros El Libertador</a></li>
+                            <li><a href="#">Puntos de Servicio</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-sm-12 d-md-none">
+                        <div class="accordion accordion-flush" id="interes">
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="interes1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        ENLACES DE INTERÉS
+                                    </button>
+                                </div>
+                                <div id="i1" class="accordion-collapse collapse" aria-labelledby="interes" data-bs-parent="#interes">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    Grupo Bolívar
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Lenguaje Inmobiliario
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Artículos de Interés
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Agencias de seguros El Libertador
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Puntos de Servicio
+                                                </a>
+                                            </li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>                                                                                  
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-4 d-none d-md-block contactenos">
+                        <h4>CONTÁCTENOS</h4>                                                
+                        <div class="d-block pb-1"><span>Teléfono: +57(1) 3527070</span></div> 
+                        <div class="d-block pb-1"><span>Email:</span><a href="mailto:direccióncorreo@email.com" class="blue hblue">direccióncorreo@email.com</a></div>                                                
+                        <div class="d-block"><strong class="blue oficina">Oficina principal</strong> </div> 
+                        <div class="d-block pb-1"><span>Dirección: Cra 13 # 26 - 45 Piso 16</span></div>
+                        <div class="d-block pb-1"><span>Horario de atención: 8:00 a.m. - 5:00 p.m.</span></div>                            
+                        
+                    </div>
+    
+                    <div class="col-sm-12 d-md-none">
+                        <div class="accordion accordion-flush" id="contacto">
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="contacto1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        CONTÁCTENOS
+                                    </button>
+                                </div>
+                                <div id="c1" class="accordion-collapse collapse" aria-labelledby="contacto" data-bs-parent="#contacto">
+                                    <div class="accordion-body contactenos">                                        
+                                        <div class="d-block pb-1"><span>Teléfono: +57(1) 3527070</span></div> 
+                                        <div class="d-block pb-1"><span>Email:</span><a href="mailto:direccióncorreo@email.com" class="blue hblue">direccióncorreo@email.com</a></div>                                                
+                                        <div class="d-block"><strong class="blue oficina">Oficina principal</strong> </div> 
+                                        <div class="d-block pb-1"><span>Dirección: Cra 13 # 26 - 45 Piso 16</span></div>
+                                        <div class="d-block pb-1"><span>Horario de atención: 8:00 a.m. - 5:00 p.m.</span></div> 
+                                    </div>
+                                </div>
+                            </div>                                                                                  
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-2 col-md-12">                        
+                        <div class="contenido-wf">
+                            <h5>Nuestras redes sociales:</h5>
+                            <div class="social">
+                                <ul>
+                                    <li><a href="#"><img src="img/icon-rs_instagram-blanco.svg" alt="" width="38" height="38"></a></li>
+                                    <li><a href="#"><img src="img/icon-rs_twitter-blanco.svg" alt="" width="38" height="38"></a></li>
+                                    <li><a href="#"><img src="img/icon-rs_facebook-blanco.svg" alt="" width="38" height="38"></a></li>
+                                </ul>
+                            </div>
+                            <h5>Busca tu nuevo hogar en:</h5>
+                            <div class="cien">
+                                <img src="img/logo_ciencuadras.svg" alt="" width="140" height="30" >
+                            </div>
                         </div>
                     </div>
                 </div>
