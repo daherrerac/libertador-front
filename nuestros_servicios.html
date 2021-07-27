@@ -347,27 +347,32 @@
   <section class="position-relative">
     <div class="backgro"></div>
     <div class="container">
-      <div class="backmenu">
-        <ul class="nav nav-pills mb-3 submenu rbox" id="pills-tab" role="tablist">
-          <li class="nav-submenu" role="presentation">
-            <button class="nav-link submenu-link active g-mediumfont" id="arrendamiento" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Estudio de solicitudes de arrendamiento</button>
+      <div class="backmenu">  
+        <div class="ae-dropdown dropdown d-lg-none rbox">
+          <div class="ae-select">
+            <span class="ae-select-content"></span>
+          </div> 
+        </div>      
+        <ul class="nav nav-pills mb-3 submenu rbox ae-hide" id="pills-tab" role="tablist">
+          <li class="nav-submenu inferior selected" role="presentation">
+            <button class="nav-link submenu-link  g-mediumfont active" id="arrendamiento" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Estudio de solicitudes de arrendamiento</button>
           </li>
-          <li class="nav-submenu" role="presentation">
+          <li class="nav-submenu inferior" role="presentation">
             <button class="nav-link submenu-link g-mediumfont" id="capacitacion" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Capacitación inmobiliaria</button>
           </li>
-          <li class="nav-submenu" role="presentation">
+          <li class="nav-submenu inferior" role="presentation">
             <button class="nav-link submenu-link g-mediumfont" id="reportes" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Reportes de facturación</button>
           </li>
-          <li class="nav-submenu" role="presentation">
+          <li class="nav-submenu inferior" role="presentation">
             <button class="nav-link submenu-link g-mediumfont" id="novedades" data-bs-toggle="pill" data-bs-target="#pills-novedades" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Programa de novedades</button>
           </li>
-          <li class="nav-submenu" role="presentation">
+          <li class="nav-submenu inferior" role="presentation">
             <button class="nav-link submenu-link g-mediumfont" id="legislacion" data-bs-toggle="pill" data-bs-target="#pills-legislacion" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Legislación</button>
           </li>
-          <li class="nav-submenu" role="presentation">
+          <li class="nav-submenu inferior" role="presentation">
             <button class="nav-link submenu-link g-mediumfont" id="juridica" data-bs-toggle="pill" data-bs-target="#pills-juridica" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Asesoría jurídica</button>
           </li>
-          <li class="nav-submenu" role="presentation">
+          <li class="nav-submenu inferior" role="presentation">
             <button class="nav-link submenu-link g-mediumfont" id="judiciales" data-bs-toggle="pill" data-bs-target="#pills-judiciales" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Notificaciones judiciales</button>
           </li>
         </ul>
@@ -378,10 +383,10 @@
             <div class="upper-tab">
               <div class="container">
                 <div class="row">
-                  <div class="col-xxl-5 col-xl-5  offset-xxl-1 col-lg-12">
+                  <div class="col-xxl-5 offset-xxl-1 col-lg-6 col-md-12">
                     <img src="img/Nservicios/estudio.png" width="475" height="230" class="d-block">                  
                   </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-12">
+                  <div class="col-xxl-6 col-lg-6 col-md-12">
                     <div class="colum-sec-p">
                       <h2 class="text-start">Análisis de solicitudes</h2>
                       <p class="r-regularfont">
@@ -402,15 +407,17 @@
           <div class="upper-tab">
             <div class="container">
               <div class="row">
-                <div class="col-xxl-5 col-xl-5  offset-xxl-1 col-lg-12">                
+                <div class="col-xxl-5 offset-xxl-1 col-lg-6 col-md-12">                
                   <img src="img/Nservicios/capacitacion01.png" width="475" height="230" class="d-block">                
                 </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-12">                
-                  <h2 class="text-start">Capacitación Inmobiliaria</h2>
-                  <p>
-                    El conocimiento es un activo muy importante que debemos desarrollar, potencializar y administrar adecuadamente, motivando siempre 
-                    la creatividad, innovación, ingenio y trabajo en equipo para que se preserven, crezcan y enriquezcan las organizaciones.
-                  </p>                
+                <div class="col-xxl-6 col-lg-6 col-md-12">  
+                  <div class="colum-sec-p">
+                    <h2 class="text-start">Capacitación Inmobiliaria</h2>
+                    <p>
+                      El conocimiento es un activo muy importante que debemos desarrollar, potencializar y administrar adecuadamente, motivando siempre 
+                      la creatividad, innovación, ingenio y trabajo en equipo para que se preserven, crezcan y enriquezcan las organizaciones.
+                    </p>
+                  </div>                                 
                 </div>
               </div>
             </div> 
@@ -419,13 +426,13 @@
           <div class="low-tab">
             <div class="container">
               <div class="row">  
-                <div class="col-xxl-5 col-xl-5 offset-xxl-1 col-lg-12">
+                <div class="col-xxl-5 col-xl-5 offset-xxl-1 offset-xl-1 col-lg-12">
                   <h3 class="">Capacitaciones:</h3>
                 </div>                                                                                       
               </div>
               <div class="row">
-                <div class="col-xxl-10 col-xl-10 offset-xxl-1 col-lg-12">                  
-                  <div class="d-flex align-items-start inner-tab-content">
+                <div class="col-xxl-10 col-xl-10 offset-xxl-1 offset-xl-1 col-lg-12">                  
+                  <div class="align-items-start inner-tab-content">
                     <div class="nav flex-column nav-pills submenu-dos intabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                       <button class="nav-link submenu-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
                         Capacitación Básica
@@ -566,21 +573,23 @@
           <div class="upper-tab">
             <div class="container">
               <div class="row">
-                <div class="col-xxl-5 col-xl-5  offset-xxl-1 col-lg-12">                
+                <div class="col-xxl-5 offset-xxl-1 col-lg-6 col-md-12">                
                   <img src="img/Nservicios/reportes01.png" width="475" height="230">                
                 </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-12">                
-                  <h2 class="text-start">Reportes de facturación</h2>
-                  <p>
-                    Nuestros Clientes tendrán acceso a la información propia de su inmobiliaria de manera mensual, como:
-                  </p>
-                  <ul>
-                    <li>Listado de contratos asegurados</li>
-                    <li>Certificados de asegurabilidad</li>
-                    <li>Listado de novedades</li>
-                    <li>Extracto de cuenta (valor de primas y siniestros)</li>
-                    <li>Relación de siniestros</li>
-                  </ul>                
+                <div class="col-xxl-6 col-lg-6 col-md-12"> 
+                  <div class="colum-sec-p">
+                    <h2 class="text-start">Reportes de facturación</h2>
+                    <p>
+                      Nuestros Clientes tendrán acceso a la información propia de su inmobiliaria de manera mensual, como:
+                    </p>
+                    <ul>
+                      <li>Listado de contratos asegurados</li>
+                      <li>Certificados de asegurabilidad</li>
+                      <li>Listado de novedades</li>
+                      <li>Extracto de cuenta (valor de primas y siniestros)</li>
+                      <li>Relación de siniestros</li>
+                    </ul>
+                  </div>                                                 
                 </div>
               </div>           
             </div>
@@ -702,10 +711,10 @@
           <div class="upper-tab">
             <div class="container">
               <div class="row">
-                <div class="col-xxl-5 col-xl-5  offset-xxl-1 col-lg-12">                
+                <div class="col-xxl-5 offset-xxl-1 col-lg-6 col-md-12">              
                   <img src="img/Nservicios/novedades.png" width="475" height="230">                
                 </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-12">
+                <div class="col-xxl-6 col-lg-6 col-md-12">  
                   <div class="colum-sec-p">
                     <h3 class="text-start">Programa de novedades</h3>
                     <p>Nuestros inmobiliarios podrán registrar las novedades del seguro, propias de su Área de Arrendamientos, así como mantener actualizada su información respecto a Ingresos, Retiros y Aumentos, bajo las políticas dadas.</p>
@@ -765,12 +774,10 @@
           <div class="upper-tab">
             <div class="container">
               <div class="row">
-                <div class="col-xxl-5 col-xl-5  offset-xxl-1 col-lg-12">
-                  <div class="colum-sec-p">
-                    <img src="img/Nservicios/legislacion.png" width="475" height="230">
-                  </div>
+                <div class="col-xxl-5 offset-xxl-1 col-lg-6 col-md-12">                  
+                  <img src="img/Nservicios/legislacion.png" width="475" height="230">                  
                 </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-12">
+                <div class="col-xxl-6 col-lg-6 col-md-12">  
                   <div class="colum-sec-p">
                     <h3 class="text-start">Legislación</h3>
                     <p>Como apoyo al Sector Inmobiliario, aquí podrá acceder al Régimen de Arrendamiento de Vivienda Urbana que será de gran utilidad para sus labores inmobiliarias.</p>
@@ -916,16 +923,14 @@
           <div class="upper-tab">
             <div class="container">
               <div class="row">
-                <div class="col-xxl-5 col-xl-5  offset-xxl-1 col-lg-12">
-                  <div class="colum-sec-p">
-                    <img src="img/Nservicios/juridico01.png" width="475" height="230">
-                  </div>
+                <div class="col-xxl-5 offset-xxl-1 col-lg-6 col-md-12">                  
+                  <img src="img/Nservicios/juridico01.png" width="475" height="230">                  
                 </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-12">
+                <div class="col-xxl-6 col-lg-6 col-md-12">
                   <div class="colum-sec-p">
                     <h3 class="text-start">Asesoría jurídica</h3>
                     <p>Contamos con un grupo de abogados especializado en procesos de restitución y ejecutivos.</p>
-                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1093,18 +1098,18 @@
         <!-- tab6 -->
         <div class="tab-pane fade" id="pills-judiciales" role="tabpanel" aria-labelledby="judiciales">          
           
-          <div class="container">
-            <div class="row g-2">
-              <div class="col-xxl-5 col-xl-5 col-lg-12">
-                <div class="colum-sec-p">
-                  <img src="img/Nservicios/judiciales.png" width="475" height="230">
+          <div class="upper-tab">
+            <div class="container">
+              <div class="row g-2">
+                <div class="col-xxl-5 offset-xxl-1 col-lg-6 col-md-12">                  
+                  <img src="img/Nservicios/judiciales.png" width="475" height="230">                  
                 </div>
-              </div>
-              <div class="col-xxl-7 col-xl-7 col-lg-12">
-                <div class="colum-sec-p">
-                  <h3 class="text-start">Notificaciones judiciales</h3>
-                  <p>Conocemos las implicaciones del oficio de notificar, nuestros notificadores poseen capacitación jurídica y manejo de técnicas para efectuar su oficio.</p>
-                  </div>
+                <div class="col-xxl-6 col-lg-6 col-md-12">
+                  <div class="colum-sec-p">
+                    <h3 class="text-start">Notificaciones judiciales</h3>
+                    <p>Conocemos las implicaciones del oficio de notificar, nuestros notificadores poseen capacitación jurídica y manejo de técnicas para efectuar su oficio.</p>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1385,7 +1390,11 @@
           return;
         }               
       }
-                             
+        
+      
+      
+          
+          
     </script>
   </body>
 </html>
