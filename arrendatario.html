@@ -360,7 +360,7 @@
                             <div class="resultados">
                                 <p>Requisitos generales según el canon de arrendamiento:</p>
                                 <div class="text-info-res">
-                                    Un deudor que demuestre ingresos por el doble del canon de arrendamiento.
+                                    Un (1) deudor que demuestre ingresos por el doble del canon de arrendamiento.
                                 </div>
                             </div>
 
@@ -565,6 +565,7 @@
     <script src="js/vscripts.js"></script>
     <script>
         $('dropdown-toggle').text();
+        var formattedVal;
         var newOp = $('.dropdown-menu > li');
             newOp.click(function() {   
                 event.preventDefault();                             
@@ -597,6 +598,13 @@
                     location.reload(true);   
                 }                         
                 if(($("#selCity").val()) !="Seleccione" && ($('input#canon').val().length != 0)){
+                    $(".consulta .canon-label").hide(); 
+                    formattedVal = $('input#canon').val().replace('$', '');
+                    formattedVal = formattedVal.split('.').join("");
+                    formattedVal = parseInt(formattedVal,10); 
+                    if(formattedVal > 1500000){
+                        $(".text-info-res").text("Dos (2) deudores que demuestren el doble del canon de arrendamiento uno de los dos debe acreditar finca raíz.")
+                    }                 
                     $('.resultados').show();
                     $('.dropdown small').hide();
                     $("#ciudadLabel").removeClass("error");
