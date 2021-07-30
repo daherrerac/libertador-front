@@ -117,3 +117,81 @@ $(window).on('load resize orientationchange', function() {
     });
 });
 
+
+    $('.ae-select-content').text($('.nav-pills > li.selected').text());
+      var newOptions = $('.nav-pills > li');
+          newOptions.click(function() {
+            $('.ae-select-content').text($(this).text());
+            $('.nav-pills > li').removeClass('selected');
+            $(this).addClass('selected');
+          });
+
+      var aeDropdown = $('.ae-dropdown');
+          aeDropdown.click(function() {
+            if ($(".submenu.ae-hide")[0]){
+              $('.submenu').removeClass('ae-hide');            
+              $('.submenu').addClass('d-block');
+            }else{
+              $('.submenu').addClass('ae-hide');            
+              $('.submenu').removeClass('d-block');
+            }            
+            $('.nav-submenu.inferior').slideToggle(200);        
+          }); 
+         
+        $('.nav-submenu.inferior').click(function() {
+            if (($(window).width())  < 992){
+                $('.submenu').addClass('ae-hide');            
+                $('.submenu').removeClass('d-block');
+                $('.nav-submenu.inferior').slideToggle(200);
+            }
+        }); 
+    
+$(window).on('load resize orientationchange', function(){
+    if (($(window).width())  > 991){
+        $('.nav-submenu.inferior').css('display','flex');
+    }else{
+        if ($(".submenu.ae-hide")[0]){
+            $('.nav-submenu.inferior').css('display','none');
+        }else{
+            $('.nav-submenu.inferior').css('display','block');
+        }        
+    }
+    
+});
+
+
+$("input[data-type='currency']").on({
+    keyup: function() {
+      formatCurrency($(this));
+    }    
+});
+
+
+function formatNumber(n) {  
+  return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+}
+
+
+function formatCurrency(input) {
+  var input_val = input.val();
+  
+  if (input_val === "") { return; }
+  
+
+  var original_len = input_val.length;
+
+  // initial caret position 
+  var caret_pos = input.prop("selectionStart");
+    
+
+    input_val = formatNumber(input_val);
+    input_val = "$" + input_val;
+    
+    
+
+  input.val(input_val);
+
+  var updated_len = input_val.length;
+  caret_pos = updated_len - original_len + caret_pos;
+  input[0].setSelectionRange(caret_pos, caret_pos);
+}
