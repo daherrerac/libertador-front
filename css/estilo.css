@@ -2020,7 +2020,12 @@ a#test{
 .slider-servicios .in-slide {
     width: 275px;    
     height: 350px;
-    border-radius: 5px;
+    border-radius: 5px;  
+    margin-bottom: 5px;  
+}
+.slider-servicios .in-slide:hover{
+    -webkit-box-shadow: 0px 1px 2px 1px #b0b6ba41; 
+    box-shadow: 0px 1px 2px 1px #b0b6ba41;
 }
 .slider-servicios .slick-dots {	
 	justify-content: center;	
