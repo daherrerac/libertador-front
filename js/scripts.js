@@ -118,33 +118,38 @@ $(window).on('load resize orientationchange', function() {
 });
 
 
-    $('.ae-select-content').text($('.nav-pills > li.selected').text());
-      var newOptions = $('.nav-pills > li');
-          newOptions.click(function() {
+$('.ae-select-content').text($('.nav-pills > li.selected').text());
+    var newOptions = $('.nav-pills > li');
+        newOptions.click(function() {
             $('.ae-select-content').text($(this).text());
             $('.nav-pills > li').removeClass('selected');
+            $('.ae-dropdown').removeClass('n-egative');
+            $('.backmenu').removeClass('minus');
             $(this).addClass('selected');
-          });
+        });
 
-      var aeDropdown = $('.ae-dropdown');
-          aeDropdown.click(function() {
-            if ($(".submenu.ae-hide")[0]){
-              $('.submenu').removeClass('ae-hide');            
-              $('.submenu').addClass('d-block');
-            }else{
-              $('.submenu').addClass('ae-hide');            
-              $('.submenu').removeClass('d-block');
-            }            
-            $('.nav-submenu.inferior').slideToggle(200);        
-          }); 
-         
-        $('.nav-submenu.inferior').click(function() {
-            if (($(window).width())  < 992){
-                $('.submenu').addClass('ae-hide');            
-                $('.submenu').removeClass('d-block');
-                $('.nav-submenu.inferior').slideToggle(200);
-            }
+    var aeDropdown = $('.ae-dropdown');
+        aeDropdown.click(function() {
+        if ($(".submenu.ae-hide")[0]){
+            $('.submenu').removeClass('ae-hide');            
+            $('.submenu').addClass('d-block');
+            $('.ae-dropdown').addClass('n-egative');
+            $('.backmenu').addClass('minus');
+        }else{
+            $('.submenu').addClass('ae-hide');            
+            $('.submenu').removeClass('d-block');
+            $('.ae-dropdown').removeClass('n-egative');
+        }            
+        $('.nav-submenu.inferior').slideToggle(200);        
         }); 
+        
+    $('.nav-submenu.inferior').click(function() {
+        if (($(window).width())  < 992){
+            $('.submenu').addClass('ae-hide');            
+            $('.submenu').removeClass('d-block');
+            $('.nav-submenu.inferior').slideToggle(200);
+        }
+    }); 
     
 $(window).on('load resize orientationchange', function(){
     if (($(window).width())  > 991){

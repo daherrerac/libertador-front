@@ -59,7 +59,7 @@
 
 .ff_fileupload_wrap .ff_fileupload_recording { animation: ff_fileupload_recording_animate 1.2s infinite alternate; }
 
-.ff_fileupload_wrap table.ff_fileupload_uploads { width: 100%; border-radius: 5px !important; padding: 0;margin:0; }
+.ff_fileupload_wrap table.ff_fileupload_uploads { width: 100%; border-radius: 5px !important; padding: 0;margin:2px 0; }
 .ff_fileupload_wrap table.ff_fileupload_uploads tr, .ff_fileupload_wrap table.ff_fileupload_uploads td { margin: 0; border: 0 none; padding: 0;height: 50px; }
 .ff_fileupload_wrap table.ff_fileupload_uploads td { padding: 1em 0; white-space: nowrap; line-height: normal; }
 
