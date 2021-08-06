@@ -916,7 +916,7 @@ label.error{
 }
 .form-container h1{
     text-align: center;
-    margin-top: 1em;
+    margin-top: 50px;
     margin-bottom: 1em;
 }
 .form-container p{
@@ -1091,6 +1091,9 @@ label.error{
     border-top: 1px solid #b0b6ba;
     border-bottom: 1px solid #b0b6ba;
     padding: 0 1em;
+}
+.table-striped > tbody > tr:nth-of-type(even):last-of-type {
+    border-bottom:none;    
 }
 .form-group .sin-documentos{
     font-family: 'RobotoRegular';
@@ -1602,6 +1605,10 @@ h2.beneficios::after{
     padding-bottom: 5px;
     border-radius: 5px 5px 0 0;
     padding: 2rem;
+    height: 133px;
+    display: flex;
+    align-content: center;
+    align-items: center;
 }
 .colum-bluebox h2{
     color: #ffffff;
@@ -2098,7 +2105,8 @@ ul.submenu {
 }
 .backmenu  {
     position: relative;
-    z-index: 1;
+    z-index: 2;
+    margin-top: -65px;
 }
 .tab-content {
     position: relative;
@@ -2132,6 +2140,15 @@ ul.submenu {
     font-size: 1em;
     height: 100%;
 }
+.backmenu .nav-pills #arrendamiento.nav-link.active {
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+.backmenu .nav-pills #judiciales.nav-link.active {
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+.backmenu .nav-pills .nav-link {
+    border-radius: 0;
+}
 .colum-sec-p .intabs button {
     padding: 1em 0;
     text-align: left;
@@ -2153,7 +2170,7 @@ ul.submenu {
 }
 .nproductos{    
     margin: 0 auto;
-    padding: 2em 0;
+    padding: 2em 0 0 0;
     text-align: center;
     max-width: 650px;
 }
@@ -2184,9 +2201,11 @@ ul.submenu {
 }
 
 .submenu-dos .nav-link{
+    font-family: 'RobotoRegular';
     color: #B0B6BA;
 }
 .submenu-dos .nav-link.active {
+    font-family:'RobotoBold';
     color: #253150;
     background-color: transparent;    
     width: max-content;
@@ -2203,10 +2222,17 @@ ul.submenu {
 .submenu-dos.intabs .nav-link.active  span{
     width: 100%;
 }
-.upper-tab{
-    max-width: 1170px;
+.upper-tab::after,.upper-tab::before{
+    background: #F8F8F8;
+}
+.upper-tab {
+    max-width:100%;
     margin-left: auto;
     margin-right: auto;
+    background: #F8F8F8;
+    margin-top: -5em;
+    padding-top: 5em;
+    padding-bottom: 3em;
 }
 .upper-tab img{
     display: block;
@@ -2219,6 +2245,7 @@ ul.submenu {
 }
 .upper-tab p{
     margin-top: 2rem;
+    color: #333333;
 }
 .upper-tab.nprod{
     position: relative;
@@ -2226,7 +2253,7 @@ ul.submenu {
     margin-top: 100px;
 }
 .low-tab {
-    margin-top: 120px;
+    margin-top: 50px;
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
@@ -2264,6 +2291,11 @@ ul.submenu {
     left: 0;
     top: 100%;
 }
+.low-tab .info-seguro-up{
+    max-width: 475px;
+    margin-right: 0;
+    margin-left: auto;
+}
 .low-tab .info-seguro-up h2{
     margin-top: 1em;
     margin-left: 1em;
@@ -2280,6 +2312,9 @@ ul.submenu {
     width: 100%;
     padding: 0em 1rem;
     margin-top: 1rem;
+    max-width: 475px;
+    margin-right: 0;
+    margin-left: auto;
 }
 .low-tab .content-down .colum-dato{
     max-width: 390px;
@@ -2293,11 +2328,15 @@ ul.submenu {
 .low-tab .judiciales .mini-slide .block-slide {    
     height: 400px;
 }
+.low-tab .judiciales #pills-judiciales .mini-slide .block-slide {
+	height: 400px;
+	margin-right: 0;
+	margin-left: auto;
+}
 .nprod .low-tab{
     margin-top: 100px;
 }
-#v-pills-tab button{
-    font-family:'RobotoBold'; 
+#v-pills-tab button{     
     text-align: left; 
 }
 .inner-tab-content{
@@ -2325,6 +2364,7 @@ ul.submenu {
     width: 100%;
     max-width: 700px;
     margin: 1em auto;
+    color: #333333;
 }
 .tabs-servicios .accordion{
     max-width: 700px;
@@ -2335,7 +2375,7 @@ ul.submenu {
 .tabs-nproductos ul{
     font-family:'RobotoRegular';
     list-style: none;
-    color: #253150;
+    color: #333333;
 }
 .tabs-nservicios ul li::before{
     content: "\2022";
@@ -2343,7 +2383,7 @@ ul.submenu {
     font-weight: bold; 
     display: inline-block; 
     width: 1em; 
-    margin-left: -1em; 
+    margin-left: -1.2em; 
 }
 ul.prod-list  >  li::before {
     content: "\2022";
@@ -2415,11 +2455,17 @@ ul.prod-list  >  li::before {
     margin:1em 0 2rem 0;
 }
 .redbox h4 {
+    font-family:'GothamMedium';
     color: #ffffff;
     font-size: 1em;
+    padding: 0 0.3em;
+    margin: 0;
 }
 .m-34{
     margin-top: 34px;
+}
+.m-50{
+    margin-top: 50px;
 }
 .cajon-lateral{
     max-width: 375px;
@@ -2432,6 +2478,7 @@ ul.prod-list  >  li::before {
     margin-top: 1rem;
     margin-bottom: 2rem;
     max-width: 320px;
+    color: #333333;
 }
 .mini-slide {
     margin: 0 auto;
@@ -2440,19 +2487,71 @@ ul.prod-list  >  li::before {
 }
 .mini-slide .block-slide {
     max-width: 365px;
-    width: 100%;
-    margin: 0 20px 0 0;
+    width: 100%;    
     height: 425px;
+}
+.mini-slider .slick-dots{ 
+    display: flex;
+    width: 100%;
+    max-width: 750px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    list-style-type: none;
+}
+.mini-slider ul.slick-dots li::before{
+    content: '';
+}
+.mini-slider ul.slick-dots li{
+    margin: 0.5rem 0.25rem;
+}
+.mini-slider .slick-dots button {
+    display: block;
+    width: 30px;
+    height: 3px;
+    padding: 0;
+    border: none;
+    background-color: #BBBBBB;
+    text-indent: -9999px;
+}
+.mini-slider .slick-dots li.slick-active button {
+    background-color: #BD0F14;
 }
 #pills-novedades .low-tab .mini-slide .block-slide{
     margin-right: 0;
+    margin-left: auto;
+}
+h3.wl{
+    position: relative;
+}
+h3.wl::after{
+    content: '';
+    position: absolute;    
+    width: 35px;
+    height: 3px;
+    background: #BD0F14;
+    border-radius: 2px;
+    left: 0;
+    top: 100%;
 }
 .block-slide p{
     width: 320px;
     margin: 0 auto;
+    color: #333333;
+    max-width: 100%;
 }
 .block-slide .text {
-    height: 275px;
+    height: 285px;
+    min-height: 285px;
+    border-right: 1px solid rgba(0, 0, 0, 0.125);
+    border-left: 1px solid rgba(0, 0, 0, 0.125);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0 0 5px 5px;
+}
+.judiciales .block-slide .text {
+    height: 240px;
+    min-height: 220px;
 }
 .mini-slide .block-slide h5 {
     font-family: 'GothamBlack';
@@ -2463,7 +2562,22 @@ ul.prod-list  >  li::before {
 }
 .mini-slide .block-slide .content {
     width: 320px;
-    margin: 0 auto;        
+    margin: 0 auto;   
+    height: 160px;
+    overflow: hidden;     
+}
+.mini-slide .block-slide .text > a {
+    font-family: 'GothamBold';
+    display: block;
+    text-align: end;
+    max-width: 320px;
+    margin: 1em auto;
+}
+.block-slide .content p:last-of-type{
+    padding-top: 1em;
+}
+.low-tab .colum-docs {
+    max-width: 475px;
 }
 /*Acordion*/
 .accordion-button{
@@ -3508,7 +3622,10 @@ footer .lineav{
         width: 100%;
     }
     .backmenu {        
-        z-index: 2;
+        z-index: 2;        
+    }
+    .backmenu.minus{
+        margin-bottom: -55px;
     }
     .backmenu .nav-submenu{
         display: none;
@@ -3516,7 +3633,7 @@ footer .lineav{
     .backmenu .submenu {
         align-items: center;
         flex-wrap: nowrap;
-        width: 90%;
+        width: 85%;
         box-shadow: none;
         background-color: #F8F8F8;        
         margin: 0 auto;
@@ -3527,7 +3644,7 @@ footer .lineav{
     }    
     .backmenu .nav-pills .nav-link.active {
         font-size: 1em;
-        width: 100%;
+        width: 95%;
         margin: 0 auto;
         background-color: #f8f8f8;
         position: relative;
@@ -3540,6 +3657,7 @@ footer .lineav{
         background-color: #253150;     
     }    
     .backmenu .nav-pills .nav-link {
+        font-family: 'RobotoRegular';
         font-size: 1em;        
         margin: 0 auto;
         background-color: #f8f8f8;
@@ -3550,38 +3668,66 @@ footer .lineav{
         border-bottom: 1px solid rgba(0, 0, 0, 0.125);     
         border-radius: 0;
     }
+    .backmenu .nav-pills .nav-link:active{
+        background-color: #253150;
+        color: #ffffff;
+    }
     .backmenu .nav-pills .inferior{        
         margin: 0 auto;
         background-color: #f8f8f8;
         position: relative;
         z-index: 2;
-        width: 65%;
+        width: 95%;
         font-size: 	0.875rem;
+        height: 40px;
+        border-left: 1px solid rgba(0, 0, 0, 0.125);
+        border-right: 1px solid rgba(0, 0, 0, 0.125);
     }
+    .backmenu .nav-pills .inferior:first-of-type {
+        border-radius: 0.25rem 0.25rem 0 0;
+        padding-top: 0.3em;
+        border-top: 1px solid rgba(0, 0, 0, 0.125);
+        height: 50px;
+    }
+    .backmenu .nav-pills .inferior:last-of-type{
+        border-radius: 0 0 0.25rem 0.25rem;
+        padding-bottom: 0.3em;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    }    
     .ae-dropdown{
-        max-width: 1170px;
-        width: 70%;
-        margin: 0 auto;
+        max-width: 375px;
+        width: 90%;
+        margin: 0 auto 20px;
         display: block;
         padding: 1rem;
-        background-color: #ffffff;
+        background-color: #253150;
+        color: #ffffff;
         box-shadow: 2px 2px 5px #999;
-        background-image: url(../img/icon_flecha-inactivo.svg);
+        background-image: url(../img/icon_flecha-white.svg);
         background-repeat: no-repeat;
-        background-position:90% center ;
+        background-position:95% center ;
         background-size: 20px;
+    }
+    .ae-dropdown.n-egative{
+        background-color: #ffffff;
+        color: #ffffff;
+        background-image: url(../img/icon_flecha-inactivo-up.svg);
+        margin-bottom: -10px;
     }
     .ae-dropdown span{
         font-family: 'GothamBold';
         font-size: 	0.875rem;
-        color: #253150;
+        color: #fff;
         margin-left: 1em;
+    }
+    .ae-dropdown.n-egative span{
+        color: #253150;
     }
     .ae-hide{
         display:none;
     }
     .low-tab {
-        margin-top: 160px;        
+        margin-top: 80px;        
     }
     .inner-tab-content{
         display: block;
@@ -3610,6 +3756,37 @@ footer .lineav{
     }
     .form-container .form-group {
         padding: 30px 0;
+    }
+    .aula-info {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+    }
+    .aula-info h4{
+        font-size: 1.25rem;
+        text-align: left;
+    }
+    .aula-info p{
+        text-align: left;
+    } 
+    .aula-info .aula-text{
+        margin-left: 1rem;
+    }   
+    .low-tab .colum-sec-p {
+        padding: 0;
+        max-width: 375px;
+        margin: 0 auto;
+    }
+    #pills-novedades .low-tab .mini-slide .block-slide {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .cajon-lateral {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .low-tab .mini-slide .block-slide {        
+        margin: 1em auto;
     }
 }
 
@@ -3841,6 +4018,9 @@ footer .lineav{
     .backgro {        
         top: 0px;
     }
+    .backgro.n_servicios{
+        top: 60px;
+    }
     .upper-tab.nprod {
         margin-top: 0;
     }
@@ -3849,6 +4029,68 @@ footer .lineav{
     }
     .form-container .form-group {
         width: 95%;
+    }
+    .low-tab .container.unwide {
+        max-width: 375px;   
+        overflow-y: hidden;     
+    }
+    .container.unwide .mini-slide {
+        margin: 1rem auto;
+        height: auto;
+    }
+    .container.unwide .mini-slide .block-slide {
+        height: auto;
+    }
+    .container.unwide .mini-slide .block-slide .content {        
+        max-height: 100%; 
+        padding-bottom: 1rem;    
+        margin-bottom: 1rem;   
+    }
+    .container.unwide .block-slide .text {
+        height: auto;     
+        padding: 0 2em;
+        width: 100%;   
+    }
+    .low-tab .more{
+        display: none !important;
+    }
+    .m-34,.m-50 {
+        margin-top: 0;
+    }  
+    
+    .lenginm .accordion-button, .pservicio .accordion-button, .ppoliticas .accordion-button {
+        padding: 1.5rem 0;
+        font-size: 	1.125rem;
+    }
+    .low-tab .lenginm {
+        width: 100%;
+        margin-top: 50px;
+        max-width: 375px;
+    }
+    .low-tab .lenginm .punto-servicio {
+        max-width: 100%;
+        margin-left: 1rem;
+    }
+    .low-tab .content-down {        
+        max-width: 375px;   
+        margin: 0 auto 2rem;     
+    }
+    .low-tab .colum-docs {
+        max-width: 375px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 30px;
+    }
+    .low-tab .colum-docs .colum-pdf {
+        position: relative;
+        max-width: 320px;        
+        height: 90px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .low-tab .colum-bluebox h2 {
+        font-size: 1.375rem;
     }
 }
 
@@ -3862,6 +4104,23 @@ footer .lineav{
         width: 90%;
         margin: auto;
         padding: 0;
+    }
+    .upper-tab .container {
+        max-width: 375px;
+        width: 90%;
+        margin: auto;
+        padding: 0;
+    }
+    .upper-tab img {        
+        padding-right: 0px;
+    }
+    .tabs-nservicios.tab-content {
+        padding-top: 2em;
+        padding-bottom: 80px;
+    }
+    .tabs-nservicios.tab-content.aux {
+        padding-top: 2em;
+        padding-bottom: 0;
     }
     .container.mt-n200{
         margin-top: -400px ;
@@ -3906,8 +4165,23 @@ footer .lineav{
         margin-top: -30px;
         height: auto;
     }
+    .info-seguro-up img.aux {
+        width: 100%;
+        margin-top: 0px;
+        height: auto;
+    }
     .info-seguro-l{
         max-width: 351px;
+    }
+    .info-seguro-l.unwide{
+        max-width: 375px;
+        width: 90%;
+    }
+    .low-tab .info-seguro-l ul {
+        max-width: 368px;
+        margin-left: 1em;
+        margin-right: 1em;
+        width: 90%;
     }
     .info-seguro{
         max-width: 375px;
@@ -4148,6 +4422,9 @@ footer .lineav{
     .low-tab {
         margin-top: 70px;
     }
+    .tabs-nservicios .low-tab {
+        margin-top: 30px;
+    }
     .low-tab .tab-container h3 {
         max-width: 375px;
         margin: auto;
@@ -4179,6 +4456,59 @@ footer .lineav{
         display: block;
         margin: 0 auto;
         max-width: 95%;
+    }
+    .low-tab .colum-sec-p {
+        padding: 0;
+        max-width: 375px;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .colum-sec-p .accordion-button {
+        padding: 1.5rem 0rem;
+    }
+    .low-tab .container.unwide {
+        max-width: 375px;
+        overflow-y: hidden;
+        width: 90%;
+    }
+    .low-tab .lenginm {
+        width: 90%;
+        margin-top: 0px;        
+    }
+    .low-tab .content-down .colum-dato {
+        max-width: 375px;        
+    }
+    .low-tab .content-down {
+        max-width: 375px;
+        margin: 0 auto 2rem;
+        width: 90%;
+    }
+    .low-tab .colum-docs {
+        max-width: 375px;
+        width: 90%;
+    }
+    .block-slide p {        
+        margin: 0 auto;
+        color: #333333;
+        max-width: 100%;
+    }
+    .mini-slide .block-slide .content {
+        max-width: 100%;
+    }
+    .backmenu .nav-pills .inferior {
+        width: 80%;
+        border-left: 1px solid rgba(0, 0, 0, 0.125);
+        border-right: 1px solid rgba(0, 0, 0, 0.125);
+    }
+    .cajon-lateral {
+        max-width: 375px;
+        max-height: max-content;
+    }
+    .mini-slide .block-slide .content {        
+        height: max-content;        
+    }
+    .colum-bluebox {
+        height: 103px;
     }
 }
 
@@ -4245,6 +4575,12 @@ footer .lineav{
         width: 90%;
         margin: auto;
     }
+    .ae-dropdown span {
+        margin-left: 0;
+    }
+    .low-tab .colum-bluebox h2 {
+        font-size: 1.25rem;
+    }
 }
 @media (max-width: 375px) {
     .miga {
@@ -4307,6 +4643,12 @@ footer .lineav{
     }
     .banner-sec .indicador {
         font-size: 0.8em;
+    }
+    .tabs-nservicios .low-tab {
+        margin-top: 30px;
+    }
+    .backmenu .nav-pills .nav-link {
+        width: 100%;
     }
 }
 @media (max-width: 330px){
