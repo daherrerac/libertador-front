@@ -531,7 +531,7 @@
                               <div class="content">
                                 <p class="r-regularfont">
                                   Para acceder a los <a href="#" class="red hred">Reportes de Facturación</a>, digite su Usuario y Contraseña; el Usuario es el Número de Identificación 
-                                  (si es NIT no tenga en cuenta el dígito de verificación) y la contraseña será la asignada por El Libertador.
+                                  (si es NIT no tenga en cuenta el dígito de verificación) y la contraseña será la asignada por <strong>El Libertador</strong>.
                                  </p>
                               </div>
                             </div>
@@ -562,46 +562,19 @@
    
                         <div class="mini-slide">
                            <div class="block-slide">
-                             <img src="img/Nservicios/servicios_pago-factura.png" alt="" width="365" height="137">
+                             <img src="img/Nservicios/servicios_informacion-importante.png" alt="" width="365" height="137">
                              <div class="text">
                                <h5>
-                                 Pago de su factura
+                                Información importante
                                </h5>
                                <div class="content">
                                 <p>
-                                  Al momento de realizar el pago de su factura, recuerde consignar en la cuenta corriente de 
-                                  Banco Davivienda No. 006069999222 a nombre de Seguros Comerciales Bolívar S.A., con No. de Referencia 912278.
-                                  </p>
-                                  <p>
-                                    No olvide legalizar su pago, entregando la consignación original en nuestras oficinas 
-                                    ubicadas en la Calle 26 con carrera 13 ó Unicentro, donde le entregarán el recibo oficial de caja.
-                                 </p>
+                                  Recuerde que a partir del día <strong>18 de cada mes</strong>, puede acceder a la información del mes correspondiente.
+                                </p>                                  
                                </div>
                              </div>
                            </div>
-                        </div>
-   
-                        <div class="mini-slide">
-                           <div class="block-slide">
-                              <img src="img/Nservicios/servicios_pago-factura.png" alt="" width="365" height="137">
-                              <div class="text">
-                                <h5>
-                                 Pago de su factura
-                                </h5>
-                                <div class="content">
-                                  <p>
-                                    Al momento de realizar el pago de su factura, recuerde consignar en la cuenta corriente de 
-                                    Banco Davivienda No. 006069999222 a nombre de Seguros Comerciales Bolívar S.A., con No. de Referencia 912278.
-                                  </p>
-                                  <p>
-                                    No olvide legalizar su pago, entregando la consignación original en nuestras oficinas 
-                                    ubicadas en la Calle 26 con carrera 13 ó Unicentro, donde le entregarán el recibo oficial de caja.
-                                  </p>
-                                </div>
-                              </div>
-                           </div>
-                        </div> 
-
+                        </div>                            
                      </div>                                                 
                 </div>
   
@@ -650,11 +623,11 @@
           <div class="low-tab upper-mar">
             <div class="container unwide">
               <div class="row">
-                <div class="col-xxl-5 col-xl-5  offset-xxl-1 col-lg-12">   
+                <div class="col-xxl-5 col-xl-6  offset-xxl-1 col-lg-12">   
                   <h3 class="text-start wl">Recomendaciones</h3>
                   <div class="py-2"></div> 
                   <div class="mini-slide">
-                    <div class="block-slide rbox me-lg-0">
+                    <div class="block-slide rbox me-xl-0">
                       <img src="img/Nservicios/novedades-min.png" alt="" width="365" height="137">
                       <div class="text">
                         <h5>
@@ -1303,7 +1276,16 @@
           dots:true,
           slidesToShow: 2,
           slidesToScroll: 2,                    
-          responsive: [  
+          responsive: [           
+              {
+                  breakpoint: 1200,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,  
+                    centerMode: true,
+                    centerPadding: '0px',
+                  }
+              }, 
               {
                   breakpoint: 992,
                   settings: "unslick",                

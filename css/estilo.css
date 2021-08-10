@@ -3102,6 +3102,17 @@ footer .lineav{
     .upper-tab.nprod {        
         margin-top: 70px;
     } 
+    #pills-novedades .low-tab .mini-slide .block-slide {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .cajon-lateral {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .low-tab .mini-slide .block-slide {        
+        margin: auto;
+    }
 }
 
 @media screen and (min-width:992px) and (max-width:1090px) {
